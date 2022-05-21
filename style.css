@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  /*color palette*/
+  --bg-color: #ffffff;
+  --primary-color: #000000;
+  --color4: #757575;
+  --color5: #e6e6e6;
+  --accent-color: #fbff1d;
+
+  /*typography*/
+  --header-font: Barrio, sans-serif;
+  --text-font: Lato, sans-serif;
+  --link-style: uppercase;
+
+  /*margins and paddings*/
+  --margin: 2rem;
+  --double-margin: calc(var(--margin) * 2);
+  --half-margin: calc(var(--margin) / 2);
+}
