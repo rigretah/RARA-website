@@ -5,6 +5,8 @@
 
 const url = "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product/155";
 
+// ALL ARTWORKS LINK: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=70
+
 fetch(url)
   .then((res) => res.json())
   .then((data) => displayArtwork(data));

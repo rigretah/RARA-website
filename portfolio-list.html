@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RARA | Artwork</title>
+    <title>RARA | Portfolio</title>
     <meta name="description" content="Welcome to RARA's universe." />
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     <link rel="stylesheet" href="css/style.css" />
@@ -13,16 +13,17 @@
     <header></header>
 
     <main>
-      <template id="artworkTemplate">
-        <img src="#" alt="Artwork Name" class="artwork-image" />
-        <h1 class="artwork-title">Artwork Title</h1>
-        <h2 class="artwork-category">Category</h2>
-        <p class="artwork-description">Description</p>
-        <a href="#">Contact</a>
+      <template id="portfolio-list-template">
+        <div class="artwork-card">
+          <a class="artwork-link" href="#"
+            ><img class="artwork-image" src="#" alt="" />
+            <h3 class="artwork-title">Artwork title</h3>
+            <h4 class="artwork-category">Category</h4>
+          </a>
+        </div>
       </template>
     </main>
 
     <footer></footer>
-    <script src="javascript/portfolio-artwork.js"></script>
   </body>
 </html>
