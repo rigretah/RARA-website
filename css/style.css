@@ -35,8 +35,11 @@ main {
 }
 
 .index-logo-container {
-  width: 50%;
-  padding: var(--margin);
+  max-width: 50%;
+  margin: var(--margin);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 
 .index-page-logo {
