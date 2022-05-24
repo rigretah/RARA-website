@@ -16,6 +16,9 @@
   --margin: 2rem;
   --double-margin: calc(var(--margin) * 2);
   --half-margin: calc(var(--margin) / 2);
+
+  /*shadows*/
+  --shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /*---------- NAVIGATION ----------*/
@@ -95,6 +98,7 @@ main {
   padding-top: var(--half-margin);
   padding-bottom: var(--half-margin);
   margin: var(--half-margin);
+  box-shadow: var(--shadow);
 }
 
 /*---------- ABOUT PAGE ----------*/
@@ -104,7 +108,80 @@ main {
 /*---------- PRODUCT PAGE ----------*/
 
 /*---------- EVENT LIST ----------*/
+#event-list h2,
+#event-list h3,
+#event-list h4 {
+  margin: 0;
+  padding: 0;
+}
+#event-list h2 {
+  font-family: var(--header-font);
+  font-size: 2rem;
+}
 
+#event-list h3 {
+  font-family: var(--text-font);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#event-list h4 {
+  font-family: var(--text-font);
+  font-weight: 700;
+  font-size: 1rem;
+}
+#event-list main {
+  gap: var(--double-margin);
+}
+
+.current-event-container {
+  display: grid;
+  row-gap: var(--half-margin);
+}
+.current-event-container h3:first-of-type {
+  grid-row: 1/2;
+}
+.current-event-container h3:last-of-type {
+  justify-self: right;
+}
+.current-event-container img {
+  max-width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+
+  box-shadow: var(--shadow);
+
+  grid-row: 4/5;
+}
+.current-event-container h2 {
+  grid-row: 2/3;
+}
+
+.current-event-container a {
+  justify-self: center;
+}
+
+.past-events-container {
+  margin: 0 var(--half-margin);
+  display: grid;
+  gap: var(--margin);
+}
+
+.event-container {
+  display: grid;
+  row-gap: var(--half-margin);
+}
+.event-container img {
+  max-width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+
+  box-shadow: var(--shadow);
+  justify-self: center;
+}
+
+.event-container a {
+  justify-self: center;
+}
 /*---------- EVENT PAGE ----------*/
 
 /*---------- MEDIA QUERIES ----------*/
