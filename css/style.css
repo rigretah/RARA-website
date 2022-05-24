@@ -20,15 +20,16 @@
 
 /*---------- GENERAL SETTINGS ----------*/
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   margin: var(--margin);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-}
-
-body {
-  margin: 0;
 }
 
 /*---------- INDEX / LANDING PAGE ----------*/
@@ -130,6 +131,40 @@ body {
 }
 
 /*---------- PORTFOLIO - ARTWORK ----------*/
+
+.main-portfolio-artwork {
+  justify-items: left;
+}
+
+.artwork-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.artwork-image {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.artwork-title {
+  font-family: var(--header-font);
+  background-color: var(--accent-color);
+  width: fit-content;
+  padding: 0.2em;
+  position: absolute;
+  top: 62%;
+  left: 5%;
+}
+
+.artwork-category {
+  font-family: var(--text-font);
+  margin: var(--margin);
+}
+
+.artwork-description {
+  margin: var(--margin);
+}
 
 /*---------- ABOUT PAGE ----------*/
 
