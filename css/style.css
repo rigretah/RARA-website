@@ -19,7 +19,33 @@
 }
 
 /*GENERAL SETTINGS*/
+body {
+  margin: 0;
+}
+/*NAVIGATION*/
 
+/*FOOTER*/
+footer {
+  background-color: var(--primary-color);
+  padding: var(--margin);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: var(--half-margin);
+}
+footer h5 {
+  display: none;
+}
+#FTlogo {
+  max-width: 2rem;
+}
+
+#footer-SoMe {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 /*HOME PAGE*/
 
 /*ABOUT PAGE*/
