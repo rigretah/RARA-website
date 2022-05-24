@@ -18,18 +18,63 @@
   --half-margin: calc(var(--margin) / 2);
 }
 
-/*GENERAL SETTINGS*/
+/*---------- GENERAL SETTINGS ----------*/
 
-/*HOME PAGE*/
+main {
+  margin: var(--margin);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
 
-/*ABOUT PAGE*/
+/*---------- INDEX / LANDING PAGE ----------*/
 
-/*PRODUCT LIST*/
+.index-body {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
 
-/*PRODUCT PAGE*/
+.index-logo-container {
+  width: 50%;
+  padding: var(--margin);
+}
 
-/*EVENT LIST*/
+.index-page-logo {
+  max-width: 100%;
+}
 
-/*EVENT PAGE*/
+.index-h1 {
+  font-family: var(--header-font);
+  font-size: 2.8em;
+  width: 70%;
+  text-align: center;
+}
 
-/* MEDIA QUERIES */
+/*---------- BUTTONS ----------*/
+
+.yellow-button {
+  font-family: var(--text-font);
+  font-weight: bold;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  width: 8em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-inline: var(--margin);
+  padding-top: var(--half-margin);
+  padding-bottom: var(--half-margin);
+  margin: var(--half-margin);
+}
+
+/*---------- ABOUT PAGE ----------*/
+
+/*---------- PRODUCT LIST ----------*/
+
+/*---------- PRODUCT PAGE ----------*/
+
+/*---------- EVENT LIST ----------*/
+
+/*---------- EVENT PAGE ----------*/
+
+/*---------- MEDIA QUERIES ----------*/
