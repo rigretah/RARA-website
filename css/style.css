@@ -18,13 +18,9 @@
   --half-margin: calc(var(--margin) / 2);
 }
 
-/*GENERAL SETTINGS*/
-body {
-  margin: 0;
-}
-/*NAVIGATION*/
+/*---------- NAVIGATION ----------*/
 
-/*FOOTER*/
+/*---------- FOOTER ----------*/
 footer {
   background-color: var(--primary-color);
   padding: var(--margin);
@@ -46,16 +42,69 @@ footer h5 {
   padding: 0;
   display: flex;
 }
-/*HOME PAGE*/
+/*---------- GENERAL SETTINGS ----------*/
+body {
+  margin: 0;
+}
 
-/*ABOUT PAGE*/
+main {
+  margin: var(--margin);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
 
-/*PRODUCT LIST*/
+/*---------- INDEX / LANDING PAGE ----------*/
 
-/*PRODUCT PAGE*/
+.index-body {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
 
-/*EVENT LIST*/
+.index-logo-container {
+  max-width: 50%;
+  margin: var(--margin);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
 
-/*EVENT PAGE*/
+.index-page-logo {
+  max-width: 100%;
+}
 
-/* MEDIA QUERIES */
+.index-h1 {
+  font-family: var(--header-font);
+  font-size: 2.8em;
+  width: 70%;
+  text-align: center;
+}
+
+/*---------- BUTTONS ----------*/
+
+.yellow-button {
+  font-family: var(--text-font);
+  font-weight: bold;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  width: 8em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-inline: var(--margin);
+  padding-top: var(--half-margin);
+  padding-bottom: var(--half-margin);
+  margin: var(--half-margin);
+}
+
+/*---------- ABOUT PAGE ----------*/
+
+/*---------- PRODUCT LIST ----------*/
+
+/*---------- PRODUCT PAGE ----------*/
+
+/*---------- EVENT LIST ----------*/
+
+/*---------- EVENT PAGE ----------*/
+
+/*---------- MEDIA QUERIES ----------*/
