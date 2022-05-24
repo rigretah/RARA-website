@@ -27,6 +27,10 @@ main {
   justify-items: center;
 }
 
+body {
+  margin: 0;
+}
+
 /*---------- INDEX / LANDING PAGE ----------*/
 
 .index-body {
@@ -70,11 +74,66 @@ main {
   margin: var(--half-margin);
 }
 
+/*---------- PORTFOLIO - LIST ----------*/
+
+.main-portfolio-list {
+  margin: 0;
+}
+
+.artwork-card {
+  max-width: 100%;
+  position: relative;
+}
+
+.artwork-link {
+  text-decoration: none;
+}
+
+.artwork-image {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.artwork-title {
+  font-family: var(--text-font);
+  font-weight: 900;
+  text-transform: lowercase;
+  color: var(--primary-color);
+  font-size: 2.5em;
+  z-index: 3;
+  margin: 0;
+  position: absolute;
+  top: 0%;
+}
+
+.artwork-category {
+  font-family: var(--text-font);
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 400;
+  z-index: 3;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+}
+
+.yellow-overlay {
+  aspect-ratio: 1/1;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  z-index: 2;
+  opacity: 50%;
+}
+
 /*---------- ABOUT PAGE ----------*/
 
-/*---------- PRODUCT LIST ----------*/
+/*---------- SHOP - LIST ----------*/
 
-/*---------- PRODUCT PAGE ----------*/
+/*---------- SHOP - PRODUCT ----------*/
 
 /*---------- EVENT LIST ----------*/
 
