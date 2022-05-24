@@ -80,23 +80,23 @@ body {
   margin: 0;
 }
 
-.artwork-card {
+.portfolio-list-card {
   max-width: 100%;
   position: relative;
 }
 
-.artwork-link {
+.portfolio-list-link {
   text-decoration: none;
 }
 
-.artwork-image {
+.portfolio-list-image {
   max-width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   z-index: 1;
 }
 
-.artwork-title {
+.portfolio-list-title {
   font-family: var(--text-font);
   font-weight: 900;
   text-transform: lowercase;
@@ -108,7 +108,7 @@ body {
   top: 0%;
 }
 
-.artwork-category {
+.portfolio-list-category {
   font-family: var(--text-font);
   text-transform: uppercase;
   color: var(--primary-color);
@@ -119,7 +119,7 @@ body {
   top: 10%;
 }
 
-.yellow-overlay {
+.portfolio-list-overlay {
   aspect-ratio: 1/1;
   background-color: var(--accent-color);
   position: absolute;
@@ -128,6 +128,8 @@ body {
   z-index: 2;
   opacity: 50%;
 }
+
+/*---------- PORTFOLIO - ARTWORK ----------*/
 
 /*---------- ABOUT PAGE ----------*/
 
