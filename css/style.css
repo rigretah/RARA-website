@@ -234,4 +234,52 @@ main {
   box-shadow: var(--shadow);
 }
 
+/*---------- SHOP LIST ----------*/
+#shop-list {
+  margin: 0;
+  background-color: var(--color5);
+}
+
+#shop-list main {
+  display: grid;
+  gap: var(--margin);
+}
+
+.product-link {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--half-margin);
+
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.product-card img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: solid var(--accent-color) 0.2rem;
+
+  box-shadow: var(--shadow);
+
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+.product-card h3,
+.product-card h4 {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--text-font);
+  font-weight: 700;
+  text-transform: var(--link-style);
+  font-size: 0.7rem;
+}
+.product-price {
+  justify-self: right;
+}
+/*---------- SHOP PRODUCT ----------*/
+
+/*---------- SHOP PURCHASE ----------*/
+
 /*---------- MEDIA QUERIES ----------*/
