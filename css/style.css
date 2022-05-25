@@ -50,11 +50,29 @@ body {
   margin: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   margin: var(--margin); /*doesn't fit with all pages*/
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-family: var(--header-font);
+  font-size: 170%;
+}
+
+h3 {
+  font-family: var(--text-font);
 }
 
 /*---------- INDEX / LANDING PAGE ----------*/
@@ -106,11 +124,202 @@ main {
 .side-arrow {
   margin: var(--half-margin);
 }
+
+/*---------- PORTFOLIO ----------*/
+
+.main-portfolio {
+  margin: 0;
+  justify-items: left;
+}
+
+.portfolio-video-container {
+  background-image: url(../images/placeholder-image.jpg);
+  aspect-ratio: 9/16;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* position: absolute; */
+}
+
+.portfolio-categories-container {
+  margin: var(--margin);
+  width: calc(100% - (2 * var(--margin)));
+}
+
+.portfolio-categories {
+  margin-top: var(--half-margin);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--half-margin);
+  width: 100%;
+}
+
+.portfolio-category {
+  background-color: var(--accent-color);
+  text-decoration: none;
+  color: var(--primary-color);
+  aspect-ratio: 16/4;
+  max-width: 100%;
+  font-family: var(--text-font);
+  font-weight: bolder;
+  /* text-transform: uppercase; */
+  font-size: 120%;
+}
+
+.portfolio-events-container {
+  margin: var(--margin);
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.portfolio-events-container h2 {
+  margin: var(--half-margin);
+}
+
+.featured-event-image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin-top: var(--half-margin);
+}
+
+.event-credits {
+  text-align: right;
+  z-index: 2;
+}
+
+.portfolio-events-container .yellow-button {
+  position: absolute;
+  justify-self: center;
+  top: 92%;
+  margin: 0;
+}
+
+.portfolio-instagram-container {
+  margin: var(--margin);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.portfolio-instagram-container h4 {
+  margin-top: var(--half-margin);
+}
+
+.portfolio-instagram-container h4 a {
+  font-family: var(--text-font);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color4);
+}
+
+.portfolio-instagram-container img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-top: var(--half-margin);
+}
+
+/*---------- PORTFOLIO - LIST ----------*/
+
+.main-portfolio-list {
+  margin: 0;
+}
+
+.portfolio-list-card {
+  max-width: 100%;
+  position: relative;
+}
+
+.portfolio-list-link {
+  text-decoration: none;
+}
+
+.portfolio-list-image {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.portfolio-list-title {
+  font-family: var(--text-font);
+  font-weight: 900;
+  text-transform: lowercase;
+  color: var(--primary-color);
+  font-size: 2.5em;
+  z-index: 3;
+  margin: 0;
+  position: absolute;
+  top: 0%;
+}
+
+.portfolio-list-category {
+  font-family: var(--text-font);
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 400;
+  z-index: 3;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+}
+
+.portfolio-list-overlay {
+  aspect-ratio: 1/1;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  z-index: 2;
+  opacity: 50%;
+}
+
+/*---------- PORTFOLIO - ARTWORK ----------*/
+
+.main-portfolio-artwork {
+  justify-items: left;
+}
+
+.artwork-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.artwork-image {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.artwork-title {
+  font-family: var(--header-font);
+  background-color: var(--accent-color);
+  width: fit-content;
+  padding: 0.2em;
+  position: absolute;
+  top: 62%;
+  left: 5%;
+}
+
+.artwork-category {
+  font-family: var(--text-font);
+  margin: var(--margin);
+}
+
+.artwork-description {
+  margin: var(--margin);
+}
+
 /*---------- ABOUT PAGE ----------*/
 
-/*---------- PRODUCT LIST ----------*/
+/*---------- SHOP - LIST ----------*/
 
-/*---------- PRODUCT PAGE ----------*/
+/*---------- SHOP - PRODUCT ----------*/
 
 /*---------- EVENT LIST ----------*/
 #event-list h2,
