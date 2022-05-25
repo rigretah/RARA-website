@@ -51,7 +51,7 @@ body {
 }
 
 main {
-  margin: var(--margin);
+  margin: var(--margin); /*doesn't fit with all pages*/
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -101,6 +101,11 @@ main {
   box-shadow: var(--shadow);
 }
 
+/*---------- ABOUT PAGE ----------*/
+
+.side-arrow {
+  margin: var(--half-margin);
+}
 /*---------- ABOUT PAGE ----------*/
 
 /*---------- PRODUCT LIST ----------*/
@@ -183,5 +188,50 @@ main {
   justify-self: center;
 }
 /*---------- EVENT PAGE ----------*/
+#event-page {
+  margin: 0;
+}
+
+#event-page main {
+  margin: var(--double-margin) 0;
+  display: grid;
+  justify-items: left;
+  gap: var(--half-margin);
+}
+#event-page h1,
+#event-page h3,
+#event-page h4,
+#event-page p {
+  padding: 0;
+  margin: 0 var(--margin);
+}
+
+#event-page h3,
+#event-page h4 {
+  font-family: var(--text-font);
+  font-weight: 700;
+}
+
+#event-page h1 {
+  font-family: var(--header-font);
+
+  grid-row: 3/4;
+}
+
+#event-page h3 {
+  grid-row: 2/3;
+}
+#event-page p {
+  font-family: var(--text-font);
+}
+
+.event-image {
+  max-width: 100%;
+  aspect-ratio: 27/35;
+  object-fit: cover;
+  margin: var(--margin) 0;
+
+  box-shadow: var(--shadow);
+}
 
 /*---------- MEDIA QUERIES ----------*/
