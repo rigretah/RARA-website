@@ -80,6 +80,10 @@ h3 {
 p {
   font-family: var(--text-font);
 }
+.yellowBG {
+  background-color: var(--accent-color);
+  padding: calc(var(--half-margin) / 4);
+}
 /*---------- INDEX / LANDING PAGE ----------*/
 
 .index-body {
@@ -505,6 +509,7 @@ p {
 }
 .product-price {
   justify-self: right;
+  font-weight: 700;
 }
 /*---------- SHOP PRODUCT ----------*/
 .shop-product {
