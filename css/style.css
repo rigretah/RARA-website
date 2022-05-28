@@ -469,13 +469,21 @@ p {
   margin: 0;
   background-color: var(--color5);
 }
-
 #shop-list main {
+  gap: var(--half-margin);
+}
+.product-list {
   display: grid;
   gap: var(--margin);
 }
 #shop-list h1 {
   font-family: var(--header-font);
+}
+#shop-list h2 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--text-font);
+  font-size: 1.2rem;
 }
 .product-link {
   display: grid;
