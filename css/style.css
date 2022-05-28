@@ -470,7 +470,9 @@ p {
   display: grid;
   gap: var(--margin);
 }
-
+#shop-list h1 {
+  font-family: var(--header-font);
+}
 .product-link {
   display: grid;
   grid-template-columns: 2fr 1fr;
