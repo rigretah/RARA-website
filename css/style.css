@@ -505,7 +505,7 @@ align-items: flex-start;
   margin-left: var(--half-margin);
 }
 
-input[type=submit] {
+input[type=submit]{
   cursor: pointer;
   float: right;
 }
