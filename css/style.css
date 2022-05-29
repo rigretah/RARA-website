@@ -46,6 +46,10 @@ footer h5 {
   display: flex;
 }
 /*---------- GENERAL SETTINGS ----------*/
+.hide {
+  display: none;
+}
+
 body {
   margin: 0;
 }
@@ -150,6 +154,41 @@ p {
   justify-self: left;
 }
 
+/*---------- LOCAL DROP DOWN ----------*/
+.categories-drop-down {
+  margin-top: -4rem;
+  padding: var(--half-margin);
+  width: 100%;
+}
+.categories-drop-down nav {
+  display: grid;
+  justify-items: center;
+  gap: var(--half-margin);
+}
+.categories-drop-down ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  gap: var(--half-margin);
+}
+.categories-drop-down a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: var(--text-font);
+}
+.up-arrow {
+  transform: rotate(180deg);
+}
+/*bg color*/
+.gray {
+  background-color: var(--color5);
+}
+.white {
+  background-color: var(--bg-color);
+}
 /*---------- PORTFOLIO ----------*/
 
 .main-portfolio {
