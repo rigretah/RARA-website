@@ -33,6 +33,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   z-index: 5;
+  box-shadow: var(--shadow);
 }
 .navbar a {
   display: block;
@@ -79,7 +80,7 @@ header {
 }
 
 .brg-menu-contacts {
-  margin-top: var(--double-margin);
+  margin-top: var(--margin);
 }
 .cross-icon {
   justify-self: right;
