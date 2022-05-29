@@ -405,15 +405,22 @@ p {
 /*---------- ABOUT PAGE ----------*/
 
 /*---------- EVENT LIST ----------*/
-#event-list h2,
-#event-list h3,
-#event-list h4 {
+
+#event-list main {
   margin: 0;
-  padding: 0;
 }
+
+#event-list h1 {
+  font-family: var(--header-font);
+  text-align: center;
+  margin-top: var(--margin);
+}
+
 #event-list h2 {
   font-family: var(--header-font);
   font-size: 2rem;
+  margin-top: calc(var(--half-margin) / 2);
+  margin-bottom: calc(var(--half-margin) / 2);
 }
 
 #event-list h3 {
@@ -421,46 +428,45 @@ p {
   font-weight: 700;
   font-size: 1.2rem;
 }
+
 #event-list h4 {
   font-family: var(--text-font);
   font-weight: 700;
   font-size: 1rem;
 }
-#event-list main {
-  gap: var(--double-margin);
-}
 
 .current-event-container {
   display: grid;
   row-gap: var(--half-margin);
+  grid-template-columns: 1fr;
 }
-.current-event-container h3:first-of-type {
-  grid-row: 1/2;
+
+.current-event-text {
+  margin-inline: var(--margin);
+  margin-top: var(--half-margin);
+  margin-bottom: var(--half-margin);
 }
-.current-event-container h3:last-of-type {
-  justify-self: right;
-}
+
 .current-event-container img {
   max-width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 5/3;
   object-fit: cover;
-
   box-shadow: var(--shadow);
-
-  grid-row: 4/5;
-}
-.current-event-container h2 {
-  grid-row: 2/3;
 }
 
-.current-event-container a {
+.current-event-container .yellow-button {
+  margin-top: -2.5em;
   justify-self: center;
 }
 
 .past-events-container {
-  margin: 0 var(--half-margin);
   display: grid;
   gap: var(--margin);
+  margin: var(--double-margin);
+}
+
+.past-events-container h3 {
+  text-transform: uppercase;
 }
 
 .event-container {
@@ -469,16 +475,17 @@ p {
 }
 .event-container img {
   max-width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 5/3;
   object-fit: cover;
 
   box-shadow: var(--shadow);
-  justify-self: center;
 }
 
-.event-container a {
-  justify-self: center;
+.event-container .yellow-button {
+  justify-self: end;
+  margin-right: 0;
 }
+
 /*---------- EVENT PAGE ----------*/
 #event-page {
   margin: 0;
