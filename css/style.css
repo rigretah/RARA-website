@@ -379,6 +379,34 @@ p {
 
 /*---------- ABOUT PAGE ----------*/
 
+/* form */
+.form-container{
+  background-color: #fbff1d;
+  width: 100%;
+}
+form>div>label{
+  font-family: var(--text-font);
+}
+
+.form-name-contact,input[type=text],textarea{
+  width: 100%;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;;
+}
+.form-name-contact{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: .025rem;
+}
+.form-option-box{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 /*---------- EVENT LIST ----------*/
 #event-list h2,
 #event-list h3,
