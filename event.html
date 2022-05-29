@@ -12,20 +12,42 @@
   <body id="event-page">
     <header></header>
     <main>
-      <template class="event-template">
-        <a href="eventlist.html">
-          <img
-            class="side-arrow"
-            src="images/icons/side-arrow.svg"
-            alt="side-arrow"
-        /></a>
-        <img class="event-image" src="#" alt="event-image" />
-        <h3>Event status</h3>
-        <h1>Event title</h1>
-        <h4>Event location</h4>
+      <a class="back-arrow" href="#">
+        <svg
+          width="17"
+          height="28"
+          viewBox="0 0 17 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 24.71L6.49258 14L17 3.29L13.7652 0L0 14L13.7652 28L17 24.71Z"
+            fill="black"
+          />
+        </svg>
+      </a>
+
+      <!-- <template class="event-template"> -->
+      <h3>Event</h3>
+      <h1>Event title</h1>
+      <img
+        class="event-image"
+        src="images/placeholder-image.jpg"
+        alt="event-image"
+      />
+      <div class="event-text">
         <h4>Description</h4>
         <p>Event description</p>
-      </template>
+        <div class="event-date">
+          <h4>Date:</h4>
+          <p>Event date</p>
+        </div>
+        <div class="event-location">
+          <h4>Location:</h4>
+          <p>Event location</p>
+        </div>
+      </div>
+      <!-- </template> -->
     </main>
     <footer>
       <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />

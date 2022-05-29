@@ -487,22 +487,21 @@ p {
 }
 
 /*---------- EVENT PAGE ----------*/
-#event-page {
-  margin: 0;
-}
 
 #event-page main {
-  margin: var(--double-margin) 0;
+  margin: 0;
   display: grid;
   justify-items: left;
   gap: var(--half-margin);
 }
+
+#event-page .back-arrow {
+  margin: var(--half-margin);
+}
+
 #event-page h1,
-#event-page h3,
-#event-page h4,
-#event-page p {
-  padding: 0;
-  margin: 0 var(--margin);
+#event-page h3 {
+  margin-left: var(--margin);
 }
 
 #event-page h3,
@@ -513,24 +512,38 @@ p {
 
 #event-page h1 {
   font-family: var(--header-font);
-
-  grid-row: 3/4;
 }
 
 #event-page h3 {
-  grid-row: 2/3;
+  text-transform: uppercase;
 }
+
 #event-page p {
   font-family: var(--text-font);
 }
 
 .event-image {
   max-width: 100%;
-  aspect-ratio: 27/35;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  margin: var(--margin) 0;
-
+  margin-top: var(--half-margin);
   box-shadow: var(--shadow);
+}
+
+.event-text {
+  margin-inline: var(--double-margin);
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+  display: grid;
+  gap: calc(var(--half-margin) / 2);
+}
+
+.event-date,
+.event-location {
+  display: grid;
+  grid-template-columns: auto 5fr;
+  gap: var(--half-margin);
+  margin-top: var(--half-margin);
 }
 
 /*---------- SHOP LIST ----------*/
