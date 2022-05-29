@@ -147,6 +147,11 @@ p {
   margin: var(--half-margin);
   box-shadow: var(--shadow);
 }
+
+.back-arrow {
+  margin-bottom: var(--half-margin);
+}
+
 /*---------- SIDE ARROW ----------*/
 
 .side-arrow {
@@ -365,6 +370,7 @@ p {
 .artwork-container {
   max-width: 100%;
   position: relative;
+  margin: var(--half-margin);
 }
 
 .artwork-image {
@@ -373,23 +379,27 @@ p {
   object-fit: cover;
 }
 
+.artwork-text {
+  margin-top: var(--half-margin);
+  margin-bottom: var(--half-margin);
+}
+
 .artwork-title {
   font-family: var(--header-font);
   background-color: var(--accent-color);
   width: fit-content;
   padding: 0.2em;
-  position: absolute;
-  top: 62%;
-  left: 5%;
+  margin-top: var(--half-margin);
 }
 
 .artwork-category {
   font-family: var(--text-font);
-  margin: var(--margin);
+  text-transform: uppercase;
+  font-size: 140%;
 }
 
 .artwork-description {
-  margin: var(--margin);
+  margin-top: var(--margin);
 }
 
 /*---------- ABOUT PAGE ----------*/
