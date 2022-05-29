@@ -183,6 +183,7 @@ p {
 .up-arrow {
   transform: rotate(180deg);
 }
+
 /*bg color*/
 .gray {
   background-color: var(--color5);
@@ -311,8 +312,10 @@ p {
 
 .portfolio-list-link {
   text-decoration: none;
-  display: block;
   width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .portfolio-list-image:hover {
@@ -327,38 +330,31 @@ p {
   z-index: 1;
 }
 
+.portfolio-list-text {
+  color: var(--primary-color);
+  z-index: 3;
+  position: absolute;
+  align-self: end;
+  margin: var(--half-margin);
+  visibility: hidden;
+}
+
 .portfolio-list-title {
   font-family: var(--text-font);
   font-weight: 900;
   text-transform: lowercase;
-  color: var(--primary-color);
   font-size: 2.5em;
-  z-index: 3;
-  margin: 0;
-  position: absolute;
-  top: 0%;
 }
 
 .portfolio-list-category {
   font-family: var(--text-font);
   text-transform: uppercase;
-  color: var(--primary-color);
   font-weight: 400;
-  z-index: 3;
-  margin: 0;
-  position: absolute;
-  top: 10%;
 }
 
-/* .portfolio-list-overlay {
-  aspect-ratio: 1/1;
-  background-color: var(--accent-color);
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  z-index: 2;
-  opacity: 50%;
-} */
+.portfolio-list-card :hover .portfolio-list-text {
+  visibility: visible;
+}
 
 /*---------- PORTFOLIO - ARTWORK ----------*/
 

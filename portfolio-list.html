@@ -13,18 +13,18 @@
     <header></header>
 
     <main class="main-portfolio-list">
-      <h1>Shop</h1>
-      <h2>Categories</h2>
+      <h1>Portfolio</h1>
+      <h2 class="h2-drop-down">Categories</h2>
       <img
         class="drop-down-arrow"
-        src="images/icons/Arrow-down.svg"
+        src="images/icons/Arrow-down-black.svg"
         alt="arrow-down"
       />
-      <div class="categories-drop-down gray hide">
+      <div class="categories-drop-down white hide">
         <nav>
           <img
             class="up-arrow"
-            src="images/icons/Arrow-down.svg"
+            src="images/icons/Arrow-down-black.svg"
             alt="arrow-up"
           />
           <ul>
@@ -46,25 +46,13 @@
             alt="Artwork name"
           />
           <div class="portfolio-list-overlay"></div>
-          <h3 class="portfolio-list-title">Artwork title</h3>
-          <h4 class="portfolio-list-category">Category</h4>
+          <div class="portfolio-list-text">
+            <h4 class="portfolio-list-category">Category</h4>
+            <h3 class="portfolio-list-title">Artwork title</h3>
+          </div>
         </a>
       </div>
       <!-- </template> -->
-
-      <!-- TESTING ADDITIONAL CARDS -->
-      <div class="portfolio-list-card">
-        <a class="portfolio-list-link" href="#"
-          ><img
-            class="portfolio-list-image"
-            src="images/placeholder-image.jpg"
-            alt="Artwork name"
-          />
-          <div class="portfolio-list-overlay"></div>
-          <h3 class="portfolio-list-title">Artwork title</h3>
-          <h4 class="portfolio-list-category">Category</h4>
-        </a>
-      </div>
     </main>
 
     <footer>
@@ -93,5 +81,6 @@
         </li>
       </ul>
     </footer>
+    <script src="javascript/portfolio-list.js"></script>
   </body>
 </html>
