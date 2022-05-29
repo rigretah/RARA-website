@@ -205,50 +205,44 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* position: absolute; */
-}
-
-.portfolio-categories-container {
-  margin: var(--margin);
-  width: calc(100% - (2 * var(--margin)));
-}
-
-.portfolio-categories {
-  margin-top: var(--half-margin);
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--half-margin);
-  width: 100%;
 }
 
-.portfolio-category {
-  background-color: var(--accent-color);
-  text-decoration: none;
-  color: var(--primary-color);
-  aspect-ratio: 16/4;
-  max-width: 100%;
-  font-family: var(--text-font);
-  font-weight: bolder;
-  /* text-transform: uppercase; */
-  font-size: 120%;
+.portfolio-video-container a {
+  justify-self: center;
+  align-self: end;
 }
 
-.portfolio-events-container {
-  margin: var(--margin);
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: center; */
+.portfolio-feature-container {
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
 }
 
-.portfolio-events-container h2 {
-  margin: var(--half-margin);
+.portfolio-feature-text {
+  margin: var(--double-margin);
+  margin-bottom: var(--half-margin);
+}
+
+.portfolio-events-text {
+  margin: var(--double-margin);
+  margin-bottom: var(--half-margin);
+}
+
+.portfolio-events-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.main-portfolio h2 {
+  margin-top: calc(var(--half-margin) / 2);
+  margin-bottom: var(--half-margin);
 }
 
 .featured-event-image {
-  aspect-ratio: 16/9;
+  aspect-ratio: 5/3;
   object-fit: cover;
   margin-top: var(--half-margin);
 }
@@ -259,14 +253,17 @@ p {
 }
 
 .portfolio-events-container .yellow-button {
-  position: absolute;
+  margin-top: -1.5em;
   justify-self: center;
-  top: 92%;
-  margin: 0;
+}
+
+.portfolio-feature-container .yellow-button {
+  margin-top: -1.5em;
+  justify-self: center;
 }
 
 .portfolio-instagram-container {
-  margin: var(--margin);
+  margin: var(--double-margin);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
