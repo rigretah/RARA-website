@@ -291,6 +291,7 @@ p {
 
 .main-portfolio-list {
   margin: var(--margin);
+  gap: var(--half-margin);
 }
 
 .main-portfolio-list h1 {
@@ -310,6 +311,8 @@ p {
 
 .portfolio-list-link {
   text-decoration: none;
+  display: block;
+  width: 100%;
 }
 
 .portfolio-list-image:hover {
@@ -318,6 +321,7 @@ p {
 
 .portfolio-list-image {
   max-width: 100%;
+  display: block;
   /* aspect-ratio: 1/1; */
   object-fit: cover;
   z-index: 1;
