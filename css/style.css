@@ -263,6 +263,11 @@ p {
   color: var(--primary-color);
   font-family: var(--text-font);
 }
+.categories-drop-down a:hover {
+  background-image: url(../images/icons/hover-effects/Hover-effect-line-black.svg);
+  background-size: cover;
+  background-position: center;
+}
 .up-arrow {
   transform: rotate(180deg);
 }
