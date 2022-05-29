@@ -278,12 +278,15 @@ p {
 /*---------- MICROINTERACTIONS ----------*/
 /*LINK HOVER EFFECTS*/
 .burger-menu-popUp li:hover {
-  background-image: url(../images/icons/hover-effects/Hover-effect-rectangualr-black.svg);
+  background-image: url(../images/icons/hover-effects/Hover-effect-line-black.svg);
   background-size: cover;
   background-position: center;
 }
 .burger-menu-popUp li:active {
-  font-weight: 700;
+  font-weight: 400;
+  background-image: url(../images/icons/hover-effects/Hover-effect-line-black-bold.svg);
+  background-size: cover;
+  background-position: center;
 }
 /*ICONS HOVER EFFECTS*/
 #footer-SoMe li:hover {
