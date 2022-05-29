@@ -164,6 +164,7 @@ p {
   display: grid;
   justify-items: center;
   gap: var(--half-margin);
+  width: 100%;
 }
 .categories-drop-down ul {
   list-style-type: none;
