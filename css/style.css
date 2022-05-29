@@ -466,6 +466,19 @@ p {
 
 /*---------- ABOUT PAGE ----------*/
 
+/* contact me */
+#about_contacts #SoMe li {
+  list-style-type: none;
+  margin: var(--half-margin);
+}
+
+#SoMe li a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: var(--header-font);
+}
+
+
 /* form */
 .form-container{
 
