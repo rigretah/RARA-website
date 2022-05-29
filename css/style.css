@@ -384,27 +384,34 @@ p {
   background-color: #fbff1d;
   width: 100%;
 }
-form>div>label{
+form>div>label,
+div{
   font-family: var(--text-font);
+  padding: 1em;
 }
 
-.form-name-contact,input[type=text],textarea{
+input[type=text],textarea{
   width: 100%;
-  padding: 0.25rem;
+  padding: 0.5rem 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: vertical;;
+  resize: vertical;
+  cursor: pointer;
+}
+input[type=radio]{
+  cursor: pointer;
+  margin-right: 1rem;
 }
 .form-name-contact{
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
-gap: .025rem;
+
 }
 .form-option-box{
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin: var(--half-margin);
 }
 
 /*---------- EVENT LIST ----------*/
