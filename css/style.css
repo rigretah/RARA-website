@@ -194,6 +194,23 @@ p {
   box-shadow: var(--shadow);
 }
 
+.yellow-button:hover {
+  background-image: url(../images/icons/hover-effects/Hover-effect-rectangualr-black.svg);
+  background-size: 8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.yellow-button:active {
+  background-image: url(../images/icons/hover-effects/Hover-effect-rectangualr-yellow.svg);
+  background-size: 8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: var(--accent-color);
+  background-color: var(--primary-color);
+}
+
 .black-button {
   font-family: var(--text-font);
   font-weight: bold;
@@ -210,11 +227,10 @@ p {
   box-shadow: var(--shadow);
 }
 
+/*---------- SIDE ARROW ----------*/
 .back-arrow {
   margin-bottom: var(--half-margin);
 }
-
-/*---------- SIDE ARROW ----------*/
 
 .side-arrow {
   margin-bottom: var(--half-margin);
