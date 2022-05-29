@@ -68,13 +68,18 @@ img {
 
 h2 {
   font-family: var(--header-font);
-  font-size: 170%;
+  font-size: 2rem; /*I think it's better if we use rem instead of %*/
 }
 
 h3 {
   font-family: var(--text-font);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
+p {
+  font-family: var(--text-font);
+}
 /*---------- INDEX / LANDING PAGE ----------*/
 
 .index-body {
@@ -119,10 +124,26 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.black-button {
+  font-family: var(--text-font);
+  font-weight: bold;
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  width: 8em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-inline: var(--margin);
+  padding-top: var(--half-margin);
+  padding-bottom: var(--half-margin);
+  margin: var(--half-margin);
+  box-shadow: var(--shadow);
+}
 /*---------- SIDE ARROW ----------*/
 
 .side-arrow {
-  margin: var(--half-margin);
+  margin-bottom: var(--half-margin);
+  justify-self: left;
 }
 
 /*---------- PORTFOLIO ----------*/
@@ -314,10 +335,6 @@ h3 {
 
 /*---------- ABOUT PAGE ----------*/
 
-/*---------- SHOP - LIST ----------*/
-
-/*---------- SHOP - PRODUCT ----------*/
-
 /*---------- EVENT LIST ----------*/
 #event-list h2,
 #event-list h3,
@@ -439,5 +456,72 @@ h3 {
 
   box-shadow: var(--shadow);
 }
+
+/*---------- SHOP LIST ----------*/
+#shop-list {
+  margin: 0;
+  background-color: var(--color5);
+}
+
+#shop-list main {
+  display: grid;
+  gap: var(--margin);
+}
+
+.product-link {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--half-margin);
+
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.product-card img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: solid var(--accent-color) 0.2rem;
+
+  box-shadow: var(--shadow);
+
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+.product-card h3,
+.product-card h4 {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--text-font);
+  font-weight: 700;
+  text-transform: var(--link-style);
+  font-size: 0.7rem;
+}
+.product-price {
+  justify-self: right;
+}
+/*---------- SHOP PRODUCT ----------*/
+.shop-product {
+  margin: 0;
+  background-color: var(--color5);
+}
+
+.artwork-image {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.shop-product main {
+  display: grid;
+  gap: var(--half-margin);
+  justify-items: left;
+}
+.shop-product main a:last-of-type {
+  justify-self: center;
+}
+/*---------- SHOP PURCHASE ----------*/
 
 /*---------- MEDIA QUERIES ----------*/
