@@ -10,27 +10,68 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body id="event-list">
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <a class="header-logo-full" href="portfolio.html"
+          ><img
+            src="images/logo/rara-logo-full-black.svg"
+            alt="header-logo-horizontal"
+        /></a>
+        <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
+      </nav>
+      <div class="burger-menu-popUp hide">
+        <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
+        <img
+          class="header-logo-square"
+          src="images/logo/rara-logo-square-black.svg"
+          alt="header-logo-square"
+        />
+
+        <ul>
+          <a href="portfolio.html">
+            <li>Portfolio</li>
+          </a>
+          <a href="shop.html">
+            <li>Shop</li>
+          </a>
+          <a href="eventlist.html">
+            <li>Events</li>
+          </a>
+          <a href="about.html">
+            <li>About Me</li>
+          </a>
+          <a class="brg-menu-contacts" href="#">
+            <li>Contacts</li>
+          </a>
+        </ul>
+      </div>
+    </header>
 
     <main>
       <div class="current-event-container">
-        <img src="#" alt="current-exposition-photo" />
-        <h3>Current Event</h3>
-        <h2>Nothing exist in isolation</h2>
-        <h3>RARA x Kintobe</h3>
+        <h1>Events</h1>
+        <div class="current-event-text">
+          <h3>Current Event</h3>
+          <h2>Nothing exist in isolation</h2>
+          <h3 class="event-credits">RARA x Kintobe</h3>
+        </div>
+        <img
+          src="images/nothing-exists-in-isolation_exhibition.JPG"
+          alt="current-exposition-photo"
+        />
         <a class="yellow-button" href="#">Read more</a>
       </div>
 
       <div class="past-events-container">
         <h3>Past Events</h3>
         <div class="event-container">
-          <template id="past-events-template">
-            <img src="#" alt="exposition-photo" />
-            <h2>Event title</h2>
-            <h4>Date</h4>
-            <h4>Location</h4>
-            <a class="yellow-button" href="#">Read more</a>
-          </template>
+          <!-- <template id="past-events-template"> -->
+          <img src="images/placeholder-image.jpg" alt="exhibition-image" />
+          <h2>Event title</h2>
+          <h4>Date</h4>
+          <h4>Location</h4>
+          <a class="yellow-button" href="#">Read more</a>
+          <!-- </template> -->
         </div>
       </div>
     </main>
@@ -61,5 +102,6 @@
         </li>
       </ul>
     </footer>
+    <script src="javascript/event-list.js"></script>
   </body>
 </html>

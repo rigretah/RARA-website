@@ -10,9 +10,68 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <a class="header-logo-full" href="portfolio.html"
+          ><img
+            src="images/logo/rara-logo-full-black.svg"
+            alt="header-logo-horizontal"
+        /></a>
+        <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
+      </nav>
+      <div class="burger-menu-popUp hide">
+        <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
+        <img
+          class="header-logo-square"
+          src="images/logo/rara-logo-square-black.svg"
+          alt="header-logo-square"
+        />
+
+        <ul>
+          <a href="portfolio.html">
+            <li>Portfolio</li>
+          </a>
+          <a href="shop.html">
+            <li>Shop</li>
+          </a>
+          <a href="eventlist.html">
+            <li>Events</li>
+          </a>
+          <a href="about.html">
+            <li>About Me</li>
+          </a>
+          <a class="brg-menu-contacts" href="#">
+            <li>Contacts</li>
+          </a>
+        </ul>
+      </div>
+    </header>
 
     <main class="main-portfolio-list">
+      <h1>Portfolio</h1>
+      <h2 class="h2-drop-down">Categories</h2>
+      <img
+        class="drop-down-arrow"
+        src="images/icons/Arrow-down-black.svg"
+        alt="arrow-down"
+      />
+      <div class="categories-drop-down white hide">
+        <nav>
+          <img
+            class="up-arrow"
+            src="images/icons/Arrow-down-black.svg"
+            alt="arrow-up"
+          />
+          <ul>
+            <a href="#"><li>See All</li></a>
+            <a href="#"><li>Illustration</li></a>
+            <a href="#"><li>Digital Art</li></a>
+            <a href="#"><li>Merchandise</li></a>
+            <a href="#"><li>Design</li></a>
+          </ul>
+        </nav>
+      </div>
+
       <!-- <template id="portfolio-list-template"> -->
       <div class="portfolio-list-card">
         <a class="portfolio-list-link" href="#"
@@ -22,25 +81,13 @@
             alt="Artwork name"
           />
           <div class="portfolio-list-overlay"></div>
-          <h3 class="portfolio-list-title">Artwork title</h3>
-          <h4 class="portfolio-list-category">Category</h4>
+          <div class="portfolio-list-text">
+            <h4 class="portfolio-list-category">Category</h4>
+            <h3 class="portfolio-list-title">Artwork title</h3>
+          </div>
         </a>
       </div>
       <!-- </template> -->
-
-      <!-- TESTING ADDITIONAL CARDS -->
-      <div class="portfolio-list-card">
-        <a class="portfolio-list-link" href="#"
-          ><img
-            class="portfolio-list-image"
-            src="images/placeholder-image.jpg"
-            alt="Artwork name"
-          />
-          <div class="portfolio-list-overlay"></div>
-          <h3 class="portfolio-list-title">Artwork title</h3>
-          <h4 class="portfolio-list-category">Category</h4>
-        </a>
-      </div>
     </main>
 
     <footer>
@@ -69,5 +116,6 @@
         </li>
       </ul>
     </footer>
+    <script src="javascript/portfolio-list.js"></script>
   </body>
 </html>
