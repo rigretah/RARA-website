@@ -22,7 +22,26 @@
 }
 
 /*---------- NAVIGATION ----------*/
+header {
+  width: 100%;
+  background-color: var(--accent-color);
+}
+.navbar {
+  padding: 0 calc(var(--half-margin) / 2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.navbar a {
+  display: block;
+  width: 6rem;
+  grid-column: 2/3;
+  justify-self: center;
+}
 
+.menu-icon {
+  justify-self: right;
+}
 /*---------- FOOTER ----------*/
 footer {
   background-color: var(--primary-color);
