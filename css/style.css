@@ -190,6 +190,7 @@ p {
 .white {
   background-color: var(--bg-color);
 }
+
 /*---------- PORTFOLIO ----------*/
 
 .main-portfolio {
@@ -289,21 +290,35 @@ p {
 /*---------- PORTFOLIO - LIST ----------*/
 
 .main-portfolio-list {
-  margin: 0;
+  margin: var(--margin);
+}
+
+.main-portfolio-list h1 {
+  font-family: var(--header-font);
+}
+
+.main-portfolio-list h2 {
+  font-family: var(--text-font);
+  font-size: 1.2rem;
 }
 
 .portfolio-list-card {
   max-width: 100%;
   position: relative;
+  background-color: var(--accent-color);
 }
 
 .portfolio-list-link {
   text-decoration: none;
 }
 
+.portfolio-list-image:hover {
+  filter: opacity(50%);
+}
+
 .portfolio-list-image {
   max-width: 100%;
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
   object-fit: cover;
   z-index: 1;
 }
@@ -331,7 +346,7 @@ p {
   top: 10%;
 }
 
-.portfolio-list-overlay {
+/* .portfolio-list-overlay {
   aspect-ratio: 1/1;
   background-color: var(--accent-color);
   position: absolute;
@@ -339,7 +354,7 @@ p {
   width: 100%;
   z-index: 2;
   opacity: 50%;
-}
+} */
 
 /*---------- PORTFOLIO - ARTWORK ----------*/
 
