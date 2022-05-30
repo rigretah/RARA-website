@@ -918,6 +918,22 @@ p {
   }
 
   /*------- portfolio list -------*/
+  .main-portfolio-list {
+    margin: var(--margin);
+    gap: var(--half-margin);
+  }
+  .porfolio-list-container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: var(--margin);
+    width: 100%;
+    aspect-ratio: 1/15.7;
+    align-content: space-around;
+  }
+
+  .portfolio-list-card {
+    max-width: 45%;
+  }
 
   /*------- portfolio artwork -------*/
   .main-portfolio-artwork {
