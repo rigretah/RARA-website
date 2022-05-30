@@ -186,7 +186,7 @@ p {
   font-weight: bold;
   color: var(--primary-color);
   background-color: var(--accent-color);
-  width: 8em;
+  width: 8rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -823,5 +823,31 @@ p {
 
   .index-buttons {
     flex-direction: row;
+  }
+
+  /*------- buttons -------*/
+  .yellow-button {
+    padding: 1.5rem var(--margin);
+  }
+
+  /*------- local navigation -------*/
+  .categories-drop-down {
+    margin-top: 0;
+  }
+  .categories-drop-down ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--half-margin);
+  }
+
+  .up-arrow {
+    display: none;
+  }
+  .drop-down-arrow {
+    display: none;
+  }
+  .h2-drop-down {
+    display: none;
   }
 }
