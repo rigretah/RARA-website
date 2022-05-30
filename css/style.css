@@ -921,9 +921,11 @@ p {
 
   /*------- portfolio artwork -------*/
   .main-portfolio-artwork {
+    gap: var(--half-margin);
     margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
   }
   .artwork-container {
+    margin: 0;
     gap: var(--double-margin);
   }
 
@@ -947,7 +949,7 @@ p {
     gap: var(--half-margin);
   }
 
-  #event-page .back-arrow {
+  .back-arrow {
     margin: 0;
     margin-bottom: var(--margin);
   }
@@ -988,11 +990,28 @@ p {
     font-family: var(--text-font);
     font-size: 1.2rem;
   }
-
   .product-card h3,
   .product-card h4 {
     font-size: 1rem;
   }
 
   /*------- shop page -------*/
+  .artwork-image {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+  }
+
+  .shop-product main {
+    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+    display: grid;
+    gap: var(--margin);
+    justify-items: left;
+  }
+
+  .shop-product main a:last-of-type {
+    justify-self: right;
+    margin-inline: 0;
+  }
 }
