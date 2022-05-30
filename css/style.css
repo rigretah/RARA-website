@@ -751,4 +751,78 @@ p {
 }
 /*---------- SHOP PURCHASE ----------*/
 
+/* Mobile view */
+.back-arrow {
+  margin-bottom: var(--half-margin);
+  justify-self: left;
+}
+
+.purchase-product {
+  display: grid;
+  gap: var(--margin);
+}
+.purchase-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--half-margin);
+
+  text-decoration: none;
+  color: var(--primary-color);
+  margin: var(--half-margin);
+}
+
+.purchase-card img {
+  background-color: var(--accent-color);
+  max-width: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+  grid-area: 1/1/2/2;
+  box-shadow: var(--shadow);
+}
+
+.purchase-details{
+  margin-left: 40%;
+  margin-top: -35%;
+  font: var(--text-font);
+}
+
+.purchase-price{
+margin-left: 70%;
+margin-top: -20%;
+font: var(--text-font);
+}
+
+.shipping-info{
+  margin-left: 1%;
+  margin-top: -10%;
+  font: var(--text-font);
+}
+
+.shipping-price{
+  margin-left: 70%;
+  margin-top: -19%;
+  font: var(--text-font);
+}
+.shipping-total{
+  margin-left: 70%;
+  margin-top: -19%;
+  font: var(--text-font);
+}
+
+
+
+.text-steps{
+  font: var(--text-font);
+  margin-left: -75%;
+  margin-top: -10%;
+}
+
+/* Purchase- Personal Details form */
+
+
+
+
+
 /*---------- MEDIA QUERIES ----------*/

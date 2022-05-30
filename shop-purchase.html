@@ -1,37 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <footer>
-      <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
 
-      <h5>still here? then you shouLd DEFINITELY contact me</h5>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RARA | Your Order</title>
+  <meta name="description" content="Welcome to RARA's universe." />
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <ul id="footer-SoMe">
-        <li id="FTmail">
-          <a href="#"><img src="assets/Mail.svg" alt="mail-icon" /></a>
-        </li>
-        <li id="FTinstagram">
-          <a href="https://www.instagram.com/almostrara/"
-            ><img src="assets/Instagram.svg" alt="instagram-icon"
-          /></a>
-        </li>
-        <li id="FTfacebook">
-          <a href="https://www.facebook.com/rasa.drukteinyte.7"
-            ><img src="assets/Facebook.svg" alt="facebook-icon"
-          /></a>
-        </li>
-        <li id="FTlinkedin">
-          <a href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
-            ><img src="assets/LinkedIn.svg" alt="linkedin-icon"
-          /></a>
-        </li>
+<body id="shop-list">
+  <header>
+    <nav class="navbar">
+      <a class="header-logo-full" href="portfolio.html"><img src="images/logo/rara-logo-full-black.svg"
+          alt="header-logo-horizontal" /></a>
+      <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
+    </nav>
+    <div class="burger-menu-popUp hide">
+      <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
+      <img class="header-logo-square" src="images/logo/rara-logo-square-black.svg" alt="header-logo-square" />
+
+      <ul>
+        <a href="portfolio.html">
+          <li>Portfolio</li>
+        </a>
+        <a href="shop.html">
+          <li>Shop</li>
+        </a>
+        <a href="eventlist.html">
+          <li>Events</li>
+        </a>
+        <a href="about.html">
+          <li>About Me</li>
+        </a>
+        <a class="brg-menu-contacts" href="#">
+          <li>Contacts</li>
+        </a>
       </ul>
-    </footer>
-  </body>
+    </div>
+  </header>
+
+  <main>
+    <h1>Your order</h1>
+    <a class="back-arrow" href="#">
+      <svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 24.71L6.49258 14L17 3.29L13.7652 0L0 14L13.7652 28L17 24.71Z" fill="black" />
+      </svg>
+    </a>
+    <div class="purchase-product">
+
+
+      <!--<template id="shop-list-template">-->
+      <div class="purchase-card">
+        <img class="purchase-image" src="images/placeholder-image.jpg" alt="product-image" />
+
+      </div>
+      <!-- Purchase details -->
+      <div class="purchase-details">
+        <p>DESIGN</p>
+        <h3>ARTWORK TITLE</h3>
+      </div>
+      <div class="purchase-price">
+        <p>DKK 500</p>
+      </div>
+      <div class="shipping-info">
+      <p>Standard Shipping & Returns</p>
+    </div>
+    <div class="shipping-price">
+      <p>DKK 100</p>
+    </div>
+    <div class="shipping-total">
+      <p>DKK 600</p>
+    </div>
+    </div>
+    <div class="steps">
+      <div class="text-steps">
+      <p>Step 1 - Personal Details</p>
+    </div>
+    <form action="/action_page.php">
+      <label for="fname">Full Name:</label><br>
+      <input type="text" id="fname" name="fname" value="Your Name"><br>
+      <label for="lname">Email Address</label><br>
+      <input type="text" id="lname" name="lname" value="someome@example.com"><br><br>
+      
+      <input type="submit" value="Submit">
+    </form> 
+    
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    
+
+    </div>
+
+    <!--</template>-->
+    <div class="categories-drop-down gray hide">
+      <nav>
+        <img class="up-arrow" src="images/icons/Arrow-down-black.svg" alt="arrow-up" />
+        <ul>
+          <a href="#">
+            <li>See All</li>
+          </a>
+          <a href="#">
+            <li>Illustration</li>
+          </a>
+          <a href="#">
+            <li>Digital Art</li>
+          </a>
+          <a href="#">
+            <li>Merchandise</li>
+          </a>
+          <a href="#">
+            <li>Design</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
+
+    <h5>still here? then you shouLd DEFINITELY contact me</h5>
+
+    <ul id="footer-SoMe">
+      <li id="FTmail">
+        <a href="#"><img src="assets/Mail.svg" alt="mail-icon" /></a>
+      </li>
+      <li id="FTinstagram">
+        <a href="https://www.instagram.com/almostrara/"><img src="assets/Instagram.svg" alt="instagram-icon" /></a>
+      </li>
+      <li id="FTfacebook">
+        <a href="https://www.facebook.com/rasa.drukteinyte.7"><img src="assets/Facebook.svg" alt="facebook-icon" /></a>
+      </li>
+      <li id="FTlinkedin">
+        <a href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"><img src="assets/LinkedIn.svg"
+            alt="linkedin-icon" /></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="/javascript/shop-list.js"></script>
+</body>
+
 </html>
