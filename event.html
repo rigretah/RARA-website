@@ -47,7 +47,7 @@
       </div>
     </header>
     <main>
-      <a class="back-arrow" href="#">
+      <a class="back-arrow" href="eventlist.html">
         <svg
           width="17"
           height="28"
@@ -62,27 +62,27 @@
         </svg>
       </a>
 
-      <!-- <template class="event-template"> -->
-      <h3>Event</h3>
-      <h1>Event title</h1>
-      <img
-        class="event-image"
-        src="images/placeholder-image.jpg"
-        alt="event-image"
-      />
-      <div class="event-text">
-        <h4>Description</h4>
-        <p>Event description</p>
-        <div class="event-date">
-          <h4>Date:</h4>
-          <p>Event date</p>
+      <template id="event-template">
+        <h3>Event</h3>
+        <h1 class="event-title">Event title</h1>
+        <img
+          class="event-image"
+          src="images/placeholder-image.jpg"
+          alt="event-image"
+        />
+        <div class="event-text">
+          <h4>Description</h4>
+          <p class="event-description">Event description</p>
+          <div class="event-date">
+            <h4>Date:</h4>
+            <p>Event date</p>
+          </div>
+          <div class="event-location">
+            <h4>Location:</h4>
+            <p>Event location</p>
+          </div>
         </div>
-        <div class="event-location">
-          <h4>Location:</h4>
-          <p>Event location</p>
-        </div>
-      </div>
-      <!-- </template> -->
+      </template>
     </main>
     <footer>
       <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
