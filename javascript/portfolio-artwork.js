@@ -1,6 +1,20 @@
 // ALL ARTWORKS LINK: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=70
 // URL FOR WHEN LIST PAGES ARE SET UP
 
+//-------BURGER MENU-------
+document.querySelector(".menu-icon").addEventListener("click", showBRGMenu);
+
+function showBRGMenu() {
+  document.querySelector(".burger-menu-popUp").classList.remove("hide");
+
+  document.querySelector(".cross-icon").addEventListener("click", hideBRGMenu);
+}
+
+function hideBRGMenu() {
+  document.querySelector(".burger-menu-popUp").classList.add("hide");
+}
+
+// COPIED CODE - TEST
 // const urlParams = new URLSearchParams(window.location.search);
 // const id = urlParams.get("id");
 

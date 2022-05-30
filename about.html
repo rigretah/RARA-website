@@ -5,10 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar">
+        <a class="header-logo-full" href="portfolio.html"
+          ><img
+            src="images/logo/rara-logo-full-black.svg"
+            alt="header-logo-horizontal"
+        /></a>
+        <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
+      </nav>
+      <div class="burger-menu-popUp hide">
+        <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
+        <img
+          class="header-logo-square"
+          src="images/logo/rara-logo-square-black.svg"
+          alt="header-logo-square"
+        />
+
+        <ul>
+          <a href="portfolio.html">
+            <li>Portfolio</li>
+          </a>
+          <a href="shop.html">
+            <li>Shop</li>
+          </a>
+          <a href="eventlist.html">
+            <li>Events</li>
+          </a>
+          <a href="about.html">
+            <li>About Me</li>
+          </a>
+          <a class="brg-menu-contacts" href="#">
+            <li>Contacts</li>
+          </a>
+        </ul>
+      </div>
+    </header>
     <main>
       <div id="about_description">
         <h2>About me</h2>
@@ -67,6 +102,6 @@
       </ul>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>
