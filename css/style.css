@@ -175,7 +175,10 @@ p {
   width: 70%;
   text-align: center;
 }
-
+.index-buttons {
+  display: flex;
+  flex-direction: column;
+}
 /*---------- BUTTONS ----------*/
 
 .yellow-button {
@@ -794,11 +797,31 @@ p {
     display: block;
     color: var(--accent-color);
     font-family: var(--header-font);
+    text-align: center;
   }
   #FTlogo {
     justify-self: left;
   }
   #footer-SoMe {
     justify-self: right;
+  }
+
+  /*------- index page -------*/
+  .index-body {
+    display: grid;
+    align-content: center;
+    height: 100vh;
+  }
+  .index-body main {
+    gap: var(--margin);
+  }
+  .index-logo-container {
+    max-width: 25%;
+    align-items: center;
+    align-self: flex-start;
+  }
+
+  .index-buttons {
+    flex-direction: row;
   }
 }
