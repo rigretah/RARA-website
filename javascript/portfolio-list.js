@@ -1,3 +1,16 @@
+//-------BURGER MENU-------
+document.querySelector(".menu-icon").addEventListener("click", showBRGMenu);
+
+function showBRGMenu() {
+  document.querySelector(".burger-menu-popUp").classList.remove("hide");
+
+  document.querySelector(".cross-icon").addEventListener("click", hideBRGMenu);
+}
+
+function hideBRGMenu() {
+  document.querySelector(".burger-menu-popUp").classList.add("hide");
+}
+
 //LOCAL NAVIGATION DROP DOWN
 document.querySelector(".drop-down-arrow").addEventListener("click", dropDown);
 document.querySelector(".h2-drop-down").addEventListener("click", dropDown);
@@ -18,6 +31,8 @@ function backUp() {
 // SINGLE CATEGORY LINK: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/categories/7
 
 // const url = `https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/categories/${id}_embed`;
+
+// ALL PRODUCTS IN A SINGLE CATEGORY: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?categories=7
 
 // ALL PRODUCTS
 // const url =
