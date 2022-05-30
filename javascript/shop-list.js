@@ -19,8 +19,46 @@ function dropDown() {
   document.querySelector(".categories-drop-down").classList.remove("hide");
 
   document.querySelector(".up-arrow").addEventListener("click", backUp);
+  document.querySelector(".h2-drop-down").addEventListener("click", backUp);
 }
 
 function backUp() {
   document.querySelector(".categories-drop-down").classList.add("hide");
+}
+
+// DISPLAY ALL PRODUCTS
+
+window.addEventListener("DOMContentLoaded", init);
+
+function init() {
+  loadData();
+}
+
+async function loadData() {
+  const response = await fetch(
+    "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?tags=9&per_page=70&_embed"
+  );
+  console.log("response", response);
+  const artworkData = await response.json();
+  displayArtworks(artworkData);
+}
+
+async function displayArtworks(userJSON) {
+  userJSON.forEach((artwork) => {
+    // select template & copy
+    const template = document.querySelector("#shop-list-template").content;
+    const copy = template.cloneNode(true);
+    // change content
+    copy.querySelector(".product-title").textContent = artwork.title.rendered;
+    copy.querySelector(".product-price").textContent = "DKK " + artwork.price;
+    copy.querySelector(
+      ".product-image"
+    ).src = `${artwork._embedded["wp:featuredmedia"][0].source_url}`;
+    copy
+      .querySelector(".product-link")
+      .setAttribute("href", `shop-product.html?id=${artwork.id}`);
+    // append to main
+    const parent = document.querySelector("main");
+    parent.appendChild(copy);
+  });
 }
