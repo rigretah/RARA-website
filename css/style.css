@@ -145,6 +145,7 @@ h3 {
 
 p {
   font-family: var(--text-font);
+  font-size: 1rem;
 }
 .yellowBG {
   background-color: var(--accent-color);
@@ -487,6 +488,8 @@ p {
   max-width: 100%;
   position: relative;
   margin: var(--half-margin);
+  display: grid;
+  gap: var(--margin);
 }
 
 .artwork-image {
@@ -511,7 +514,7 @@ p {
 .artwork-category {
   font-family: var(--text-font);
   text-transform: uppercase;
-  font-size: 140%;
+  font-size: 1.2rem;
 }
 
 .artwork-description {
@@ -817,6 +820,10 @@ p {
     justify-self: right;
   }
 
+  /*------- general -------*/
+  p {
+    font-size: 1.2rem;
+  }
   /*------- index page -------*/
   .index-body {
     display: grid;
@@ -899,5 +906,23 @@ p {
 
   .portfolio-instagram-container h4 a {
     font-size: 1.2rem;
+  }
+
+  /*------- portfolio list -------*/
+
+  /*------- portfolio artwork -------*/
+  .main-portfolio-artwork {
+    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+  }
+  .artwork-container {
+    gap: var(--double-margin);
+  }
+
+  .artwork-text {
+    margin: 0;
+  }
+
+  .artwork-description {
+    margin-top: var(--margin);
   }
 }
