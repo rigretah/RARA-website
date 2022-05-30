@@ -426,10 +426,14 @@ p {
   font-size: 1.2rem;
 }
 
+.porfolio-list-container {
+  display: grid;
+  gap: var(--margin);
+}
+
 .portfolio-list-card {
   max-width: 100%;
   position: relative;
-  background-color: var(--accent-color);
 }
 
 .portfolio-list-link {
@@ -438,6 +442,7 @@ p {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
+  background-color: var(--accent-color);
 }
 
 .portfolio-list-image:hover {
@@ -450,6 +455,7 @@ p {
   /* aspect-ratio: 1/1; */
   object-fit: cover;
   z-index: 1;
+  box-shadow: var(--shadow);
 }
 
 .portfolio-list-text {

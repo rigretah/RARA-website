@@ -68,7 +68,7 @@ async function displayArtworks(userJSON) {
       .querySelector(".portfolio-list-link")
       .setAttribute("href", `portfolio-artwork.html?id=${artwork.id}`);
     // append to main
-    const parent = document.querySelector("main");
+    const parent = document.querySelector(".porfolio-list-container");
     parent.appendChild(copy);
   });
 }
