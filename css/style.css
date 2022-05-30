@@ -506,6 +506,16 @@ p {
 
 /*---------- ABOUT PAGE ----------*/
 
+/* .main-about-page{
+  display: grid;
+  row-gap: var(--half-margin);
+  grid-template-columns: 1fr;
+} */
+#about_description > p{
+  padding-top: 0.5rem;
+  padding-bottom: .5rem;
+  text-align: justify;
+}
 
 /* contact me */
 
@@ -556,6 +566,7 @@ align-items: flex-start;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-left: var(--half-margin);
+  margin-bottom: 1rem;
 }
 
 input[type=submit]{
