@@ -506,15 +506,65 @@ p {
 
 /*---------- ABOUT PAGE ----------*/
 
-/* .main-about-page{
+.main-about-page{
   display: grid;
-  row-gap: var(--half-margin);
+  margin: 0;
   grid-template-columns: 1fr;
-} */
+}
+
+
+.welcome-about-bg{
+  grid-column: 1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  aspect-ratio: 3/4;
+
+}
+
+.about-welcome-img-container{
+  display: block;
+  justify-items: center;
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+img.about-welcome-img{
+  grid-column: 1;
+  max-width: 100%;
+  margin: var(--double-margin);
+}
+
+.rara-img{
+  width: 100%;
+}
+#about_description {
+  margin: var(--margin);
+}
 #about_description > p{
   padding-top: 0.5rem;
   padding-bottom: .5rem;
   text-align: justify;
+}
+
+#about_description > h2,
+#about_contacts > h2,
+.form-container > h2{
+  text-align: center;
+  margin-bottom: var(--half-margin);
+}
+#about_description > h3{
+  margin: var(--half-margin);
+}
+
+#about_contacts{
+  margin: var(--margin);
+}
+ul li{
+  padding: 0.5em;
 }
 
 /* contact me */
@@ -529,12 +579,15 @@ p {
   text-align: inherit;
 }
 
+
+
 /* form */
 .form-container{
-
   width: 100%;
 }
-
+form{
+  margin: var(--margin);
+}
 div{
   font-family: var(--text-font);
   padding: 1em;
