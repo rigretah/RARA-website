@@ -1,17 +1,24 @@
-// ALL ARTWORKS LINK: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=70
+// ALL ARTWORKS LINK: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=70&_embed
+
 // URL FOR WHEN LIST PAGES ARE SET UP
 
-// const urlParams = new URLSearchParams(window.location.search);
-// const id = urlParams.get("id");
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
 
 // const url = `https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product/${id}_embed`;
+
+// const url = "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product/" + id;
+
+const url =
+  "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product/" +
+  `${id}?_embed`;
 
 // -----------------
 
 // URL FOR TESTING
 
-const url =
-  "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product/155?_embed";
+// const url =
+//   "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product/155?_embed";
 
 fetch(url)
   .then((res) => res.json())
