@@ -781,5 +781,24 @@ p {
   .burger-menu-popUp a {
     font-size: 1.2rem;
   }
-  /*------- navigation -------*/
+
+  /*------- footer -------*/
+  footer {
+    background-color: var(--primary-color);
+    padding: var(--margin);
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  footer h5 {
+    display: block;
+    color: var(--accent-color);
+    font-family: var(--header-font);
+  }
+  #FTlogo {
+    justify-self: left;
+  }
+  #footer-SoMe {
+    justify-self: right;
+  }
 }
