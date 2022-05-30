@@ -389,9 +389,20 @@ p {
   font-family: var(--text-font);
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--color4);
+  color: var(--primary-color);
+  font-weight: 200;
 }
-
+.portfolio-instagram-container h4 a:hover {
+  background-image: url(../images/icons/hover-effects/Hover-effect-line-black.svg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-instagram-container h4 a:active {
+  font-weight: 400;
+  background-image: url(../images/icons/hover-effects/Hover-effect-line-black-bold.svg);
+  background-size: cover;
+  background-position: center;
+}
 .portfolio-instagram-container img {
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -849,5 +860,44 @@ p {
   }
   .h2-drop-down {
     display: none;
+  }
+
+  /*------- portfolio -------*/
+  .main-portfolio {
+    gap: calc(var(--double-margin) + var(--margin));
+  }
+  .portfolio-video-container {
+    aspect-ratio: 3/4;
+  }
+
+  .portfolio-feature-container {
+    margin: 0 var(--double-margin);
+  }
+
+  .portfolio-feature-text {
+    margin: 0;
+  }
+
+  .portfolio-events-text {
+    margin: 0;
+  }
+
+  .portfolio-events-container {
+    margin: 0 var(--double-margin);
+    align-content: center;
+  }
+
+  .portfolio-instagram-container {
+    margin: 0 var(--double-margin);
+    margin-bottom: var(--double-margin);
+  }
+
+  .portfolio-instagram-container div {
+    display: flex;
+    gap: var(--half-margin);
+  }
+
+  .portfolio-instagram-container h4 a {
+    font-size: 1.2rem;
   }
 }
