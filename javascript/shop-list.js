@@ -58,7 +58,7 @@ async function displayArtworks(userJSON) {
       .querySelector(".product-link")
       .setAttribute("href", `shop-product.html?id=${artwork.id}`);
     // append to main
-    const parent = document.querySelector("main");
+    const parent = document.querySelector(".product-list");
     parent.appendChild(copy);
   });
 }
