@@ -752,3 +752,34 @@ p {
 /*---------- SHOP PURCHASE ----------*/
 
 /*---------- MEDIA QUERIES ----------*/
+
+/*----tablet screen size----*/
+@media only screen and (min-width: 700px) {
+  /*------- navigation -------*/
+  .navbar {
+    padding: calc(var(--half-margin) / 2) var(--half-margin);
+    display: grid;
+  }
+  .navbar a {
+    grid-column: 1/2;
+    justify-self: left;
+  }
+
+  .menu-icon {
+    grid-column: 3/4;
+  }
+
+  .burger-menu-popUp {
+    aspect-ratio: 3/4;
+  }
+  .header-logo-square {
+    max-width: 20%;
+  }
+  .burger-menu-popUp ul {
+    align-self: center;
+  }
+  .burger-menu-popUp a {
+    font-size: 1.2rem;
+  }
+  /*------- navigation -------*/
+}
