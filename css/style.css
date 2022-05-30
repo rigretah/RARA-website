@@ -931,4 +931,43 @@ p {
   .artwork-description {
     margin-top: var(--margin);
   }
+
+  /*------- about page -------*/
+
+  /*------- event list -------*/
+
+  /*------- event page -------*/
+
+  #event-page main {
+    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+    display: grid;
+    justify-items: left;
+    gap: var(--half-margin);
+  }
+
+  #event-page .back-arrow {
+    margin: 0;
+    margin-bottom: var(--margin);
+  }
+
+  #event-page h1,
+  #event-page h3 {
+    margin-left: 0;
+  }
+
+  .event-text {
+    margin: 0;
+    display: grid;
+    gap: calc(var(--half-margin) / 2);
+  }
+  .event-image {
+    margin-bottom: var(--margin);
+  }
+  .event-date,
+  .event-location {
+    display: grid;
+    grid-template-columns: auto 5fr;
+    gap: var(--half-margin);
+    margin-top: var(--half-margin);
+  }
 }
