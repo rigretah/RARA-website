@@ -52,27 +52,39 @@
       <div class="current-event-container">
         <div class="current-event-text">
           <h3>Current Event</h3>
-          <h2>Nothing exist in isolation</h2>
+          <h2>Nothing exists in isolation</h2>
           <h3 class="event-credits">RARA x Kintobe</h3>
         </div>
         <img
           src="images/nothing-exists-in-isolation_exhibition.JPG"
           alt="current-exposition-photo"
         />
-        <a class="yellow-button" href="#">Read more</a>
+        <a class="yellow-button" href="event.html?id=178">Read more</a>
       </div>
 
       <div class="past-events-container">
         <h3>Past Events</h3>
-        <div class="event-container">
-          <!-- <template id="past-events-template"> -->
-          <img src="images/placeholder-image.jpg" alt="exhibition-image" />
-          <h2>Event title</h2>
-          <h4>Date</h4>
-          <h4>Location</h4>
-          <a class="yellow-button" href="#">Read more</a>
-          <!-- </template> -->
-        </div>
+
+        <template id="past-events-template">
+          <div class="event-container">
+            <img
+              class="event-image"
+              src="images/placeholder-image.jpg"
+              alt="exhibition-image"
+            />
+            <h2 class="event-title">Event title</h2>
+            <div class="event-date">
+              <h4>Date:</h4>
+              <p>Event date</p>
+            </div>
+
+            <div class="event-location">
+              <h4>Location:</h4>
+              <p>Event location</p>
+            </div>
+            <a class="event-link yellow-button" href="#">Read more</a>
+          </div>
+        </template>
       </div>
     </main>
 
