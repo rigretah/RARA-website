@@ -66,30 +66,37 @@
         <p>DKK 500</p>
       </div>
       <div class="shipping-info">
-      <p>Standard Shipping & Returns</p>
-    </div>
-    <div class="shipping-price">
-      <p>DKK 100</p>
-    </div>
-    <div class="shipping-total">
-      <p>DKK 600</p>
-    </div>
+        <p>Standard Shipping & Returns</p>
+      </div>
+      <div class="shipping-price">
+        <p>DKK 100</p>
+      </div>
+      <div class="shipping-total">
+        <p>DKK 600</p>
+      </div>
     </div>
     <div class="steps">
       <div class="text-steps">
-      <p>Step 1 - Personal Details</p>
-    </div>
-    <form action="/action_page.php">
-      <label for="fname">Full Name:</label><br>
-      <input type="text" id="fname" name="fname" value="Your Name"><br>
-      <label for="lname">Email Address</label><br>
-      <input type="text" id="lname" name="lname" value="someome@example.com"><br><br>
-      
-      <input type="submit" value="Submit">
-    </form> 
-    
-    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-    
+        <p>Step 1 - Personal Details</p>
+      </div>
+
+      <!-- FORM -->
+      <form action="/action_page.php">
+        <label for="fname">Full Name:</label><br>
+        <input type="text" class="complete-box" name="fname" value="Your Name"><br>
+        <label for="address">Address</label><br>
+        <input type="text" class="complete-box" name="Address" value="Your Address"><br>
+        <label for="pcode">Post Code</label><br>
+        <input type="text" class="complete-box" name="lname" value="Post Code"><br>
+        <label for="lname">Email Address</label><br>
+        <input type="text" class="complete-box" name="lname" value="someome@example.com"><br>
+        <label for="lname">Phone Number</label><br>
+        <input type="text" class="complete-box" name="lname" value="+45"><br>
+
+        <input type="submit" value="Submit">
+      </form>
+      <!-- /FORM -->
+
 
     </div>
 
