@@ -249,7 +249,6 @@ p {
   border-width: 0.1em;
   width: calc(100% - var(--margin) - 0.2em);
   margin-top: var(--half-margin);
-  /* margin-inline: var(--margin); */
 }
 
 .categories-drop-down {
