@@ -237,7 +237,8 @@ p {
   justify-self: left;
 }
 
-/*---------- LOCAL DROP DOWN ----------*/
+/*---------- CATEGORY DROP DOWN MENU ----------*/
+
 .categories-drop-down {
   margin-top: -4rem;
   padding: var(--half-margin);
@@ -506,14 +507,13 @@ p {
 
 /*---------- ABOUT PAGE ----------*/
 
-.main-about-page{
+.main-about-page {
   display: grid;
   margin: 0;
   grid-template-columns: 1fr;
 }
 
-
-.welcome-about-bg{
+.welcome-about-bg {
   grid-column: 1;
   display: grid;
   justify-items: center;
@@ -523,85 +523,82 @@ p {
   padding: 0;
   background-color: var(--primary-color);
   aspect-ratio: 3/4;
-
 }
 
-.about-welcome-img-container{
+.about-welcome-img-container {
   display: block;
   justify-items: center;
   width: 100%;
   aspect-ratio: 16/9;
 }
-.container-welcome-img{
+.container-welcome-img {
   grid-column: 1;
   margin: var(--half-margin);
 }
-img.about-welcome-img{
+img.about-welcome-img {
   grid-column: 1;
   max-width: 100%;
   /* margin: var(--double-margin); */
 }
 
-.rara-img{
+.rara-img {
   width: 100%;
 }
 #about_description {
   margin: var(--margin);
 }
-#about_description > p{
+#about_description > p {
   padding-top: 0.5rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   text-align: justify;
 }
 
 #about_description > h2,
 #about_contacts > h2,
-.form-container > h2{
+.form-container > h2 {
   text-align: center;
   margin-bottom: var(--half-margin);
 }
-#about_description > h3{
+#about_description > h3 {
   margin: var(--half-margin);
 }
 
-#about_contacts{
+#about_contacts {
   margin: var(--margin);
 }
-ul li{
+ul li {
   padding: 0.5em;
 }
 
 /* contact me */
 
-.container-SoMe{
+.container-SoMe {
   display: inline-block;
 }
-.icon{
+.icon {
   vertical-align: middle;
 }
-.txt{
+.txt {
   text-align: inherit;
 }
 
-
-
 /* form */
-.form-container{
+.form-container {
   width: 100%;
 }
-form{
+form {
   margin: var(--margin);
 }
-div{
+div {
   font-family: var(--text-font);
   padding: 1em;
 }
-form>div>label{
+form > div > label {
   padding-bottom: 1rem;
 }
 
-
-input[type=text],textarea{
+input[type="text"],
+textarea {
   width: 100%;
   padding: 0.5rem 0.5rem;
   border: 1px solid #ccc;
@@ -609,33 +606,32 @@ input[type=text],textarea{
   resize: vertical;
   cursor: pointer;
 }
-textarea{
+textarea {
   outline: none;
   resize: none;
 }
-input[type=radio]{
+input[type="radio"] {
   cursor: pointer;
   margin-right: 1rem;
 }
-.form-name-contact{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-
+.form-name-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.form-option-box{
+.form-option-box {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-left: var(--half-margin);
   margin-bottom: 1rem;
 }
 
-input[type=submit]{
+input[type="submit"] {
   cursor: pointer;
   float: right;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: var(--accent-color);
 }
 
