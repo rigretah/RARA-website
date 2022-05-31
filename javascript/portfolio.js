@@ -22,3 +22,4 @@ function setCategoryLinks(category) {
   //   .querySelector(".category-link")
   //   .setAttribute("href", `portfolio-categories.html?id=${category.id}`);
 }
+

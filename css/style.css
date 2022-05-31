@@ -306,11 +306,7 @@ p {
   justify-items: left;
 }
 
-.portfolio-video-container {
-  background-image: url(../images/placeholder-image.jpg);
-  aspect-ratio: 9/16;
-  height: 100%;
-  width: 100%;
+#video {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
