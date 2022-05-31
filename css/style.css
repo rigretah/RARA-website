@@ -426,14 +426,10 @@ p {
   font-size: 1.2rem;
 }
 
-.porfolio-list-container {
-  display: grid;
-  gap: var(--margin);
-}
-
 .portfolio-list-card {
   max-width: 100%;
   position: relative;
+  margin-bottom: var(--margin);
 }
 
 .portfolio-list-link {
@@ -920,19 +916,15 @@ p {
   /*------- portfolio list -------*/
   .main-portfolio-list {
     margin: var(--margin);
-    gap: var(--half-margin);
+    gap: var(--margin);
   }
   .porfolio-list-container {
-    display: flex;
-    flex-flow: column wrap;
-    gap: var(--margin);
-    width: 100%;
-    aspect-ratio: 1/15.7;
-    align-content: space-around;
+    columns: 2;
+    column-gap: var(--margin);
   }
 
   .portfolio-list-card {
-    max-width: 45%;
+    page-break-inside: avoid;
   }
 
   /*------- portfolio artwork -------*/
@@ -957,12 +949,12 @@ p {
 
   /*------- event list -------*/
   #event-list main {
-    margin: var(--margin) var(--double-margin);
+    margin: var(--double-margin);
+    margin-top: var(--margin);
     gap: var(--double-margin);
   }
-
-  #event-list h1 {
-    font-size: 3rem;
+  #event-list .yellow-button {
+    padding: 1rem;
   }
 
   .current-event-container {
@@ -988,20 +980,38 @@ p {
 
   .past-events-container {
     gap: var(--double-margin);
-    margin: var(--double-margin);
+    margin: 0;
+    margin-top: var(--margin);
   }
 
   .event-container {
-    row-gap: var(--margin);
+    gap: 0 var(--margin);
     grid-template-columns: 1fr 1fr;
   }
   .event-container img {
+    aspect-ratio: 4/3;
     grid-column: 1/2;
+    grid-row: 1/5;
+    margin: 0;
+    align-self: center;
   }
-
+  .event-title {
+    margin: 0;
+  }
+  .event-date {
+    grid-column: 2/3;
+    margin: 0;
+  }
+  .event-location {
+    grid-column: 2/3;
+    margin: 0;
+  }
   .event-container .yellow-button {
     justify-self: end;
-    margin-right: 0;
+    align-self: flex-end;
+    grid-column: 2/3;
+    margin: 0;
+    margin-top: var(--margin);
   }
 
   /*------- event page -------*/
