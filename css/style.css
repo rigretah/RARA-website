@@ -534,6 +534,7 @@ p {
 }
 .container-welcome-img{
   grid-column: 1;
+  margin: var(--half-margin);
 }
 img.about-welcome-img{
   grid-column: 1;
@@ -607,6 +608,10 @@ input[type=text],textarea{
   border-radius: 4px;
   resize: vertical;
   cursor: pointer;
+}
+textarea{
+  outline: none;
+  resize: none;
 }
 input[type=radio]{
   cursor: pointer;
