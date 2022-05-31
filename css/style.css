@@ -609,6 +609,7 @@ img.about-welcome-img {
 /* form */
 .form-container {
   width: 100%;
+  margin-bottom: var(--margin);
 }
 .form-abou-page {
   margin: var(--margin);
@@ -620,13 +621,22 @@ img.about-welcome-img {
   /* gap to make space between field name and field */
   margin-bottom: var(--half-margin);
 }
-
+.form-option p {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
 .radio-button-option {
   font-family: var(--text-font);
-  padding: 1em;
+  padding: calc(var(--half-margin) / 2);
 }
 .form-abou-page > .radio-button-option > label {
   padding-bottom: 1rem;
+}
+.form-message {
+  font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 input[type="text"],
@@ -669,6 +679,13 @@ input[type="submit"]:hover {
   background-color: var(--accent-color);
 }
 
+.form-container .yellow-button {
+  border: none;
+  padding-inline: var(--margin);
+  padding-top: var(--half-margin);
+  padding-bottom: var(--half-margin);
+  margin-inline: 0;
+}
 /*---------- EVENT LIST ----------*/
 
 #event-list main {
@@ -1161,67 +1178,32 @@ input[type="submit"]:hover {
 
   /* form */
   .form-container {
-    width: 100%;
+    width: 80%;
+    margin-inline: var(--double-margin);
   }
   .form-abou-page {
-    margin: var(--margin);
-  }
-
-  .form-name-contact {
-    font-family: var(--text-font);
-    gap: 0.25rem;
-    /* gap to make space between field name and field */
-    margin-bottom: var(--half-margin);
-  }
-
-  .radio-button-option {
-    font-family: var(--text-font);
-    padding: 1em;
-  }
-  .form-abou-page > .radio-button-option > label {
-    padding-bottom: 1rem;
-  }
-
-  input[type="text"],
-  textarea,
-  .form-option-box {
-    width: 100%;
-    padding: 0.5rem 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: var(--text-font);
-  }
-
-  textarea {
-    outline: none;
-    resize: none;
-  }
-  input[type="radio"] {
-    cursor: pointer;
-    margin-right: 1rem;
+    margin: var(--margin) 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--half-margin) var(--double-margin);
   }
   .form-name-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    grid-column: 1/2;
+    margin: 0;
+  }
+  .form-option {
+    grid-column: 2/3;
+    grid-row: 1/3;
   }
   .form-option-box {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    margin-bottom: 1rem;
+    margin: 0;
   }
-
-  input[type="submit"] {
-    cursor: pointer;
-    float: right;
+  .form-message {
+    grid-column: 1/3;
   }
-
-  input[type="submit"]:hover {
-    background-color: var(--accent-color);
+  .row {
+    grid-column: 2/3;
   }
-
   /*------- event list -------*/
   #event-list main {
     margin: var(--double-margin);
