@@ -239,11 +239,12 @@ p {
 
 /*---------- CATEGORY DROP DOWN MENU ----------*/
 
-.categories-drop-down {
+/* .categories-drop-down {
   margin-top: -4rem;
   padding: var(--half-margin);
   width: 100%;
 }
+
 .categories-drop-down nav {
   display: grid;
   justify-items: center;
@@ -271,7 +272,7 @@ p {
 }
 .up-arrow {
   transform: rotate(180deg);
-}
+} */
 
 /*bg color*/
 .gray {
