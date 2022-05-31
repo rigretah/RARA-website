@@ -530,12 +530,15 @@ p {
   display: block;
   justify-items: center;
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 16/9;
+}
+.container-welcome-img{
+  grid-column: 1;
 }
 img.about-welcome-img{
   grid-column: 1;
   max-width: 100%;
-  margin: var(--double-margin);
+  /* margin: var(--double-margin); */
 }
 
 .rara-img{
