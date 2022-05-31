@@ -582,10 +582,9 @@ img.about-welcome-img {
 }
 
 #about_contacts {
+  display: flex;
+  flex-direction: column;
   margin: var(--margin);
-}
-ul li {
-  padding: 0.5em;
 }
 
 /* contact me */
@@ -598,32 +597,43 @@ ul li {
 }
 .txt {
   text-align: inherit;
+  font-family: var(--header-font);
 }
 
 /* form */
 .form-container {
   width: 100%;
 }
-form {
+.form-abou-page {
   margin: var(--margin);
 }
-div {
+
+.form-name-contact {
+  font-family: var(--text-font);
+  gap: 0.25rem;
+  /* gap to make space between field name and field */
+  margin-bottom: var(--half-margin);
+}
+
+.radio-button-option {
   font-family: var(--text-font);
   padding: 1em;
 }
-form > div > label {
+.form-abou-page > .radio-button-option > label {
   padding-bottom: 1rem;
 }
 
 input[type="text"],
-textarea {
+textarea,
+.form-option-box {
   width: 100%;
   padding: 0.5rem 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: vertical;
   cursor: pointer;
+  font-family: var(--text-font);
 }
+
 textarea {
   outline: none;
   resize: none;
@@ -640,7 +650,7 @@ input[type="radio"] {
 .form-option-box {
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-left: var(--half-margin);
+  width: 100%;
   margin-bottom: 1rem;
 }
 
