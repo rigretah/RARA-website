@@ -565,6 +565,8 @@ img.about-welcome-img{
 }
 
 #about_contacts{
+  display: flex;
+  flex-direction: column;
   margin: var(--margin);
 }
 
@@ -587,7 +589,7 @@ img.about-welcome-img{
 .form-container{
   width: 100%;
 }
-form{
+.form-abou-page{
   margin: var(--margin);
 }
 
@@ -602,7 +604,7 @@ margin-bottom: var(--half-margin);
   font-family: var(--text-font);
   padding: 1em;
 }
-form>.radio-button-option>label{
+.form-abou-page>.radio-button-option>label{
   padding-bottom: 1rem;
 }
 
