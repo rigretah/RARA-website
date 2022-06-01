@@ -12,18 +12,32 @@ function hideBRGMenu() {
 }
 
 //LOCAL NAVIGATION DROP DOWN
-document.querySelector(".drop-down-arrow").addEventListener("click", dropDown);
-document.querySelector(".h2-drop-down").addEventListener("click", dropDown);
+
+document
+  .querySelector(".select-category-container")
+  .addEventListener("click", dropDown);
 
 function dropDown() {
   document.querySelector(".categories-drop-down").classList.remove("hide");
+  document.querySelector(".drop-down-arrow").classList.add("up-arrow");
 
-  document.querySelector(".up-arrow").addEventListener("click", backUp);
-  document.querySelector(".h2-drop-down").addEventListener("click", backUp);
+  document
+    .querySelector(".select-category-container")
+    .removeEventListener("click", dropDown);
+
+  document
+    .querySelector(".select-category-container")
+    .addEventListener("click", backUp);
 }
 
 function backUp() {
-  document.querySelector(".categories-drop-down").classList.add("hide");
+  // document.querySelector(".categories-drop-down").classList.add("hide");
+  document.querySelector(".drop-down-arrow").classList.remove("up-arrow");
+
+  document.querySelector(".categories-drop-down").classList.toggle("hide");
+  document
+    .querySelector(".select-category-container")
+    .addEventListener("click", dropDown);
 }
 
 // DISPLAY ALL PRODUCTS
