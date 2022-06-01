@@ -1518,4 +1518,19 @@ input[type="submit"]:hover {
     margin: 0;
     align-self: center;
   }
+
+  /*------- about page -------*/
+  .welcome-about-bg {
+    aspect-ratio: 16/9;
+  }
+
+  #about_description {
+    margin: var(--double-margin) calc(var(--double-margin) * 2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--double-margin);
+  }
+  #about_description h3 {
+    margin-top: var(--half-margin);
+  }
 }
