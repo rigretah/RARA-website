@@ -360,7 +360,8 @@ p {
   margin-bottom: var(--half-margin);
 }
 
-.featured-event-image {
+.featured-event-image,
+.featured-portfolio-image {
   aspect-ratio: 5/3;
   object-fit: cover;
   margin-top: var(--half-margin);
@@ -1418,5 +1419,61 @@ input[type="submit"]:hover {
   }
   .index-h1 {
     font-size: 2rem;
+  }
+
+  /*------- portfolio -------*/
+  .main-portfolio {
+    gap: calc(var(--double-margin) + var(--margin));
+  }
+
+  .portfolio-feature-container,
+  .portfolio-events-container {
+    margin: 0 calc(var(--double-margin) * 2);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--half-margin);
+  }
+  .featured-event-image,
+  .featured-portfolio-image {
+    margin: 0;
+    aspect-ratio: 4/3;
+    grid-row: 1/3;
+  }
+  .featured-portfolio-image {
+    grid-column: 2/3;
+  }
+  .portfolio-feature-text {
+    align-self: center;
+  }
+  .main-portfolio h2 {
+    font-size: 2.5rem;
+  }
+  .portfolio-feature-container .yellow-button,
+  .portfolio-events-container .yellow-button {
+    margin: 0;
+    align-self: center;
+    justify-self: left;
+  }
+
+  .portfolio-events-text,
+  .portfolio-events-container .yellow-button {
+    margin-left: var(--half-margin);
+  }
+  .featured-event-image {
+    grid-column: 1/2;
+  }
+
+  .portfolio-instagram-container {
+    margin: 0 calc(var(--double-margin) * 2);
+    margin-bottom: calc(var(--double-margin) + var(--margin));
+  }
+  .portfolio-instagram-container img {
+    margin-top: var(--margin);
+  }
+  .portfolio-instagram-container div {
+    gap: var(--margin);
+  }
+
+  .portfolio-instagram-container h4 a {
+    font-size: 1.2rem;
   }
 }
