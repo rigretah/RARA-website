@@ -1402,4 +1402,9 @@ input[type="submit"]:hover {
   p {
     font-size: 1rem;
   }
+
+  /*------- buttons -------*/
+  .yellow-button {
+    padding: var(--half-margin);
+  }
 }
