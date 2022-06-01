@@ -1459,7 +1459,9 @@ input[type="submit"]:hover {
   .main-portfolio {
     gap: calc(var(--double-margin) + var(--margin));
   }
-
+  .portfolio-video-container {
+    aspect-ratio: 18/9;
+  }
   .portfolio-feature-container,
   .portfolio-events-container {
     margin: 0 calc(var(--double-margin) * 2);
