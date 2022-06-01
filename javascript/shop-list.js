@@ -40,21 +40,51 @@ function backUp() {
     .addEventListener("click", dropDown);
 }
 
-// DISPLAY ALL PRODUCTS
+// ---------- SHOW ALL PRODUCTS / SHOW SELECTED CATEGORY ----------
 
 window.addEventListener("DOMContentLoaded", init);
 
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("categories");
+let url =
+  "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?tags=9&_embed&";
+
 function init() {
-  loadData();
+  if (category) {
+    url += "categories=" + `${category}`;
+  } else {
+    url += "per_page=30";
+  }
+
+  showCategory();
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => displayArtworks(data));
 }
 
-async function loadData() {
-  const response = await fetch(
-    "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?tags=9&per_page=70&_embed"
-  );
-  console.log("response", response);
-  const artworkData = await response.json();
-  displayArtworks(artworkData);
+function showCategory() {
+  console.log("showCategory", category);
+  if (category === "4") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".illustration").classList.add("selected");
+  }
+  if (category === "3") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".digital-art").classList.add("selected");
+  }
+  if (category === "8") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".merchandise").classList.add("selected");
+  }
+  if (category === "6") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".design").classList.add("selected");
+  }
+  if (category === "7") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".consulting").classList.add("selected");
+  }
 }
 
 async function displayArtworks(userJSON) {
