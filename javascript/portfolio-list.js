@@ -40,32 +40,33 @@ function backUp() {
     .addEventListener("click", dropDown);
 }
 
-// FETCHING & DISPLAYING DATA
-
-// SINGLE CATEGORY LINK: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/categories/7
-
-// const url = `https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/categories/${id}_embed`;
+// LINKS FOR DATA
 
 // ALL PRODUCTS IN A SINGLE CATEGORY: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?categories=7
 
-// ALL PRODUCTS
-// const url =
-//   "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=70&_embed";
+// ALL PRODUCTS: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=55&_embed
+
+// ---------- SHOW ALL PRODUCTS / SHOW SELECTED CATEGORY ----------
 
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  loadData();
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get("categories");
+  let url = "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?";
+  if (category) {
+    url += "categories=" + `${category}&_embed`;
+  } else {
+    url += "per_page=55&_embed";
+  }
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => displayArtworks(data));
 }
-async function loadData() {
-  const response = await fetch(
-    "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=70&_embed"
-  );
-  console.log("response", response);
-  const artworkData = await response.json();
-  displayArtworks(artworkData);
-}
+
 async function displayArtworks(userJSON) {
+  console.log("Displaying Artworks");
   userJSON.forEach((artwork) => {
     // select template & copy
     const template = document.querySelector("#portfolio-list-template").content;
