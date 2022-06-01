@@ -1544,4 +1544,37 @@ input[type="submit"]:hover {
     gap: var(--double-margin);
     margin: var(--margin) 0;
   }
+  /*------- event page -------*/
+  #event-page main {
+    gap: var(--half-margin) var(--double-margin);
+    margin: 0;
+    margin-right: var(--double-margin);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #event-page .back-arrow {
+    grid-column: 2/3;
+    margin-inline: 0;
+  }
+  .event-text {
+    margin: 0;
+    margin-bottom: var(--margin);
+    gap: calc(var(--half-margin) / 2);
+  }
+  .event-image {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    height: 100%;
+  }
+  .event-description {
+    margin-top: var(--half-margin);
+  }
+  .event-date,
+  .event-location {
+    display: grid;
+    grid-template-columns: auto 5fr;
+    gap: var(--half-margin);
+    margin-top: var(--half-margin);
+  }
 }
