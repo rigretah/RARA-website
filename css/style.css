@@ -472,7 +472,7 @@ p {
   background-color: var(--accent-color);
 }
 
-.portfolio-list-image:hover {
+.portfolio-list-card:hover .portfolio-list-image {
   filter: opacity(50%);
 }
 
