@@ -448,6 +448,10 @@ p {
   gap: var(--half-margin);
 }
 
+.porfolio-list-container {
+  margin-top: var(--half-margin);
+}
+
 .main-portfolio-list h1 {
   font-family: var(--header-font);
 }
@@ -866,7 +870,8 @@ input[type="submit"]:hover {
 }
 .product-list {
   display: grid;
-  gap: var(--margin);
+  gap: var(--double-margin);
+  margin-top: var(--half-margin);
 }
 #shop-list h1 {
   font-family: var(--header-font);
