@@ -28,7 +28,17 @@ function dropDown() {
   document
     .querySelector(".select-category-container")
     .addEventListener("click", backUp);
+
+  // document
+  //   .querySelectorAll(".illustration")
+  //   .addEventListener("click", showSelection);
 }
+
+// function showSelection() {
+//   console.log("showSelection");
+//   // this.classList.add("selected");
+//   document.querySelector(".see-all").classList.remove("selected");
+// }
 
 function backUp() {
   // document.querySelector(".categories-drop-down").classList.add("hide");
@@ -50,19 +60,46 @@ function backUp() {
 
 window.addEventListener("DOMContentLoaded", init);
 
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("categories");
+let url = "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?";
+
 function init() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const category = urlParams.get("categories");
-  let url = "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?";
   if (category) {
     url += "categories=" + `${category}&_embed`;
   } else {
     url += "per_page=55&_embed";
   }
 
+  showCategory();
+
   fetch(url)
     .then((res) => res.json())
     .then((data) => displayArtworks(data));
+}
+
+function showCategory() {
+  console.log("showCategory", category);
+  if (category === "4") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".illustration").classList.add("selected");
+  }
+  if (category === "3") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".digital-art").classList.add("selected");
+  }
+  if (category === "8") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".merchandise").classList.add("selected");
+  }
+  if (category === "6") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".design").classList.add("selected");
+  }
+  if (category === "7") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".consulting").classList.add("selected");
+  }
 }
 
 async function displayArtworks(userJSON) {

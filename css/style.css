@@ -306,6 +306,15 @@ p {
   background-color: var(--bg-color);
 }
 
+/* selected category */
+.selected {
+  background-image: url(../images/icons/hover-effects/Hover-effect-line-black.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+}
+
 /*---------- MICROINTERACTIONS ----------*/
 /*LINK HOVER EFFECTS*/
 .burger-menu-popUp li:hover {
