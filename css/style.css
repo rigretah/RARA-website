@@ -1533,4 +1533,15 @@ input[type="submit"]:hover {
   #about_description h3 {
     margin-top: var(--half-margin);
   }
+  /*------- event list -------*/
+  #event-list main {
+    margin: var(--double-margin) calc(var(--double-margin) * 2);
+    margin-top: var(--margin);
+    gap: var(--double-margin);
+  }
+
+  .past-events-container {
+    gap: var(--double-margin);
+    margin: var(--margin) 0;
+  }
 }
