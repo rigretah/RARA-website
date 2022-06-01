@@ -899,6 +899,7 @@ input[type="submit"]:hover {
   display: grid;
   justify-items: center;
   align-items: center;
+  position: relative;
 }
 
 .product-card img {
@@ -912,16 +913,23 @@ input[type="submit"]:hover {
   box-shadow: var(--shadow);
 }
 
-.product-card img:hover {
-  filter: opacity(50%);
-}
 .product-card a::before {
-  content: "see more";
+  content: "see details";
   color: var(--primary-color);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: var(--text-font);
-  grid-area: 1/1/2/2;
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+
+.product-card:hover img {
+  filter: opacity(50%);
+}
+
+.product-card:hover a::before {
+  display: block;
 }
 
 .product-card h3,
