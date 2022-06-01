@@ -1397,4 +1397,9 @@ input[type="submit"]:hover {
   .brg-menu-contacts {
     display: none;
   }
+
+  /*------- general -------*/
+  p {
+    font-size: 1rem;
+  }
 }
