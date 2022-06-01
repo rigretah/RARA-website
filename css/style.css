@@ -847,7 +847,7 @@ input[type="submit"]:hover {
 #shop-list h1 {
   font-family: var(--header-font);
 }
-#shop-list h2 {
+#shop-list main h2 {
   margin: 0;
   padding: 0;
   font-family: var(--text-font);
@@ -1324,7 +1324,7 @@ input[type="submit"]:hover {
     gap: var(--double-margin);
     grid-template-columns: 1fr 1fr;
   }
-  #shop-list h2 {
+  #shop-list main h2 {
     margin: 0;
     padding: 0;
     font-family: var(--text-font);
