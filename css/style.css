@@ -1476,4 +1476,17 @@ input[type="submit"]:hover {
   .portfolio-instagram-container h4 a {
     font-size: 1.2rem;
   }
+  /*------- portfolio list -------*/
+  .main-portfolio-list {
+    margin: var(--margin) calc(var(--double-margin) * 2);
+    gap: var(--margin);
+  }
+  .porfolio-list-container {
+    columns: 4;
+    column-gap: var(--double-margin);
+  }
+
+  .portfolio-list-card {
+    page-break-inside: avoid;
+  }
 }
