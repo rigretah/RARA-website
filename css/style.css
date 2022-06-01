@@ -1539,10 +1539,23 @@ input[type="submit"]:hover {
     margin-top: var(--margin);
     gap: var(--double-margin);
   }
+  .current-event-text {
+    align-self: center;
+  }
+  .current-event-container .yellow-button {
+    align-self: center;
+  }
+  .current-event-container img {
+    max-width: 90%;
+  }
 
   .past-events-container {
     gap: var(--double-margin);
     margin: var(--margin) 0;
+  }
+  .event-container img {
+    aspect-ratio: 5/3;
+    max-width: 80%;
   }
   /*------- event page -------*/
   #event-page main {
