@@ -1590,4 +1590,18 @@ input[type="submit"]:hover {
     gap: var(--half-margin);
     margin-top: var(--half-margin);
   }
+  /*------- shop list -------*/
+
+  #shop-list main {
+    margin: var(--double-margin) calc(var(--double-margin) * 2);
+    gap: var(--margin);
+  }
+  .product-list {
+    gap: var(--double-margin);
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .product-card h3,
+  .product-card h4 {
+    font-size: 0.7rem;
+  }
 }
