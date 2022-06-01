@@ -1407,4 +1407,16 @@ input[type="submit"]:hover {
   .yellow-button {
     padding: var(--half-margin);
   }
+
+  /*------- index page -------*/
+  .index-body main {
+    gap: var(--half-margin);
+  }
+  .index-logo-container {
+    max-width: 12%;
+    margin: var(--double-margin);
+  }
+  .index-h1 {
+    font-size: 2rem;
+  }
 }
