@@ -1453,6 +1453,9 @@ input[type="submit"]:hover {
     align-self: center;
     justify-self: left;
   }
+  .portfolio-events-text {
+    align-self: center;
+  }
 
   .portfolio-events-text,
   .portfolio-events-container .yellow-button {
@@ -1507,7 +1510,7 @@ input[type="submit"]:hover {
     grid-column: 1/3;
     grid-template-columns: 1fr 1fr;
   }
-  .artwork-image {
+  .artwork-container .artwork-image {
     width: 100%;
     margin-top: -4rem;
     aspect-ratio: 185/ 220;
@@ -1603,5 +1606,33 @@ input[type="submit"]:hover {
   .product-card h3,
   .product-card h4 {
     font-size: 0.7rem;
+  }
+
+  /*------- shop page -------*/
+  .artwork-image {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/7;
+    height: 100%;
+    aspect-ratio: 185/ 220;
+  }
+
+  .shop-product main {
+    gap: var(--half-margin) var(--double-margin);
+    margin: 0;
+    margin-right: var(--double-margin);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .shop-product .side-arrow {
+    margin-top: var(--half-margin);
+  }
+  .shop-product main a:last-of-type {
+    justify-self: right;
+    margin-inline: 0;
+    align-self: center;
+  }
+  .shop-product main h2 {
+    align-self: center;
   }
 }
