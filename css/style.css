@@ -455,6 +455,10 @@ p {
   gap: var(--half-margin);
 }
 
+.porfolio-list-container {
+  margin-top: var(--half-margin);
+}
+
 .main-portfolio-list h1 {
   font-family: var(--header-font);
 }
@@ -479,7 +483,7 @@ p {
   background-color: var(--accent-color);
 }
 
-.portfolio-list-image:hover {
+.portfolio-list-card:hover .portfolio-list-image {
   filter: opacity(50%);
 }
 
@@ -873,7 +877,8 @@ input[type="submit"]:hover {
 }
 .product-list {
   display: grid;
-  gap: var(--margin);
+  gap: var(--double-margin);
+  margin-top: var(--half-margin);
 }
 #shop-list h1 {
   font-family: var(--header-font);
@@ -906,6 +911,7 @@ input[type="submit"]:hover {
   display: grid;
   justify-items: center;
   align-items: center;
+  position: relative;
 }
 
 .product-card img {
@@ -919,16 +925,23 @@ input[type="submit"]:hover {
   box-shadow: var(--shadow);
 }
 
-.product-card img:hover {
-  filter: opacity(50%);
-}
 .product-card a::before {
-  content: "see more";
+  content: "see details";
   color: var(--primary-color);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: var(--text-font);
-  grid-area: 1/1/2/2;
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+
+.product-card:hover img {
+  filter: opacity(50%);
+}
+
+.product-card:hover a::before {
+  display: block;
 }
 
 .product-card h3,
