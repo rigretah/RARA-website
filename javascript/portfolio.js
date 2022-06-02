@@ -42,3 +42,17 @@ function muteSound() {
   document.querySelector(".sound-icon").removeEventListener("click", muteSound);
   document.querySelector(".sound-icon").addEventListener("click", playSound);
 }
+
+// VIDEO ASPECT RATIO
+
+let width = window.innerWidth;
+
+if (width < 600) {
+  document
+    .querySelector("#myVideo")
+    .setAttribute("src", "video/phone-view-small.mp4");
+} else {
+  document
+    .querySelector("#myVideo")
+    .setAttribute("src", "video/homepage-video.mp4");
+}
