@@ -49,6 +49,8 @@ header {
 
 .menu-icon {
   justify-self: right;
+  grid-column: 3/3;
+  grid-row: 1/2;
 }
 
 .burger-menu-popUp {
@@ -97,6 +99,37 @@ header {
 .cross-icon {
   justify-self: right;
 }
+
+/* SHOP NAVBAR */
+
+.shop-navbar {
+  padding: 0 calc(var(--half-margin) / 2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  z-index: 5;
+  width: 98%;
+  background-color: var(--accent-color);
+  box-shadow: var(--shadow);
+  overflow: visible;
+  position: fixed;
+}
+
+.shop-navbar a {
+  display: block;
+  width: 6rem;
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.cart-icon {
+  justify-self: right;
+  height: 60%;
+  grid-column: 3/3;
+  grid-row: 1/2;
+  margin-right: var(--double-margin);
+}
+
 /*---------- FOOTER ----------*/
 footer {
   background-color: var(--primary-color);
