@@ -610,7 +610,7 @@ img.about-welcome-img {
 #about_description > p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  text-align: justify;
+  text-align: justify; 
   font-size: 1.2rem;
 }
 
@@ -984,17 +984,16 @@ input[type="submit"]:hover {
 
 /* Mobile view */
 .p-flow-main{
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
 }
-.steps{
-  width: 100%;
-  margin: var(--half-margin);
-}
-.img-step-1{
-  width: 100%;
-}
-.body-background{
+
+
+.body-background-purchaseF{
   background-color: var(--color5);
+  margin: 0;
+  padding: 0;
 }
 
 .purchase-h1{
@@ -1006,15 +1005,68 @@ input[type="submit"]:hover {
   justify-self: left;
 }
 
-.purchase-product {
+
+/* form area */
+#form-bg{
+  margin: 0; 
+  width: 100%;
+  background-color: var(--bg-color);
+
+}
+
+.labelStyle{
+  font-family: var(--text-font);
+  margin-bottom: 0.25rem;
+}
+.form-purchase-flow{
+/* width: 100%; */
+  margin: var(--half-margin);
+}
+input#contact.postcode{
+  width: 40%;
+}
+input.name[type="text"]{
+  width: inherit;
+  padding: 0.5rem 0.5rem;
+
+}
+.fields{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: var(--half-margin);
+}
+
+.button-cancel{
+  font-family: var(--text-font);
+  font-weight: bold;
+  color: var(--primary-color);
+  background-color: var(--color5);
+  width: 8rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-inline: var(--margin);
+  padding-top: var(--half-margin);
+  padding-bottom: var(--half-margin);
+  margin: var(--half-margin);
+  box-shadow: var(--shadow);
+}
+
+.buttons-purchase-form{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* .purchase-product {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: var(--margin);
   margin: var(--half-margin);
 }
 .purchase-card {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
+ 
   gap: var(--half-margin);
 
   text-decoration: none;
@@ -1035,7 +1087,7 @@ input[type="submit"]:hover {
   object-fit: contain;
   overflow: hidden;
 
-}
+} */
 /* .purchase-card img {
   background-color: var(--accent-color);
   max-width: 50%;
@@ -1047,73 +1099,16 @@ input[type="submit"]:hover {
   box-shadow: var(--shadow);
 } */
 
-.purchase-details{
-  /* margin-left: 40%;
-  margin-top: -35%; */
+/* .purchase-details{
   font: var(--text-font);
   color: var(--primary-color);
   grid-column: 2;
   grid-row: 1;
-}
-
-/* .artwork-details {
-  align-self: center;
 } */
-
-.purchase-price{
-/* margin-left: 70%;
-margin-top: -20%; */
-font: var(--text-font);
-color: var(--primary-color);
-}
-
-.shipping-info{
-  margin-left: 1%;
-  margin-top: -10%;
-  font: var(--text-font);
-  color: var(--primary-color);
-}
-
-.shipping-price{
-  margin-left: 70%;
-  margin-top: -19%;
-  font: var(--text-font);
-  color: var(--primary-color);
-}
-
-.shipping-total{
-  margin-left: 70%;
-  margin-top: -19%;
-  font: var(--text-font);
-  color: var(--primary-color);
-}
-
-
-
-.text-steps{
-  font: var(--text-font);
-  color: var(--primary-color);
- margin: var(--half-margin);
-
-  /* margin-left: -19%;
-  margin-top: -10%; */
-}
 
 /* Purchase- Personal Details form */
 
-.form-container-purchase{
-  
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.form-container-purchase-bg{
-  background-color: red;
-  width: 100%;
-  padding: 1rem;
-  grid-row: 4;
-}
+
 
 
 

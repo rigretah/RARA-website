@@ -13,7 +13,7 @@
   <link rel="shortcut icon" type="image/jpg" href="images/logo/favicon.png" />
 </head>
 
-<body class="body-background">
+<body class="body-background-purchaseF">
   <header>
     <nav class="navbar">
       <a class="header-logo-full" href="portfolio.html"><img src="images/logo/rara-logo-full-black.svg"
@@ -119,10 +119,45 @@
 
     </section>
 
-    
-    <!-- COTI & GRETA -->
 
-    <section id="PURCHASE FLOW">
+    <!-- COTI & GRETA -->
+    <!-- Purchase flow -->
+
+    <section id="form-bg">
+
+
+      <form class="form-purchase-flow" action="#" method="get">
+        <div class="fields">
+          <label class="labelStyle" for="name">Full Name </label>
+          <input name="name" type="text" id="name" placeholder="Name and Surname" required>
+        </div>
+        <div class="fields">
+          <label class="labelStyle" for="contact">Address</label>
+          <input name="contact" type="text" id="contact" placeholder="fx. Street, 40">
+        </div>
+        <div class="fields">
+          <label class="labelStyle" for="name">Postcode</label>
+          <input name="postcode" type="text" id="contact" class="postcode" placeholder="fx. 2300">
+        </div>
+        <div class="fields">
+          <label class="labelStyle" for="contact">Email</label>
+          <input name="contact" type="text" id="contact" placeholder="fx. email@example.com" required>
+        </div>
+        <div class="fields">
+          <label class="labelStyle" for="contact">Phone Number</label>
+          <input name="contact" type="text" id="contact" placeholder="fx. +45 00 00 00 00" required>
+        </div>
+
+        </div>
+        <div class="buttons-purchase-form">
+        <div>
+          <Button class="button-cancel" type="submit">Cancel</Button>
+        </div>
+        <div>
+          <Button class="button-next yellow-button" type="submit">Submit</Button>
+        </div>
+      </div>
+      </form>
 
     </section>
 
@@ -159,7 +194,7 @@
 
 <!-- <div class="purchase-product"> -->
 
-      <!-- <div class="purchase-card">
+<!-- <div class="purchase-card">
         <div class="purch-img-container">
           <img class="purchase-image" src="images/placeholder-image.jpg" alt="product-image" />
         </div>
@@ -187,9 +222,9 @@
           <p>DKK 600</p>
         </div>
       </div> -->
-  
-      <!-- FORM FLOW STEPS -->
-    <!-- <div class="NO TOUCH">
+
+<!-- FORM FLOW STEPS -->
+<!-- <div class="NO TOUCH">
       <div class="text-steps">
         <h3>Step 1 - PERSONAL DETAILS</h3>
       </div>
