@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RARA | Shop</title>
+    <title>RARA | Product</title>
     <meta name="description" content="Welcome to RARA's universe." />
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/logo/favicon.png" />
   </head>
   <body class="shop-product">
     <header>
@@ -26,46 +27,101 @@
           src="images/logo/rara-logo-square-black.svg"
           alt="header-logo-square"
         />
-
+  
         <ul>
-          <a href="portfolio.html">
-            <li>Portfolio</li>
-          </a>
-          <a href="shop.html">
-            <li>Shop</li>
-          </a>
-          <a href="eventlist.html">
-            <li>Events</li>
-          </a>
-          <a href="about.html">
-            <li>About Me</li>
-          </a>
-          <a class="brg-menu-contacts" href="#">
-            <li>Contacts</li>
-          </a>
+          
+            <li class="left">
+              <a href="portfolio-list.html"><h2>Porfolio</h2></a>
+               <ul class="extended-menu">
+                 <a href="#">
+                   <li>See all</li>
+                 </a>
+                 <a href="#">
+                   <li>Illustration</li>
+                 </a>
+                 <a href="#">
+                   <li>Digital Art</li>
+                 </a>
+                 <a href="#">
+                   <li>Merchandise</li>
+                 </a>
+                 <a href="#">
+                   <li>Design</li>
+                 </a>
+               </ul>
+            </li>
+          
+         
+            <li class="right">
+               <a href="shop.html"><h2>Shop</h2> </a>
+               <ul class="extended-menu right">
+                <a href="#">
+                  <li>See all</li>
+                </a>
+                <a href="#">
+                  <li>Illustration</li>
+                </a>
+                <a href="#">
+                  <li>Digital Art</li>
+                </a>
+                <a href="#">
+                  <li>Merchandise</li>
+                </a>
+                <a href="#">
+                  <li>Design</li>
+                </a>
+              </ul>
+              </li>
+         
+         
+            <li class="left"> <a href="eventlist.html"><h2>Events</h2></a>
+            <ul class="extended-menu ">
+              <a href="#">
+                <li>See all</li>
+              </a>
+              <a href="#">
+                <li>Current</li>
+              </a>
+            </ul>
+            </li>
+          
+          
+            <li class="right"><a href="about.html"><h2>About Me</h2></a>
+            <ul class="extended-menu right">
+              <a href="#">
+                <li>About</li>
+              </a>
+              <a href="#">
+                <li>Contacts</li>
+              </a>
+            </ul>
+            </li>
+          
+           <li></li><a class="brg-menu-contacts" href="#">
+           <h2>Contacts</h2>
+          </a></li>
         </ul>
       </div>
     </header>
-
     <main>
-      <a href="eventlist.html">
+      <a href="shop.html">
         <img
           class="side-arrow"
           src="images/icons/side-arrow.svg"
           alt="side-arrow"
       /></a>
-      <!--<template id="product-template">-->
-      <img
-        src="images/placeholder-image.jpg"
-        alt="Artwork Name"
-        class="artwork-image"
-      />
-      <h3 class="product-category">Category</h3>
-      <h2 class="product-title yellowBG">Artwork Title</h2>
-      <p class="product-description">Description</p>
-      <p class="product-price">Price</p>
-      <a class="yellow-button" href="#">Buy me</a>
-      <!--</template>-->
+      <template id="product-template">
+        <img
+          src="images/placeholder-image.jpg"
+          alt="Artwork Name"
+          class="artwork-image"
+        />
+        <h3 class="product-category">Category</h3>
+        <h2 class="product-title yellowBG">Artwork Title</h2>
+        <p class="product-description">Description</p>
+        <p class="product-price">Price</p>
+        <a class="yellow-button" href="#">Buy me</a>
+      </template>
     </main>
 
     <footer>
@@ -78,23 +134,25 @@
           <a href="#"><img src="assets/Mail.svg" alt="mail-icon" /></a>
         </li>
         <li id="FTinstagram">
-          <a href="https://www.instagram.com/almostrara/"
+          <a href="https://www.instagram.com/almostrara/" target="_blank"
             ><img src="assets/Instagram.svg" alt="instagram-icon"
           /></a>
         </li>
         <li id="FTfacebook">
-          <a href="https://www.facebook.com/rasa.drukteinyte.7"
+          <a href="https://www.facebook.com/rasa.drukteinyte.7" target="_blank"
             ><img src="assets/Facebook.svg" alt="facebook-icon"
           /></a>
         </li>
         <li id="FTlinkedin">
-          <a href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
+          <a
+            href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
+            target="_blank"
             ><img src="assets/LinkedIn.svg" alt="linkedin-icon"
           /></a>
         </li>
       </ul>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="/javascript/shop-product.js"></script>
   </body>
 </html>
