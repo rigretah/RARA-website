@@ -130,6 +130,40 @@ header {
   margin-right: var(--double-margin);
 }
 
+/* ----------- SHOP NAVBAR CART DROPDOWN -----------*/
+
+.cart-drop-down {
+  background-color: var(--bg-color);
+  padding: 2em;
+  padding-top: var(--double-margin);
+  margin-top: var(--margin);
+  display: grid;
+  max-width: 100%;
+
+  border-style: solid;
+  border-width: 2px;
+  border-inline: none;
+  border-top: none;
+
+  position: fixed;
+}
+
+.cart-drop-down h4 {
+  font-family: var(--text-font);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.cart-drop-down h3 {
+  text-transform: uppercase;
+}
+
+.cart-drop-down a {
+  justify-self: center;
+  width: 13em;
+  margin-top: var(--margin);
+}
+
 /*---------- FOOTER ----------*/
 footer {
   background-color: var(--primary-color);
@@ -1062,6 +1096,7 @@ input[type="submit"]:hover {
 .order-image {
   aspect-ratio: 1/1;
   object-fit: cover;
+  box-shadow: var(--shadow);
 }
 
 .order-card {

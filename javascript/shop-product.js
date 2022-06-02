@@ -11,6 +11,17 @@ function hideBRGMenu() {
   document.querySelector(".burger-menu-popUp").classList.add("hide");
 }
 
+// ------ CART DROPDOWN -------
+
+document.querySelector(".cart-icon").addEventListener("click", showCart);
+document.querySelector(".yellow-button").addEventListener("click", showCart);
+// this event listener doesn't work, probably because it's an <a> tag with a # link - change element to div or something else?
+
+function showCart() {
+  console.log("cart dropdown");
+  document.querySelector(".cart-drop-down").classList.toggle("hide");
+}
+
 // ------ DISPLAYING DATA ------
 
 const urlParams = new URLSearchParams(window.location.search);
