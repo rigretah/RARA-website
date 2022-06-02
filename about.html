@@ -31,75 +31,82 @@
       />
 
       <ul>
-        
-          <li class="left">
+        <li class="left brg-home">
+          <a href="portfolio.html">
+            <h2>Home</h2>
+          </a>
+        </li>
+          <li class="left brg-portfolio">
             <a href="portfolio-list.html"><h2>Porfolio</h2></a>
              <ul class="extended-menu">
-               <a href="#">
+               <a href="portfolio-list.html">
                  <li>See all</li>
                </a>
-               <a href="#">
+               <a href="portfolio-list.html?categories=4">
                  <li>Illustration</li>
                </a>
-               <a href="#">
+               <a href="portfolio-list.html?categories=3">
                  <li>Digital Art</li>
                </a>
-               <a href="#">
+               <a href="portfolio-list.html?categories=8">
                  <li>Merchandise</li>
                </a>
-               <a href="#">
+               <a href="portfolio-list.html?categories=6">
                  <li>Design</li>
                </a>
+               <a href="portfolio-list.html?categories=7">
+                <li>Consulting</li>
+              </a>
              </ul>
           </li>
         
        
-          <li class="right">
+          <li class="right brg-shop">
              <a href="shop.html"><h2>Shop</h2> </a>
              <ul class="extended-menu right">
-              <a href="#">
+              <a href="shop.html">
                 <li>See all</li>
               </a>
-              <a href="#">
+              <a href="shop.html?categories=4">
                 <li>Illustration</li>
               </a>
-              <a href="#">
+              <a href="shop.html?categories=3">
                 <li>Digital Art</li>
               </a>
-              <a href="#">
+              <a href="shop.html?categories=8">
                 <li>Merchandise</li>
               </a>
-              <a href="#">
+              <a href="shop.html?categories=6">
                 <li>Design</li>
               </a>
             </ul>
             </li>
        
        
-          <li class="left"> <a href="eventlist.html"><h2>Events</h2></a>
+          <li class="left brg-events"> <a href="eventlist.html"><h2>Events</h2></a>
           <ul class="extended-menu ">
-            <a href="#">
+            <a href="eventlist.html">
               <li>See all</li>
             </a>
-            <a href="#">
+            <a href="event.html?id=178">
               <li>Current</li>
             </a>
           </ul>
           </li>
         
         
-          <li class="right"><a href="about.html"><h2>About Me</h2></a>
+          <li class="right brg-about"><a href="about.html"><h2>About Me</h2></a>
           <ul class="extended-menu right">
-            <a href="#">
+            <a href="about.html">
               <li>About</li>
             </a>
-            <a href="#">
+            <a class="contact-link" href="about.html#contact-form">
               <li>Contacts</li>
             </a>
           </ul>
           </li>
         
-         <li></li><a class="brg-menu-contacts" href="#">
+         <li class="brg-contacts"><a class="brg-menu-contacts" href="#">
          <h2>Contacts</h2>
         </a></li>
       </ul>
@@ -114,10 +121,11 @@
     <div id="about_description">
       <h2>About me</h2>
       
-      <img class="rara-img" src="images/rasa-profile-picture.jpg" alt="">
+      <img class="rara-img" src="images/rasa-profile-picture.png" alt="">
       <!-- <img /> -->
-      <h3>RASA DRUKTEINYTE</h3>
-      
+     
+      <div class="description-text"> 
+        <h3>RASA DRUKTEINYTE</h3>
       <p>
         Rasa Drukteinyte is a lithuanian artist, who was born in Klaipeda.
       </p>
@@ -132,7 +140,7 @@
         behaviours. Her use of edgy irony and sarcasm in her works is her artist signature.
 
       </p>
-    
+    </div>
       <div id="about_contacts">
       <h3>Contact me</h3>
 <div class="about_contacts_Some">
@@ -157,9 +165,9 @@
    
     
   
-    <div class="form-container">
+    <div id="contact-form" class="form-container">
       <h2>Or write me here</h2>
-      <form class="form-abou-page" action="#" method="get">
+      <form class="form-about-page" action="#" method="get">
         <div class="form-name-contact">
           <label for="name">Your Name</label>
           <input name="name" type="text" id="name" placeholder="James Smith ">
@@ -170,11 +178,11 @@
         </div>
         <div class="form-option">
           <p>Options</p>
-        <div class="form-option-box">
-          <div class="radio-button-option">
-            <label for="option"></label>
-            <input name="radio" type="radio" id="option">Purchasing
-          </div>
+          <div class="form-option-box">
+            <div class="radio-button-option">
+              <label for="option"></label>
+              <input name="radio" type="radio" id="option">Purchasing
+            </div>
           <div class="radio-button-option">
             <label for="option"></label>
             <input name="radio" type="radio" id="option">Collaboration
@@ -188,7 +196,7 @@
             <input name="radio" type="radio" id="option">Other
           </div>
         </div>
-        </div>
+        
         <div class="form-message">
           <label for="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
