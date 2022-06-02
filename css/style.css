@@ -619,7 +619,9 @@ img.about-welcome-img {
 #about_description > h3 {
   margin: var(--half-margin) 0;
 }
-
+.description-text {
+  padding: var(--margin) 0;
+}
 #about_contacts {
   display: flex;
   flex-direction: column;
@@ -1160,7 +1162,7 @@ input[type="submit"]:hover {
     column-gap: var(--margin);
   }
   #about_description h2 {
-    grid-column: 1/4;
+    grid-column: 1/3;
   }
 
   #about_description h3,
@@ -1172,6 +1174,7 @@ input[type="submit"]:hover {
     grid-row: 2/4;
     display: grid;
     gap: calc(var(--half-margin) / 2);
+    padding: 0;
   }
   #about_description > p {
     padding-top: 0.5rem;
@@ -1193,7 +1196,7 @@ input[type="submit"]:hover {
   #about_contacts {
     grid-row: 3/4;
     grid-column: 2/3;
-    margin: 0;
+    margin-top: var(--margin);
     gap: var(--half-margin);
     align-self: center;
   }
@@ -1676,16 +1679,10 @@ input[type="submit"]:hover {
 /*----desktop screen size----*/
 @media only screen and (min-width: 1100px) {
   /*------- about page -------*/
+  .rara-img {
+    aspect-ratio: 4/3;
+  }
   .description-text {
     grid-row: 2/3;
-  }
-  #about_contacts {
-    grid-column: 1/3;
-  }
-  #about_description {
-    grid-template-columns: 1.5fr 1fr;
-  }
-  .main-about-page {
-    gap: var(--margin);
   }
 }
