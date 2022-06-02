@@ -23,4 +23,17 @@ function setCategoryLinks(category) {
   //   .setAttribute("href", `portfolio-categories.html?id=${category.id}`);
 }
 
-// VIDEO
+// VIDEO change secreen size
+const largeDevice = window.matchMedia("(min-width: 700px)").matches;
+
+if (largeDevice){
+  const sources = document.querySelectorAll("video#myVideo source");
+  const myVideo = document.querySelector("video#myVideo");
+
+  for (var i = 0; i < sources.length; i++) {
+    sources[i].setAttribute("src",sources[i].getAttribute("data-src"))
+  }
+  myVideo.load();
+  }
+
+
