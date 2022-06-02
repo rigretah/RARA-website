@@ -753,7 +753,7 @@ input[type="submit"]:hover {
   margin-top: var(--margin);
 }
 
-#event-list h2 {
+#event-list main h2 {
   font-family: var(--header-font);
   font-size: 2rem;
   margin-top: calc(var(--half-margin) / 2);
