@@ -135,6 +135,7 @@ body {
 
 main {
   margin: var(--margin); /*doesn't fit with all pages*/
+  margin-top: var(--double-margin);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -460,7 +461,8 @@ p {
 /*---------- PORTFOLIO - LIST ----------*/
 
 .main-portfolio-list {
-  margin: var(--margin);
+  margin-inline: var(--margin);
+  margin-bottom: var(--margin);
   gap: var(--half-margin);
 }
 
@@ -741,7 +743,8 @@ input[type="submit"]:hover {
 /*---------- EVENT LIST ----------*/
 
 #event-list main {
-  margin: 0;
+  margin-inline: 0;
+  margin-bottom: 0;
 }
 
 #event-list h1 {
@@ -1049,6 +1052,10 @@ input[type="submit"]:hover {
   p {
     font-size: 1.2rem;
   }
+
+  main {
+    margin-top: calc(var(--margin) * 3);
+  }
   /*------- index page -------*/
   .index-body {
     display: grid;
@@ -1135,7 +1142,8 @@ input[type="submit"]:hover {
 
   /*------- portfolio list -------*/
   .main-portfolio-list {
-    margin: var(--margin);
+    margin-inline: var(--margin);
+    margin-bottom: var(--margin);
     gap: var(--margin);
   }
   .porfolio-list-container {
@@ -1150,7 +1158,8 @@ input[type="submit"]:hover {
   /*------- portfolio artwork -------*/
   .main-portfolio-artwork {
     gap: var(--half-margin);
-    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+    margin: calc(var(--double-margin) + var(--margin));
+    margin-bottom: var(--double-margin);
   }
   .artwork-container {
     margin: 0;
@@ -1270,8 +1279,8 @@ input[type="submit"]:hover {
   }
   /*------- event list -------*/
   #event-list main {
-    margin: var(--double-margin);
-    margin-top: var(--margin);
+    margin-inline: var(--double-margin);
+    margin-bottom: var(--double-margin);
     gap: var(--double-margin);
   }
   #event-list .yellow-button {
@@ -1337,7 +1346,8 @@ input[type="submit"]:hover {
 
   /*------- event page -------*/
   #event-page main {
-    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+    margin: calc(var(--double-margin) + var(--margin));
+    margin-bottom: var(--double-margin);
     display: grid;
     justify-items: left;
     gap: var(--half-margin);
@@ -1376,7 +1386,8 @@ input[type="submit"]:hover {
   /*------- shop list -------*/
 
   #shop-list main {
-    margin: var(--double-margin);
+    margin-inline: var(--double-margin);
+    margin-bottom: var(--double-margin);
   }
   .product-list {
     gap: var(--double-margin);
@@ -1402,7 +1413,8 @@ input[type="submit"]:hover {
   }
 
   .shop-product main {
-    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+    margin-inline: calc(var(--double-margin) + var(--margin));
+    margin-bottom: var(--double-margin);
     display: grid;
     gap: var(--margin);
     justify-items: left;
@@ -1473,6 +1485,9 @@ input[type="submit"]:hover {
   /*------- general -------*/
   p {
     font-size: 1rem;
+  }
+  main {
+    margin-top: calc(var(--double-margin) * 2);
   }
 
   /*------- buttons -------*/
@@ -1554,7 +1569,8 @@ input[type="submit"]:hover {
   }
   /*------- portfolio list -------*/
   .main-portfolio-list {
-    margin: var(--margin) calc(var(--double-margin) * 2);
+    margin-inline: calc(var(--double-margin) * 2);
+    margin-bottom: var(--margin);
     gap: var(--margin);
   }
   .porfolio-list-container {
@@ -1570,6 +1586,7 @@ input[type="submit"]:hover {
   .main-portfolio-artwork {
     gap: var(--half-margin) var(--double-margin);
     margin: 0;
+    margin-top: 3.7rem;
     grid-template-columns: 1fr 1fr;
   }
   .main-portfolio-artwork .back-arrow {
@@ -1612,8 +1629,8 @@ input[type="submit"]:hover {
 
   /*------- event list -------*/
   #event-list main {
-    margin: var(--double-margin) calc(var(--double-margin) * 2);
-    margin-top: var(--margin);
+    margin: calc(var(--double-margin) * 2);
+    margin-bottom: var(--double-margin);
     gap: var(--double-margin);
   }
   .current-event-text {
@@ -1638,6 +1655,7 @@ input[type="submit"]:hover {
   #event-page main {
     gap: var(--half-margin) var(--double-margin);
     margin: 0;
+    margin-top: 3.7rem;
     margin-right: var(--double-margin);
     grid-template-columns: 1fr 1fr;
   }
@@ -1670,7 +1688,8 @@ input[type="submit"]:hover {
   /*------- shop list -------*/
 
   #shop-list main {
-    margin: var(--double-margin) calc(var(--double-margin) * 2);
+    margin: calc(var(--double-margin) * 2);
+    margin-bottom: var(--double-margin);
     gap: var(--margin);
   }
   .product-list {
@@ -1694,6 +1713,7 @@ input[type="submit"]:hover {
   .shop-product main {
     gap: var(--half-margin) var(--double-margin);
     margin: 0;
+    margin-top: 3.7rem;
     margin-right: var(--double-margin);
     grid-template-columns: 1fr 1fr;
   }
