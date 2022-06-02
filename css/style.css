@@ -63,7 +63,7 @@ header {
   justify-items: center;
   align-items: center;
   position: fixed;
-  width: calc(100% - var(--half-margin));
+  width: calc(100% - var(--margin));
 }
 .header-logo-square {
   max-width: 30%;
