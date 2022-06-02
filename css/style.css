@@ -1084,26 +1084,17 @@ input[type="submit"]:hover {
   }
 
   /*------- local navigation -------*/
+  .select-category-container {
+    display: none;
+  }
   .categories-drop-down {
-    margin-top: 0;
+    display: block;
+    border: 0;
   }
   .categories-drop-down ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: var(--half-margin);
+    flex-wrap: nowrap;
+    column-gap: var(--margin);
   }
-
-  .up-arrow {
-    display: none;
-  }
-  .drop-down-arrow {
-    display: none;
-  }
-  .h2-drop-down {
-    display: none;
-  }
-
   /*------- portfolio -------*/
   .main-portfolio {
     gap: calc(var(--double-margin) + var(--margin));
