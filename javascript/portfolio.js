@@ -23,4 +23,22 @@ function setCategoryLinks(category) {
   //   .setAttribute("href", `portfolio-categories.html?id=${category.id}`);
 }
 
-// VIDEO
+// VIDEO SOUND
+
+const video = document.querySelector("#myVideo");
+document.querySelector(".sound-icon").addEventListener("click", playSound);
+
+function playSound() {
+  video.muted = false;
+  document.querySelector(".sound-icon").src = "images/icons/sound.svg";
+
+  document.querySelector(".sound-icon").addEventListener("click", muteSound);
+}
+
+function muteSound() {
+  video.muted = true;
+  document.querySelector(".sound-icon").src = "images/icons/Mute.svg";
+
+  document.querySelector(".sound-icon").removeEventListener("click", muteSound);
+  document.querySelector(".sound-icon").addEventListener("click", playSound);
+}

@@ -392,6 +392,10 @@ p {
   opacity: 70%;
 }
 
+.icons img:hover {
+  cursor: pointer;
+}
+
 .icons a {
   /* align-self: center;
   justify-self: center; */
