@@ -1149,7 +1149,6 @@ input[type="submit"]:hover {
   }
 
   .rara-img {
-    width: auto;
     height: 100%;
     grid-column: 2/3;
     grid-row: 2/3;
@@ -1175,6 +1174,7 @@ input[type="submit"]:hover {
     display: grid;
     gap: calc(var(--half-margin) / 2);
     padding: 0;
+    align-self: start;
   }
   #about_description > p {
     padding-top: 0.5rem;
@@ -1575,6 +1575,7 @@ input[type="submit"]:hover {
   #about_description h3 {
     margin-top: var(--half-margin);
   }
+
   /*------- event list -------*/
   #event-list main {
     margin: var(--double-margin) calc(var(--double-margin) * 2);
@@ -1676,13 +1677,23 @@ input[type="submit"]:hover {
   }
 }
 
-/*----desktop screen size----*/
+/*----wide screen size----*/
 @media only screen and (min-width: 1100px) {
   /*------- about page -------*/
   .rara-img {
     aspect-ratio: 4/3;
+    width: 80%;
+    justify-self: end;
   }
   .description-text {
     grid-row: 2/3;
+  }
+  #about-description {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  #about_contacts {
+    width: 80%;
+    justify-self: end;
   }
 }
