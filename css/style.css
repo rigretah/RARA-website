@@ -606,15 +606,16 @@ p {
   grid-column: 1;
   margin: var(--half-margin);
 }
+
 img.about-welcome-img {
   grid-column: 1;
   max-width: 100%;
-  /* margin: var(--double-margin); */
 }
 
 .rara-img {
   width: 100%;
 }
+
 #about_description {
   margin: var(--margin);
 }
@@ -664,9 +665,9 @@ img.about-welcome-img {
 /* form */
 .form-container {
   width: 100%;
-  margin-bottom: var(--margin);
 }
-.form-abou-page {
+
+.form-about-page {
   margin: var(--margin);
 }
 
@@ -682,9 +683,10 @@ img.about-welcome-img {
 }
 .radio-button-option {
   font-family: var(--text-font);
+  font-size: 0.9em;
   padding: calc(var(--half-margin) / 2);
 }
-.form-abou-page > .radio-button-option > label {
+.form-about-page > .radio-button-option > label {
   padding-bottom: 1rem;
 }
 .form-message {
@@ -695,15 +697,16 @@ img.about-welcome-img {
 }
 
 input[type="text"],
-textarea,
-.form-option-box {
+textarea {
   width: 100%;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5em;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
   font-family: var(--text-font);
+  box-sizing: border-box;
 }
+
 textarea {
   outline: none;
   resize: none;
@@ -1264,109 +1267,6 @@ input[type="submit"]:hover {
     margin-top: var(--margin);
   }
 
-  /*------- about page -------*/
-  .welcome-about-bg {
-    aspect-ratio: 4/3;
-  }
-
-  .rara-img {
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    object-fit: cover;
-  }
-  #about_description {
-    margin: var(--double-margin);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: var(--margin);
-  }
-  #about_description h2 {
-    grid-column: 1/4;
-  }
-
-  #about_description h3,
-  #about_description h4,
-  #about_description p {
-    grid-column: 1/2;
-  }
-  .description-text {
-    grid-row: 2/4;
-    display: grid;
-    gap: calc(var(--half-margin) / 2);
-  }
-  #about_description > p {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    text-align: justify;
-  }
-
-  #about_description > h2,
-  #about_contacts > h2,
-  .form-container > h2 {
-    text-align: left;
-    margin-bottom: var(--half-margin);
-  }
-  #about_description > h3 {
-    margin: 0;
-    margin-bottom: var(--half-margin);
-  }
-
-  #about_contacts {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    margin-top: var(--margin);
-    gap: var(--half-margin);
-    align-self: center;
-  }
-
-  .about_contacts_Some {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--half-margin);
-  }
-  .container-SoMe {
-    display: grid;
-    justify-items: center;
-  }
-  .icon-img {
-    max-height: 70%;
-  }
-  .txt {
-    text-align: center;
-    font-family: var(--header-font);
-    font-size: 0.8rem;
-    height: auto;
-  }
-
-  /* form */
-  .form-container {
-    width: 80%;
-    margin-inline: var(--double-margin);
-  }
-  .form-abou-page {
-    margin: var(--margin) 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--half-margin) var(--double-margin);
-  }
-  .form-name-contact {
-    grid-column: 1/2;
-    margin: 0;
-  }
-  .form-option {
-    grid-column: 2/3;
-    grid-row: 1/3;
-  }
-  .form-option-box {
-    margin: 0;
-  }
-  .form-message {
-    grid-column: 1/3;
-  }
-  .row {
-    grid-column: 2/3;
-  }
   /*------- event list -------*/
   #event-list main {
     margin-inline: var(--double-margin);
