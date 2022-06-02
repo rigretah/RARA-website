@@ -3,7 +3,7 @@
   /*color palette*/
   --bg-color: #ffffff;
   --primary-color: #000000;
-  --color4: #757575;
+  --color4: #757575; 
   --color5: #e6e6e6;
   --accent-color: #fbff1d;
 
@@ -983,6 +983,15 @@ input[type="submit"]:hover {
 /*---------- SHOP PURCHASE ----------*/
 
 /* Mobile view */
+
+.body-background{
+  background-color: var(--color5);
+}
+
+.purchase-h1{
+  font-family: var(--header-font);
+}
+
 .back-arrow {
   margin-bottom: var(--half-margin);
   justify-self: left;
@@ -1017,41 +1026,55 @@ input[type="submit"]:hover {
   margin-left: 40%;
   margin-top: -35%;
   font: var(--text-font);
+  color: var(--primary-color);
 }
 
 .purchase-price{
 margin-left: 70%;
 margin-top: -20%;
 font: var(--text-font);
+color: var(--primary-color);
 }
 
 .shipping-info{
   margin-left: 1%;
   margin-top: -10%;
   font: var(--text-font);
+  color: var(--primary-color);
 }
 
 .shipping-price{
   margin-left: 70%;
   margin-top: -19%;
   font: var(--text-font);
+  color: var(--primary-color);
 }
+
 .shipping-total{
   margin-left: 70%;
   margin-top: -19%;
   font: var(--text-font);
+  color: var(--primary-color);
 }
 
 
 
 .text-steps{
   font: var(--text-font);
-  margin-left: -75%;
+  color: var(--primary-color);
+  margin-left: -19%;
   margin-top: -10%;
 }
 
 /* Purchase- Personal Details form */
 
+.form-container-purchase{
+  background-color: var(--bg-color);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
 
 
 

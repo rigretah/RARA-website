@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/jpg" href="images/logo/favicon.png" />
   </head>
-  <body>
+  <body class="body-background">
     <header>
       <nav class="navbar">
         <a class="header-logo-full" href="portfolio.html"
@@ -104,38 +104,8 @@
         </ul>
       </div>
     </header>
-    <footer>
-      <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
-
-      <h5>still here? then you shouLd DEFINITELY contact me</h5>
-
-      <ul id="footer-SoMe">
-        <li id="FTmail">
-          <a href="#"><img src="assets/Mail.svg" alt="mail-icon" /></a>
-        </li>
-        <li id="FTinstagram">
-          <a href="https://www.instagram.com/almostrara/" target="_blank"
-            ><img src="assets/Instagram.svg" alt="instagram-icon"
-          /></a>
-        </li>
-        <li id="FTfacebook">
-          <a href="https://www.facebook.com/rasa.drukteinyte.7" target="_blank"
-            ><img src="assets/Facebook.svg" alt="facebook-icon"
-          /></a>
-        </li>
-        <li id="FTlinkedin">
-          <a
-            href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
-            target="_blank"
-            ><img src="assets/LinkedIn.svg" alt="linkedin-icon"
-          /></a>
-        </li>
-      </ul>
-    </div>
-  </header>
-
   <main>
-    <h1>Your order</h1>
+    <h1 class="purchase-h1">Your order</h1>
     <a class="back-arrow" href="#">
       <svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M17 24.71L6.49258 14L17 3.29L13.7652 0L0 14L13.7652 28L17 24.71Z" fill="black" />
@@ -169,24 +139,33 @@
     </div>
     <div class="steps">
       <div class="text-steps">
-        <p>Step 1 - Personal Details</p>
+        <p>Step 1 - PERSONAL DETAILS</p>
       </div>
 
       <!-- FORM -->
-      <form action="/action_page.php">
-        <label for="fname">Full Name:</label><br>
-        <input type="text" class="complete-box" name="fname" value="Your Name"><br>
-        <label for="address">Address</label><br>
-        <input type="text" class="complete-box" name="Address" value="Your Address"><br>
-        <label for="pcode">Post Code</label><br>
-        <input type="text" class="complete-box" name="lname" value="Post Code"><br>
-        <label for="lname">Email Address</label><br>
-        <input type="text" class="complete-box" name="lname" value="someome@example.com"><br>
-        <label for="lname">Phone Number</label><br>
-        <input type="text" class="complete-box" name="lname" value="+45"><br>
-
-        <input type="submit" value="Submit">
-      </form>
+      <div class="form-container-purchase">
+        <form class="form-purchase-flow" action="#" method="get">
+          <div class="form-name-purchase">
+            <label for="name">Your Name</label>
+            <input name="name" type="text" id="name" placeholder="James Smith ">
+          </div>
+          <div class="form-name-purchase">
+            <label for="contact">Your Email</label>
+            <input name="contact" type="text" id="contact" placeholder="someone@example.com">
+          </div>
+          <div class="form-name-purchase">
+            <label for="Address">Your Address </label>
+            <input name="Address" type="text" id="name" placeholder="Your Address ">
+          </div>
+          <div class="form-name-purchase">
+            <label for="PostCode">Your Post Code</label>
+            <input name="PostCode" type="text" id="name" placeholder="Post code ">
+          </div>
+          <div class="row">
+            <input class="yellow-button" type="submit" value="Submit">
+          </div>
+        </form>
+      
       <!-- /FORM -->
 
 
