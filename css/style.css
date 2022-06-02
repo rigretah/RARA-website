@@ -1722,3 +1722,45 @@ input[type="submit"]:hover {
     align-self: center;
   }
 }
+/* --- video screen view --- */
+/* @media all and (max-width: 959px) {
+  .portfolio-video-container .desktop  {
+  display: block;
+  }
+  .portfolio-video-container .mobile  {
+  display: none;
+  }
+ }
+ @media all and (max-width: 479px) {
+  .portfolio-video-container .desktop  {
+  display: none;
+  }
+  .portfolio-video-container .mobile {
+  display: block;
+  }
+ } */
+
+ @media (min-aspect-ratio: 16/9){
+   #desktop{
+     width: 100%;
+     height: auto;
+   }
+ }
+ @media (max-aspect-ratio: 16/9){
+   #desktop{
+     width: auto;
+     height: 100%;
+   }
+ }
+ @media (max-width: 767px){
+   #desktop{
+     display: none;
+   }
+   .portfolio-video-container{
+     background: url();
+     aspect-ratio: 16/9;
+    z-index: 5;
+
+   }
+ }
+ 
