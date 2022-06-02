@@ -12,7 +12,7 @@
   <link rel="shortcut icon" type="image/jpg" href="images/logo/favicon.png" />
 </head>
 
-<body class="body-background-purchaseF">
+<body>
   <header>
     <nav class="navbar">
       <a class="header-logo-full" href="portfolio.html"><img src="images/logo/rara-logo-full-black.svg"
@@ -116,29 +116,29 @@
 
     <section class="order-container">
 
-        <div class="order-card">
-          <div class="order-details">
-            <img class="order-image" src="images/placeholder-image.jpg" alt="product-image" />
+      <div class="order-card">
+        <div class="order-details">
+          <img class="order-image" src="images/placeholder-image.jpg" alt="product-image" />
 
-            <div class="order-text">
-              <h4>Design</h4>
-              <h3>Artwork title</h3>
-            </div>
-            
-            <img class="delete" src="images/icons/Trash.svg" alt="delete-icon">
+          <div class="order-text">
+            <h4>Design</h4>
+            <h3>Artwork title</h3>
           </div>
-          <p class="order-price">DKK 500</p>
-        </div>
 
-        <div class="shipping-info">
-          <h4>Standard Shipping & Returns</h4>
-          <p>DKK 100</p>
+          <img class="delete" src="images/icons/Trash.svg" alt="delete-icon">
         </div>
+        <p class="order-price">DKK 500</p>
+      </div>
 
-        <div class="order-total">
-          <h4>Total</h4>
-          <p>DKK 600</p>
-        </div>
+      <div class="shipping-info">
+        <h4>Standard Shipping & Returns</h4>
+        <p>DKK 100</p>
+      </div>
+
+      <div class="order-total">
+        <h4>Total</h4>
+        <p>DKK 600</p>
+      </div>
 
     </section>
 
@@ -148,8 +148,11 @@
     <!-- COTI & GRETA -->
     <!-- Purchase flow -->
 
-    <section id="form-bg">
-
+    <section id="form-bg-1">
+      <div class="step-indicator">
+        <h3>Step 1 - Personal Details</h2>
+          <img class="step-img" src="images/purchase-steps-1.svg" alt="">
+      </div>
 
       <form class="form-purchase-flow" action="#" method="get">
         <div class="fields">
@@ -173,19 +176,145 @@
           <input name="contact" type="text" id="contact" placeholder="fx. +45 00 00 00 00" required>
         </div>
 
-        </div>
+
         <div class="buttons-purchase-form">
-        <div>
+
           <Button class="button-cancel" type="submit">Cancel</Button>
-        </div>
-        <div>
+
+
           <Button class="button-next yellow-button" type="submit">Submit</Button>
+
         </div>
-      </div>
       </form>
 
     </section>
 
+    <section id="form-bg-2">
+      <div class="step-indicator">
+        <h3>Step 2 - Payment Information</h2>
+          <img class="step-img" src="images/purchase-steps-2.svg" alt="">
+      </div>
+
+      <form class="form-purchase-flow" action="#" method="get">
+        <div class="fields">
+          <label class="labelStyle" for="name">Card Name </label>
+          <input name="name" type="text" id="name" placeholder="Name and Surname" required>
+        </div>
+        <div class="fields">
+          <label class="labelStyle" for="contact">Card Number</label>
+          <input name="contact" type="text" id="contact" placeholder="fx. Street, 40">
+        </div>
+        <div class="inline-div">
+          <div class="fields inline">
+            <label class="labelStyle" for="date">Exp. Date</label>
+            <input name="postcode" type="text" id="date" class="postcode" placeholder="fx. MM/YY">
+          </div>
+          <div class="fields inline">
+            <label class="labelStyle" for="date">CVC</label>
+            <input name="cvc" type="text" id="date" class="postcode" placeholder="fx. 012">
+          </div>
+        </div>
+
+        </div>
+        <div class="buttons-purchase-form">
+
+          <Button class="button-cancel" type="submit">Cancel</Button>
+
+
+          <Button class="button-next yellow-button" type="submit">Submit</Button>
+
+        </div>
+
+
+      </form>
+
+    </section>
+
+    </section>
+
+    <section id="form-bg-3">
+      <div class="step-indicator">
+        <h3>Step 3 - Review Order</h2>
+          <img class="step-img" src="images/purchase-steps-3.svg" alt="">
+      </div>
+
+      <div class="overview-billing">
+        <h3>Billing Address</h3>
+
+        <p id="fullName">Alan Applewood</p>
+        <p id="address">Nørrebrogade 72</p>
+        <p id="postcode">2200</p>
+        <p>Copenhagen, Denmark</p> <!-- hard code -->
+      </div>
+
+      <div class="overview-billing">
+        <h3>Shipping Address</h3>
+
+        <p id="fullName">Alan Applewood</p>
+        <p id="address">Nørrebrogade 72</p>
+        <p id="postcode">2200</p>
+        <p>Copenhagen, Denmark</p> <!-- hard code -->
+      </div>
+
+      <div class="overview-billing">
+        <h3>Contact</h3>
+
+        <p id="emailAddress">alan@applewood.com</p>
+        <p id="phoneNumber">+45 35275678</p>
+      </div>
+
+      <div class="overview-billing">
+        <h3>Payment</h3>
+
+        <img src="images/visa-icon.svg" alt="">
+        <p id="emailAddress">VISA DEBIT</p>
+        <p id="phoneNumber">Exp. Date <span>01/30</span></p>
+      </div>
+
+      </div>
+
+      <div class="buttons-purchase-form-3">
+
+        <Button class="button-next yellow-button" type="submit">Complete Purchase</Button>
+
+        <Button class="button-cancel" type="submit">Cancel</Button>
+
+      </div>
+
+
+      </form>
+
+    </section>
+
+    <section id="form-bg-4">
+      <div class="step-indicator">
+        <h3>Step 3 - Review Order</h2>
+          <img class="step-img" src="images/purchase-steps-4.svg" alt="">
+      </div>
+
+      <div class="overview-billing">
+        <h3>Billing Address</h3>
+
+        <p id="fullName">Alan Applewood</p>
+        <p id="address">Nørrebrogade 72</p>
+        <p id="postcode">2200</p>
+        <p>Copenhagen, Denmark</p> <!-- hard code -->
+      </div>
+
+    
+
+      <div class="buttons-purchase-form-3">
+
+        <Button class="button-next yellow-button" type="submit">Complete Purchase</Button>
+
+        <Button class="button-cancel" type="submit">Cancel</Button>
+
+      </div>
+
+
+      </form>
+
+    </section>
 
   </main>
 
