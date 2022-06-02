@@ -26,6 +26,7 @@ header {
   width: 100%;
   background-color: var(--accent-color);
   display: grid;
+  position: relative;
 }
 .navbar {
   padding: 0 calc(var(--half-margin) / 2);
@@ -33,7 +34,11 @@ header {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   z-index: 5;
+  width: 98%;
+  background-color: var(--accent-color);
   box-shadow: var(--shadow);
+  overflow: visible;
+  position: fixed;
 }
 .navbar a {
   display: block;
@@ -47,7 +52,6 @@ header {
 }
 
 .burger-menu-popUp {
-  margin-top: -3.5rem;
   aspect-ratio: 9/18;
   background-color: var(--accent-color);
   display: grid;
@@ -58,6 +62,8 @@ header {
 
   justify-items: center;
   align-items: center;
+  position: fixed;
+  width: calc(100% - var(--margin));
 }
 .header-logo-square {
   max-width: 30%;
@@ -129,6 +135,7 @@ body {
 
 main {
   margin: var(--margin); /*doesn't fit with all pages*/
+  margin-top: var(--double-margin);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -323,6 +330,9 @@ p {
 
 /*---------- MICROINTERACTIONS ----------*/
 /*LINK HOVER EFFECTS*/
+.burger-menu-popUp a {
+  display: block;
+}
 .burger-menu-popUp a:hover {
   background-image: url(../images/icons/hover-effects/Hover-effect-line-black.svg);
   background-size: cover;
@@ -451,7 +461,8 @@ p {
 /*---------- PORTFOLIO - LIST ----------*/
 
 .main-portfolio-list {
-  margin: var(--margin);
+  margin-inline: var(--margin);
+  margin-bottom: var(--margin);
   gap: var(--half-margin);
 }
 
@@ -623,7 +634,9 @@ img.about-welcome-img {
 #about_description > h3 {
   margin: var(--half-margin) 0;
 }
-
+.description-text {
+  padding: var(--margin) 0;
+}
 #about_contacts {
   display: flex;
   flex-direction: column;
@@ -730,7 +743,8 @@ input[type="submit"]:hover {
 /*---------- EVENT LIST ----------*/
 
 #event-list main {
-  margin: 0;
+  margin-inline: 0;
+  margin-bottom: 0;
 }
 
 #event-list h1 {
@@ -739,7 +753,7 @@ input[type="submit"]:hover {
   margin-top: var(--margin);
 }
 
-#event-list h2 {
+#event-list main h2 {
   font-family: var(--header-font);
   font-size: 2rem;
   margin-top: calc(var(--half-margin) / 2);
@@ -812,7 +826,9 @@ input[type="submit"]:hover {
 /*---------- EVENT PAGE ----------*/
 
 #event-page main {
-  margin: 0;
+  margin-inline: 0;
+  margin-bottom: 0;
+
   display: grid;
   justify-items: left;
   gap: var(--half-margin);
@@ -822,9 +838,9 @@ input[type="submit"]:hover {
   margin: var(--half-margin);
 }
 
-#event-page h1,
-#event-page h3 {
-  margin-left: var(--margin);
+#event-page main h1,
+#event-page main h3 {
+  margin-inline: var(--margin);
 }
 
 #event-page h3,
@@ -1086,6 +1102,7 @@ input[type="submit"]:hover {
   .navbar {
     padding: calc(var(--half-margin) / 2) var(--half-margin);
     display: grid;
+    width: calc(100% - var(--margin));
   }
   .navbar a {
     grid-column: 1/2;
@@ -1134,6 +1151,10 @@ input[type="submit"]:hover {
   p {
     font-size: 1.2rem;
   }
+
+  main {
+    margin-top: calc(var(--margin) * 3);
+  }
   /*------- index page -------*/
   .index-body {
     display: grid;
@@ -1159,26 +1180,17 @@ input[type="submit"]:hover {
   }
 
   /*------- local navigation -------*/
+  .select-category-container {
+    display: none;
+  }
   .categories-drop-down {
-    margin-top: 0;
+    display: block;
+    border: 0;
   }
   .categories-drop-down ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: var(--half-margin);
+    flex-wrap: nowrap;
+    column-gap: var(--margin);
   }
-
-  .up-arrow {
-    display: none;
-  }
-  .drop-down-arrow {
-    display: none;
-  }
-  .h2-drop-down {
-    display: none;
-  }
-
   /*------- portfolio -------*/
   .main-portfolio {
     gap: calc(var(--double-margin) + var(--margin));
@@ -1220,7 +1232,8 @@ input[type="submit"]:hover {
 
   /*------- portfolio list -------*/
   .main-portfolio-list {
-    margin: var(--margin);
+    margin-inline: var(--margin);
+    margin-bottom: var(--margin);
     gap: var(--margin);
   }
   .porfolio-list-container {
@@ -1235,7 +1248,8 @@ input[type="submit"]:hover {
   /*------- portfolio artwork -------*/
   .main-portfolio-artwork {
     gap: var(--half-margin);
-    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+    margin: calc(var(--double-margin) + var(--margin));
+    margin-bottom: var(--double-margin);
   }
   .artwork-container {
     margin: 0;
@@ -1256,10 +1270,9 @@ input[type="submit"]:hover {
   }
 
   .rara-img {
-    width: auto;
     height: 100%;
     grid-column: 2/3;
-    grid-row: 2/5;
+    grid-row: 2/3;
     object-fit: cover;
   }
   #about_description {
@@ -1269,7 +1282,7 @@ input[type="submit"]:hover {
     column-gap: var(--margin);
   }
   #about_description h2 {
-    grid-column: 1/3;
+    grid-column: 1/4;
   }
 
   #about_description h3,
@@ -1277,7 +1290,11 @@ input[type="submit"]:hover {
   #about_description p {
     grid-column: 1/2;
   }
-
+  .description-text {
+    grid-row: 2/4;
+    display: grid;
+    gap: calc(var(--half-margin) / 2);
+  }
   #about_description > p {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -1296,9 +1313,9 @@ input[type="submit"]:hover {
   }
 
   #about_contacts {
-    grid-row: 5/6;
+    grid-row: 3/4;
     grid-column: 2/3;
-    margin: 0;
+    margin-top: var(--margin);
     gap: var(--half-margin);
     align-self: center;
   }
@@ -1352,8 +1369,8 @@ input[type="submit"]:hover {
   }
   /*------- event list -------*/
   #event-list main {
-    margin: var(--double-margin);
-    margin-top: var(--margin);
+    margin-inline: var(--double-margin);
+    margin-bottom: var(--double-margin);
     gap: var(--double-margin);
   }
   #event-list .yellow-button {
@@ -1419,7 +1436,8 @@ input[type="submit"]:hover {
 
   /*------- event page -------*/
   #event-page main {
-    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+    margin: calc(var(--double-margin) + var(--margin));
+    margin-bottom: var(--double-margin);
     display: grid;
     justify-items: left;
     gap: var(--half-margin);
@@ -1458,7 +1476,8 @@ input[type="submit"]:hover {
   /*------- shop list -------*/
 
   #shop-list main {
-    margin: var(--double-margin);
+    margin-inline: var(--double-margin);
+    margin-bottom: var(--double-margin);
   }
   .product-list {
     gap: var(--double-margin);
@@ -1484,7 +1503,8 @@ input[type="submit"]:hover {
   }
 
   .shop-product main {
-    margin: var(--double-margin) calc(var(--double-margin) + var(--margin));
+    margin-inline: calc(var(--double-margin) + var(--margin));
+    margin-bottom: var(--double-margin);
     display: grid;
     gap: var(--margin);
     justify-items: left;
@@ -1496,7 +1516,7 @@ input[type="submit"]:hover {
   }
 }
 
-/*----tablet screen size----*/
+/*----desktop screen size----*/
 @media only screen and (min-width: 900px) {
   /*------- navigation -------*/
   .menu-icon {
@@ -1513,10 +1533,11 @@ input[type="submit"]:hover {
   .burger-menu-popUp > ul {
     align-self: center;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
     justify-items: start;
     width: 60%;
     height: 80%;
-    align-items: end;
+    align-items: flex-start;
   }
   .burger-menu-popUp h2 {
     font-family: var(--header-font);
@@ -1529,18 +1550,40 @@ input[type="submit"]:hover {
     margin: 0;
     gap: calc(var(--half-margin) / 2);
   }
-  .right {
+  .brg-about {
     display: grid;
     justify-items: end;
     justify-self: right;
   }
-  .brg-menu-contacts {
+  .left {
+    grid-column: 1/2;
+  }
+  .brg-portfolio {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    justify-self: end;
+    text-align: right;
+  }
+  .brg-shop {
+    justify-self: start;
+    text-align: left;
+  }
+  .brg-home {
+    height: 100%;
+  }
+  .brg-contacts {
+    display: none;
+  }
+  .brg-menu-contacts h2 {
     display: none;
   }
 
   /*------- general -------*/
   p {
     font-size: 1rem;
+  }
+  main {
+    margin-top: calc(var(--double-margin) * 2);
   }
 
   /*------- buttons -------*/
@@ -1564,7 +1607,9 @@ input[type="submit"]:hover {
   .main-portfolio {
     gap: calc(var(--double-margin) + var(--margin));
   }
-
+  .portfolio-video-container {
+    aspect-ratio: 18/9;
+  }
   .portfolio-feature-container,
   .portfolio-events-container {
     margin: 0 calc(var(--double-margin) * 2);
@@ -1620,7 +1665,8 @@ input[type="submit"]:hover {
   }
   /*------- portfolio list -------*/
   .main-portfolio-list {
-    margin: var(--margin) calc(var(--double-margin) * 2);
+    margin-inline: calc(var(--double-margin) * 2);
+    margin-bottom: var(--margin);
     gap: var(--margin);
   }
   .porfolio-list-container {
@@ -1636,6 +1682,7 @@ input[type="submit"]:hover {
   .main-portfolio-artwork {
     gap: var(--half-margin) var(--double-margin);
     margin: 0;
+    margin-top: 3.7rem;
     grid-template-columns: 1fr 1fr;
   }
   .main-portfolio-artwork .back-arrow {
@@ -1675,10 +1722,11 @@ input[type="submit"]:hover {
   #about_description h3 {
     margin-top: var(--half-margin);
   }
+
   /*------- event list -------*/
   #event-list main {
-    margin: var(--double-margin) calc(var(--double-margin) * 2);
-    margin-top: var(--margin);
+    margin: calc(var(--double-margin) * 2);
+    margin-bottom: var(--double-margin);
     gap: var(--double-margin);
   }
   .current-event-text {
@@ -1703,6 +1751,7 @@ input[type="submit"]:hover {
   #event-page main {
     gap: var(--half-margin) var(--double-margin);
     margin: 0;
+    margin-top: 3.7rem;
     margin-right: var(--double-margin);
     grid-template-columns: 1fr 1fr;
   }
@@ -1735,7 +1784,8 @@ input[type="submit"]:hover {
   /*------- shop list -------*/
 
   #shop-list main {
-    margin: var(--double-margin) calc(var(--double-margin) * 2);
+    margin: calc(var(--double-margin) * 2);
+    margin-bottom: var(--double-margin);
     gap: var(--margin);
   }
   .product-list {
@@ -1759,6 +1809,7 @@ input[type="submit"]:hover {
   .shop-product main {
     gap: var(--half-margin) var(--double-margin);
     margin: 0;
+    margin-top: 3.7rem;
     margin-right: var(--double-margin);
     grid-template-columns: 1fr 1fr;
   }
@@ -1773,5 +1824,26 @@ input[type="submit"]:hover {
   }
   .shop-product main h2 {
     align-self: center;
+  }
+}
+
+/*----wide screen size----*/
+@media only screen and (min-width: 1100px) {
+  /*------- about page -------*/
+  .rara-img {
+    aspect-ratio: 4/3;
+    width: 80%;
+    justify-self: end;
+  }
+  .description-text {
+    grid-row: 2/3;
+  }
+  #about-description {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  #about_contacts {
+    width: 80%;
+    justify-self: end;
   }
 }
