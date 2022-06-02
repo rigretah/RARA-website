@@ -1192,11 +1192,6 @@ input[type="submit"]:hover {
     grid-row: 2/4;
     display: grid;
     gap: calc(var(--half-margin) / 2);
-<<<<<<< HEAD
-    padding: 0;
-    align-self: start;
-=======
->>>>>>> burger-menu
   }
   #about_description > p {
     padding-top: 0.5rem;
