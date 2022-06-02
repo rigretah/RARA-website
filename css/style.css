@@ -334,10 +334,8 @@ p {
 }
 .burger-menu-popUp a:hover {
   background-image: url(../images/icons/hover-effects/Hover-effect-line-black.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  background-position-y: bottom;
 }
 .burger-menu-popUp a:active {
   font-weight: 400;
@@ -1433,10 +1431,11 @@ input[type="submit"]:hover {
   .burger-menu-popUp > ul {
     align-self: center;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
     justify-items: start;
     width: 60%;
     height: 80%;
-    align-items: end;
+    align-items: flex-start;
   }
   .burger-menu-popUp h2 {
     font-family: var(--header-font);
@@ -1453,6 +1452,19 @@ input[type="submit"]:hover {
     display: grid;
     justify-items: end;
     justify-self: right;
+  }
+  .left {
+    grid-column: 1/2;
+  }
+  .brg-shop {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  .brg-home {
+    height: 100%;
+  }
+  .brg-contacts {
+    display: none;
   }
   .brg-menu-contacts h2 {
     display: none;
