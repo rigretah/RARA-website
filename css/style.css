@@ -329,10 +329,15 @@ p {
 
 /*---------- MICROINTERACTIONS ----------*/
 /*LINK HOVER EFFECTS*/
+.burger-menu-popUp a {
+  display: block;
+}
 .burger-menu-popUp a:hover {
   background-image: url(../images/icons/hover-effects/Hover-effect-line-black.svg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
+  background-position-y: bottom;
 }
 .burger-menu-popUp a:active {
   font-weight: 400;
@@ -1192,11 +1197,6 @@ input[type="submit"]:hover {
     grid-row: 2/4;
     display: grid;
     gap: calc(var(--half-margin) / 2);
-<<<<<<< HEAD
-    padding: 0;
-    align-self: start;
-=======
->>>>>>> burger-menu
   }
   #about_description > p {
     padding-top: 0.5rem;
@@ -1454,7 +1454,7 @@ input[type="submit"]:hover {
     justify-items: end;
     justify-self: right;
   }
-  .brg-menu-contacts {
+  .brg-menu-contacts h2 {
     display: none;
   }
 
