@@ -358,8 +358,7 @@ p {
 }
 
 .portfolio-video-container {
-  /* background-image: url(../video/homepage-video.mp4); */
-  background-color: red;
+  background-color: var(--color4);
   aspect-ratio: 9/16;
   height: calc(100vh - (var(--double-margin) - 2px));
   width: 100%;
@@ -368,7 +367,6 @@ p {
   background-repeat: no-repeat;
   position: relative;
   display: grid;
-  /* object-fit: cover; */
 }
 
 .portfolio-video-container video {
