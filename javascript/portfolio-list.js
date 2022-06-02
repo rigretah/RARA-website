@@ -12,46 +12,98 @@ function hideBRGMenu() {
 }
 
 //LOCAL NAVIGATION DROP DOWN
-document.querySelector(".drop-down-arrow").addEventListener("click", dropDown);
-document.querySelector(".h2-drop-down").addEventListener("click", dropDown);
+
+document
+  .querySelector(".select-category-container")
+  .addEventListener("click", dropDown);
 
 function dropDown() {
   document.querySelector(".categories-drop-down").classList.remove("hide");
+  document.querySelector(".drop-down-arrow").classList.add("up-arrow");
 
-  document.querySelector(".up-arrow").addEventListener("click", backUp);
-  document.querySelector(".h2-drop-down").addEventListener("click", backUp);
+  document
+    .querySelector(".select-category-container")
+    .removeEventListener("click", dropDown);
+
+  document
+    .querySelector(".select-category-container")
+    .addEventListener("click", backUp);
+
+  // document
+  //   .querySelectorAll(".illustration")
+  //   .addEventListener("click", showSelection);
 }
+
+// function showSelection() {
+//   console.log("showSelection");
+//   // this.classList.add("selected");
+//   document.querySelector(".see-all").classList.remove("selected");
+// }
 
 function backUp() {
-  document.querySelector(".categories-drop-down").classList.add("hide");
+  // document.querySelector(".categories-drop-down").classList.add("hide");
+  document.querySelector(".drop-down-arrow").classList.remove("up-arrow");
+
+  document.querySelector(".categories-drop-down").classList.toggle("hide");
+  document
+    .querySelector(".select-category-container")
+    .addEventListener("click", dropDown);
 }
 
-// FETCHING & DISPLAYING DATA
-
-// SINGLE CATEGORY LINK: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/categories/7
-
-// const url = `https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/categories/${id}_embed`;
+// LINKS FOR DATA
 
 // ALL PRODUCTS IN A SINGLE CATEGORY: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?categories=7
 
-// ALL PRODUCTS
-// const url =
-//   "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=70&_embed";
+// ALL PRODUCTS: https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=55&_embed
+
+// ---------- SHOW ALL PRODUCTS / SHOW SELECTED CATEGORY ----------
 
 window.addEventListener("DOMContentLoaded", init);
 
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("categories");
+let url = "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?";
+
 function init() {
-  loadData();
+  if (category) {
+    url += "categories=" + `${category}&_embed`;
+  } else {
+    url += "per_page=55&_embed";
+  }
+
+  showCategory();
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => displayArtworks(data));
 }
-async function loadData() {
-  const response = await fetch(
-    "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product?per_page=70&_embed"
-  );
-  console.log("response", response);
-  const artworkData = await response.json();
-  displayArtworks(artworkData);
+
+function showCategory() {
+  console.log("showCategory", category);
+  if (category === "4") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".illustration").classList.add("selected");
+  }
+  if (category === "3") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".digital-art").classList.add("selected");
+  }
+  if (category === "8") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".merchandise").classList.add("selected");
+  }
+  if (category === "6") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".design").classList.add("selected");
+  }
+  if (category === "7") {
+    document.querySelector(".see-all").classList.remove("selected");
+    document.querySelector(".consulting").classList.add("selected");
+  }
 }
+
 async function displayArtworks(userJSON) {
+  console.log("Displaying Artworks");
   userJSON.forEach((artwork) => {
     // select template & copy
     const template = document.querySelector("#portfolio-list-template").content;
@@ -68,7 +120,7 @@ async function displayArtworks(userJSON) {
       .querySelector(".portfolio-list-link")
       .setAttribute("href", `portfolio-artwork.html?id=${artwork.id}`);
     // append to main
-    const parent = document.querySelector("main");
+    const parent = document.querySelector(".porfolio-list-container");
     parent.appendChild(copy);
   });
 }

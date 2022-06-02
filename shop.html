@@ -8,6 +8,7 @@
     <meta name="description" content="Welcome to RARA's universe." />
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/logo/favicon.png" />
   </head>
   <body id="shop-list">
     <header>
@@ -26,48 +27,127 @@
           src="images/logo/rara-logo-square-black.svg"
           alt="header-logo-square"
         />
-
+  
         <ul>
-          <a href="portfolio.html">
-            <li>Portfolio</li>
-          </a>
-          <a href="shop.html">
-            <li>Shop</li>
-          </a>
-          <a href="eventlist.html">
-            <li>Events</li>
-          </a>
-          <a href="about.html">
-            <li>About Me</li>
-          </a>
-          <a class="brg-menu-contacts" href="#">
-            <li>Contacts</li>
-          </a>
+          <li class="left brg-home">
+            <a href="portfolio.html">
+              <h2>Home</h2>
+            </a>
+          </li>
+            <li class="left brg-portfolio">
+              <a href="portfolio-list.html"><h2>Porfolio</h2></a>
+               <ul class="extended-menu">
+                 <a href="portfolio-list.html">
+                   <li>See all</li>
+                 </a>
+                 <a href="portfolio-list.html?categories=4">
+                   <li>Illustration</li>
+                 </a>
+                 <a href="portfolio-list.html?categories=3">
+                   <li>Digital Art</li>
+                 </a>
+                 <a href="portfolio-list.html?categories=8">
+                   <li>Merchandise</li>
+                 </a>
+                 <a href="portfolio-list.html?categories=6">
+                   <li>Design</li>
+                 </a>
+                 <a href="portfolio-list.html?categories=7">
+                  <li>Consulting</li>
+                </a>
+               </ul>
+            </li>
+          
+         
+            <li class="right brg-shop">
+               <a href="shop.html"><h2>Shop</h2> </a>
+               <ul class="extended-menu right">
+                <a href="shop.html">
+                  <li>See all</li>
+                </a>
+                <a href="shop.html?categories=4">
+                  <li>Illustration</li>
+                </a>
+                <a href="shop.html?categories=3">
+                  <li>Digital Art</li>
+                </a>
+                <a href="shop.html?categories=8">
+                  <li>Merchandise</li>
+                </a>
+                <a href="shop.html?categories=6">
+                  <li>Design</li>
+                </a>
+              </ul>
+              </li>
+         
+         
+            <li class="left brg-events"> <a href="eventlist.html"><h2>Events</h2></a>
+            <ul class="extended-menu ">
+              <a href="eventlist.html">
+                <li>See all</li>
+              </a>
+              <a href="event.html?id=178">
+                <li>Current</li>
+              </a>
+            </ul>
+            </li>
+          
+          
+            <li class="right brg-about"><a href="about.html"><h2>About Me</h2></a>
+            <ul class="extended-menu right">
+              <a href="about.html">
+                <li>About</li>
+              </a>
+              <a class="contact-link" href="about.html#contact-form">
+                <li>Contacts</li>
+              </a>
+            </ul>
+            </li>
+          
+           <li class="brg-contacts"><a class="brg-menu-contacts" href="#">
+           <h2>Contacts</h2>
+          </a></li>
         </ul>
       </div>
     </header>
 
     <main>
       <h1>Shop</h1>
-      <h2 class="h2-drop-down">Categories</h2>
-      <img
-        class="drop-down-arrow"
-        src="images/icons/Arrow-down-black.svg"
-        alt="arrow-down"
-      />
+      <div class="select-category-container">
+        <h2 class="h2-drop-down">Select category</h2>
+        <svg
+          class="drop-down-arrow"
+          width="36"
+          height="35"
+          viewBox="0 0 36 35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.3062 12.5269L18 19.206L24.6938 12.5269L26.75 14.5831L18 23.3331L9.25 14.5831L11.3062 12.5269Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+
       <div class="categories-drop-down gray hide">
         <nav>
-          <img
-            class="up-arrow"
-            src="images/icons/Arrow-down-black.svg"
-            alt="arrow-up"
-          />
           <ul>
-            <a href="#"><li>See All</li></a>
-            <a href="#"><li>Illustration</li></a>
-            <a href="#"><li>Digital Art</li></a>
-            <a href="#"><li>Merchandise</li></a>
-            <a href="#"><li>Design</li></a>
+            <a class="see-all selected" href="shop.html"
+              ><li>See All</li></a
+            >
+            <a class="illustration" href="shop.html?categories=4"
+              ><li>Illustration</li></a
+            >
+            <a class="digital-art" href="shop.html?categories=3"
+              ><li>Digital Art</li></a
+            >
+            <a class="merchandise" href="shop.html?categories=8"
+              ><li>Merchandise</li></a
+            >
+            <a class="design" href="shop.html?categories=6"
+              ><li>Design</li></a
+            >
           </ul>
         </nav>
       </div>
@@ -76,7 +156,8 @@
         <template id="shop-list-template">
         <div class="product-card">
           <a class="product-link" href="#"
-            ><img
+            >
+            <img
               class="product-image"
               src="images/placeholder-image.jpg"
               alt="product-image"
@@ -98,17 +179,19 @@
           <a href="#"><img src="assets/Mail.svg" alt="mail-icon" /></a>
         </li>
         <li id="FTinstagram">
-          <a href="https://www.instagram.com/almostrara/"
+          <a href="https://www.instagram.com/almostrara/" target="_blank"
             ><img src="assets/Instagram.svg" alt="instagram-icon"
           /></a>
         </li>
         <li id="FTfacebook">
-          <a href="https://www.facebook.com/rasa.drukteinyte.7"
+          <a href="https://www.facebook.com/rasa.drukteinyte.7" target="_blank"
             ><img src="assets/Facebook.svg" alt="facebook-icon"
           /></a>
         </li>
         <li id="FTlinkedin">
-          <a href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
+          <a
+            href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
+            target="_blank"
             ><img src="assets/LinkedIn.svg" alt="linkedin-icon"
           /></a>
         </li>
