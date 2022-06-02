@@ -826,7 +826,9 @@ input[type="submit"]:hover {
 /*---------- EVENT PAGE ----------*/
 
 #event-page main {
-  margin: 0;
+  margin-inline: 0;
+  margin-bottom: 0;
+
   display: grid;
   justify-items: left;
   gap: var(--half-margin);
@@ -836,9 +838,9 @@ input[type="submit"]:hover {
   margin: var(--half-margin);
 }
 
-#event-page h1,
-#event-page h3 {
-  margin-left: var(--margin);
+#event-page main h1,
+#event-page main h3 {
+  margin-inline: var(--margin);
 }
 
 #event-page h3,
