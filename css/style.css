@@ -983,7 +983,16 @@ input[type="submit"]:hover {
 /*---------- SHOP PURCHASE ----------*/
 
 /* Mobile view */
-
+.p-flow-main{
+  margin: 0;
+}
+.steps{
+  width: 100%;
+  margin: var(--half-margin);
+}
+.img-step-1{
+  width: 100%;
+}
 .body-background{
   background-color: var(--color5);
 }
@@ -999,19 +1008,35 @@ input[type="submit"]:hover {
 
 .purchase-product {
   display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: var(--margin);
+  margin: var(--half-margin);
 }
 .purchase-card {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
   gap: var(--half-margin);
 
   text-decoration: none;
   color: var(--primary-color);
   margin: var(--half-margin);
 }
+.purch-img-container{
+  grid-column: 1;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+  justify-items: center;
+  align-items: center;
+}
 
-.purchase-card img {
+.purchase-image{
+  max-width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+
+}
+/* .purchase-card img {
   background-color: var(--accent-color);
   max-width: 50%;
   aspect-ratio: 1/1;
@@ -1020,18 +1045,24 @@ input[type="submit"]:hover {
   z-index: 1;
   grid-area: 1/1/2/2;
   box-shadow: var(--shadow);
-}
+} */
 
 .purchase-details{
-  margin-left: 40%;
-  margin-top: -35%;
+  /* margin-left: 40%;
+  margin-top: -35%; */
   font: var(--text-font);
   color: var(--primary-color);
+  grid-column: 2;
+  grid-row: 1;
 }
 
+/* .artwork-details {
+  align-self: center;
+} */
+
 .purchase-price{
-margin-left: 70%;
-margin-top: -20%;
+/* margin-left: 70%;
+margin-top: -20%; */
 font: var(--text-font);
 color: var(--primary-color);
 }
@@ -1062,20 +1093,27 @@ color: var(--primary-color);
 .text-steps{
   font: var(--text-font);
   color: var(--primary-color);
-  margin-left: -19%;
-  margin-top: -10%;
+ margin: var(--half-margin);
+
+  /* margin-left: -19%;
+  margin-top: -10%; */
 }
 
 /* Purchase- Personal Details form */
 
 .form-container-purchase{
-  background-color: var(--bg-color);
+  
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
   margin-bottom: 1rem;
 }
-
+.form-container-purchase-bg{
+  background-color: red;
+  width: 100%;
+  padding: 1rem;
+  grid-row: 4;
+}
 
 
 
