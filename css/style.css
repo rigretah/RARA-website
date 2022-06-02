@@ -1756,11 +1756,10 @@ input[type="submit"]:hover {
    #desktop{
      display: none;
    }
-   .portfolio-video-container{
-     background: url();
-     aspect-ratio: 16/9;
-    z-index: 5;
 
+   #mobile{
+     background-size: cover;
    }
- }
+
+}
  
