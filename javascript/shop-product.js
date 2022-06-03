@@ -38,9 +38,9 @@ function displayArtwork(artwork) {
     artwork._embedded["wp:term"][0][0].name;
   copy.querySelector(".product-description").textContent = artwork.description;
   copy.querySelector(
-    ".artwork-image"
+    ".product-image"
   ).src = `${artwork._embedded["wp:featuredmedia"][0].source_url}`;
-  copy.querySelector(".artwork-image").alt = artwork.title.rendered;
+  copy.querySelector(".product-image").alt = artwork.title.rendered;
 
   // select parent
   const parent = document.querySelector("main");
