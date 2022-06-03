@@ -202,7 +202,7 @@
     <!-- PURCHASE FLOW FORMS -->
 
     <div class="step-indicator">
-      <h3>Step 1 - Personal Details</h2>
+      <h3 class="step-title">Step 1 - Personal Details</h2>
         <img class="step-img" src="images/purchase-steps-1.svg" alt="step-indicator">
     </div>
     
@@ -237,13 +237,13 @@
       </form>
 
       <div class="buttons-purchase-form">
-        <Button class="yellow-button gray" type="submit">Cancel</Button>
-        <Button class="yellow-button" type="submit">Continue</Button>
+        <Button class="yellow-button gray step-1-back" onclick="window.location.href='shop.html'" >Back</Button>
+        <Button class="yellow-button step-1-button" type="submit">Continue</Button>
       </div>
 
     </section>
-   <template> 
-    <section class="step-2">
+
+    <section class="step-2 hide">
 
       <form class="form-purchase-flow" action="#" method="get">
         <div class="fields">
@@ -268,14 +268,13 @@
       </form>
 
       <div class="buttons-purchase-form">
-        <Button class="yellow-button gray" type="submit">Cancel</Button>
-        <Button class="yellow-button" type="submit">Continue</Button>
+        <Button class="yellow-button gray step-2-back" onclick="window.location.href='shop-purchase.html'" >Back</Button>
+        <Button class="yellow-button step-2-button" type="submit">Continue</Button>
       </div>
 
     </section>
- </template>
- <template>
-    <section class="step-3">
+
+    <section class="step-3 hide">
       <div class="overview-billing">
         <div class="billing-address">
           <h3>Billing Address</h3>
@@ -310,14 +309,13 @@
       </div>
 
       <div class="buttons-purchase-form">
-        <Button class="yellow-button gray" type="submit">Cancel</Button>
-        <Button class="yellow-button" type="submit">Complete purchase</Button>
+        <Button class="yellow-button gray step-3-back" onclick="window.location.href='shop.html'" >Cancel</Button>        
+        <Button class="yellow-button step-3-button" type="submit">Complete purchase</Button>
       </div>
 
     </section>
- </template>
-<template>
-    <section class="step-4">
+
+    <section class="step-4 hide">
       <div class="thank-you-container">
       <h2>Thank you for your purchase</h2>
 
@@ -330,7 +328,7 @@
     </div>
 
     </section>
-</template> 
+
   </main>
 
   <footer>
