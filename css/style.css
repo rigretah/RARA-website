@@ -145,6 +145,7 @@ header {
   border-top: none;
 
   position: fixed;
+  z-index: 4;
 }
 
 .cart-container {
