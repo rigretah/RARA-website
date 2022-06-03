@@ -158,24 +158,14 @@
         </ul>
       </div>
     </header>
-    <main class="p-flow-main">
-      <h1 class="purchase-h1">Your order</h1>
-      <a class="back-arrow" href="#">
-        <svg
-          width="17"
-          height="28"
-          viewBox="0 0 17 28"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M17 24.71L6.49258 14L17 3.29L13.7652 0L0 14L13.7652 28L17 24.71Z"
-            fill="black"
-          />
-        </svg>
-      </a>
 
-      <section class="order-container">
+    <main class="p-flow-main">
+
+      <!-- ORDER OVERVIEW -->
+
+      <h1 class="purchase-h1">Your order</h1>
+
+      <div class="order-container">
         <div class="order-card">
           <div class="order-details">
             <img
@@ -185,8 +175,8 @@
             />
 
             <div class="order-text">
-              <h4>Design</h4>
-              <h3>Artwork title</h3>
+              <h4>Illustration</h4>
+              <h3>Enlightened hedonism</h3>
             </div>
 
             <img
@@ -195,180 +185,152 @@
               alt="delete-icon"
             />
           </div>
+          <p class="order-price">DKK 169</p>
         </div>
-        <p class="order-price">DKK 500</p>
-      </div>
+
+        <div class="shipping-info">
+          <h4>Standard Shipping & Returns</h4>
+          <p>DKK 100</p>
+        </div>
 
         <div class="order-total">
           <h4>Total</h4>
-          <p>DKK 600</p>
+          <p>DKK 269</p>
         </div>
-      </section>
-
-    <!-- COTI & GRETA -->
-    <!-- Purchase flow -->
-
-    <section id="form-bg-1">
-      <div class="step-indicator">
-        <h3>Step 1 - Personal Details</h2>
-          <img class="step-img" src="images/purchase-steps-1.svg" alt="">
       </div>
 
+    <!-- PURCHASE FLOW FORMS -->
+
+    <div class="step-indicator">
+      <h3>Step 1 - Personal Details</h2>
+        <img class="step-img" src="images/purchase-steps-1.svg" alt="step-indicator">
+    </div>
+    
+    <section class="step-1">
       <form class="form-purchase-flow" action="#" method="get">
+
         <div class="fields">
           <label class="labelStyle" for="name">Full Name </label>
-          <input name="name" type="text" id="name" placeholder="Name and Surname" required>
+          <input name="name" type="text" id="name" placeholder="Alan Applewood" required>
         </div>
+
         <div class="fields">
-          <label class="labelStyle" for="contact">Address</label>
-          <input name="contact" type="text" id="contact" placeholder="fx. Street, 40">
+          <label class="labelStyle" for="address">Address</label>
+          <input name="address" type="text" id="address" placeholder="Nørrebrogade 72">
         </div>
+
         <div class="fields">
-          <label class="labelStyle" for="name">Postcode</label>
-          <input name="postcode" type="text" id="contact" class="postcode" placeholder="fx. 2300">
+          <label class="labelStyle" for="postcode">Postcode</label>
+          <input name="postcode" type="text" id="postcode" class="postcode" class="short" placeholder="2200">
         </div>
+
         <div class="fields">
-          <label class="labelStyle" for="contact">Email</label>
-          <input name="contact" type="text" id="contact" placeholder="fx. email@example.com" required>
+          <label class="labelStyle" for="email">Email</label>
+          <input name="email" type="text" id="email" placeholder="email@example.com" required>
         </div>
+
         <div class="fields">
-          <label class="labelStyle" for="contact">Phone Number</label>
-          <input name="contact" type="text" id="contact" placeholder="fx. +45 00 00 00 00" required>
+          <label class="labelStyle" for="phone">Phone Number</label>
+          <input name="phone" type="text" id="phone" placeholder="+45 35275678" required>
         </div>
 
-
-        <div class="buttons-purchase-form">
-
-          <Button class="button-cancel" type="submit">Cancel</Button>
-
-
-          <Button class="button-next yellow-button" type="submit">Submit</Button>
-
-        </div>
       </form>
 
-    </section>
-
-    <section id="form-bg-2">
-      <div class="step-indicator">
-        <h3>Step 2 - Payment Information</h2>
-          <img class="step-img" src="images/purchase-steps-2.svg" alt="">
+      <div class="buttons-purchase-form">
+        <Button class="yellow-button gray" type="submit">Cancel</Button>
+        <Button class="yellow-button" type="submit">Continue</Button>
       </div>
+
+    </section>
+   <template> 
+    <section class="step-2">
 
       <form class="form-purchase-flow" action="#" method="get">
         <div class="fields">
-          <label class="labelStyle" for="name">Card Name </label>
-          <input name="name" type="text" id="name" placeholder="Name and Surname" required>
+          <label class="labelStyle" for="cardname">Card Name</label>
+          <input name="cardname" type="text" id="cardname" placeholder="Alan Applewood" required>
         </div>
         <div class="fields">
-          <label class="labelStyle" for="contact">Card Number</label>
-          <input name="contact" type="text" id="contact" placeholder="fx. Street, 40">
+          <label class="labelStyle" for="cardnumber">Card Number</label>
+          <input name="cardnumber" type="text" id="cardnumber" placeholder="5567 4458">
         </div>
-        <div class="inline-div">
-          <div class="fields inline">
-            <label class="labelStyle" for="date">Exp. Date</label>
-            <input name="postcode" type="text" id="date" class="postcode" placeholder="fx. MM/YY">
-          </div>
-          <div class="fields inline">
-            <label class="labelStyle" for="date">CVC</label>
-            <input name="cvc" type="text" id="date" class="postcode" placeholder="fx. 012">
-          </div>
+        
+        <div class="fields">
+          <label class="labelStyle" for="expdate">Exp. Date</label>
+          <input name="expdate" type="text" id="expdate" placeholder="01/30">
         </div>
 
+        <div class="fields">
+          <label class="labelStyle" for="cvc">CVC</label>
+          <input name="cvc" type="text" id="cvc" placeholder="012">
         </div>
-        <div class="buttons-purchase-form">
-
-          <Button class="button-cancel" type="submit">Cancel</Button>
-
-
-          <Button class="button-next yellow-button" type="submit">Submit</Button>
-
-        </div>
-
 
       </form>
 
-    </section>
-
-    <section id="form-bg-3">
-      <div class="step-indicator">
-        <h3>Step 3 - Review Order</h2>
-          <img class="step-img" src="images/purchase-steps-3.svg" alt="">
+      <div class="buttons-purchase-form">
+        <Button class="yellow-button gray" type="submit">Cancel</Button>
+        <Button class="yellow-button" type="submit">Continue</Button>
       </div>
-
-      <div class="overview-billing">
-        <h3>Billing Address</h3>
-
-        <p id="fullName">Alan Applewood</p>
-        <p id="address">Nørrebrogade 72</p>
-        <p id="postcode">2200</p>
-        <p>Copenhagen, Denmark</p> <!-- hard code -->
-      </div>
-
-      <div class="overview-billing">
-        <h3>Shipping Address</h3>
-
-        <p id="fullName">Alan Applewood</p>
-        <p id="address">Nørrebrogade 72</p>
-        <p id="postcode">2200</p>
-        <p>Copenhagen, Denmark</p> <!-- hard code -->
-      </div>
-
-      <div class="overview-billing">
-        <h3>Contact</h3>
-
-        <p id="emailAddress">alan@applewood.com</p>
-        <p id="phoneNumber">+45 35275678</p>
-      </div>
-
-      <div class="overview-billing">
-        <h3>Payment</h3>
-
-        <img src="images/visa-icon.svg" alt="">
-        <p id="emailAddress">VISA DEBIT</p>
-        <p id="phoneNumber">Exp. Date <span>01/30</span></p>
-      </div>
-
-      </div>
-
-      <div class="buttons-purchase-form-3">
-
-        <Button class="button-next yellow-button" type="submit">Complete Purchase</Button>
-
-        <Button class="button-cancel" type="submit">Cancel</Button>
-
-      </div>
-
-
-      </form>
 
     </section>
-
-    <section id="form-bg-4">
-      <div class="step-indicator">
-        <h3>Step 3 - Review Order</h2>
-          <img class="step-img" src="images/purchase-steps-4.svg" alt="">
-      </div>
-
+ </template>
+ <template>
+    <section class="step-3">
       <div class="overview-billing">
-        thank you for your purchase
+        <div class="billing-address">
+          <h3>Billing Address</h3>
+
+          <p id="fullName">Alan Applewood</p>
+          <p id="address">Nørrebrogade 72</p>
+          <p id="postcode">2200</p>
+          <p>Copenhagen, Denmark</p>
+        </div>
+      
+        <div class="shipping-address">
+          <h3>Shipping Address</h3>
+
+          <p id="fullName">Alan Applewood</p>
+          <p id="address">Nørrebrogade 72</p>
+          <p id="postcode">2200</p>
+          <p>Copenhagen, Denmark</p>
+        </div>
+
+        <div class="contact-info">  
+          <h3>Contact</h3>
+          <p id="emailAddress">alan@applewood.com</p>
+          <p id="phoneNumber">+45 35275678</p>
+        </div>
+     
+        <div class="payment-info">
+          <h3>Payment</h3>
+          <img class="payment-method" src="images/visa-icon.svg" alt="payment-method">
+          <p id="emailAddress">VISA DEBIT</p>
+          <p id="phoneNumber">Exp. Date 01/30</p>
+        </div>
       </div>
 
-    
-
-      <div class="buttons-purchase-form-3">
-
-        <Button class="button-next yellow-button" type="submit">Complete Purchase</Button>
-
-        <Button class="button-cancel" type="submit">Cancel</Button>
-
+      <div class="buttons-purchase-form">
+        <Button class="yellow-button gray" type="submit">Cancel</Button>
+        <Button class="yellow-button" type="submit">Complete purchase</Button>
       </div>
-
-
-      </form>
 
     </section>
+ </template>
+<template>
+    <section class="step-4">
+      <div class="thank-you-container">
+      <h2>Thank you for your purchase</h2>
 
+      <div class="payment-approved">
+        <h3>Your payment has been approved</h3>
+        <img src="images/icons/checkmark.svg" alt="checkmark-icon">
+      </div>
+
+      <a class="yellow-button" href="shop.html">Back to shop</a>
+    </div>
+
+    </section>
+</template> 
   </main>
 
   <footer>
@@ -393,73 +355,6 @@
     </ul>
   </footer>
 
-  <script src="/javascript/shop-list.js"></script>
-</body>
-
     <script src="/javascript/shop-purchase.js"></script>
   </body>
 </html>
-
-<!-- <div class="purchase-product"> -->
-
-<!-- <div class="purchase-card">
-        <div class="purch-img-container">
-          <img class="purchase-image" src="images/placeholder-image.jpg" alt="product-image" />
-        </div>
-        
-        <div class="purchase-details">
-          <div class="artwork-details">
-            <p>DESIGN</p>
-            <h3>ARTWORK TITLE</h3>
-          </div>
-        <div  class="trash-img" >
-          <img src="images/icons/Trash.svg" alt="">
-        </div>
-      
-      
-        <div class="purchase-price">
-          <p>DKK 500</p>
-        </div>
-        <div class="shipping-info">
-          <p>Standard Shipping & Returns</p>
-        </div>
-        <div class="shipping-price">
-         <p>DKK 100</p>
-        </div>
-        <div class="shipping-total">
-          <p>DKK 600</p>
-        </div>
-      </div> -->
-
-<!-- FORM FLOW STEPS -->
-<!-- <div class="NO TOUCH">
-      <div class="text-steps">
-        <h3>Step 1 - PERSONAL DETAILS</h3>
-      </div>
-      <div class="steps"><img class="img-step-1" src="images/purchase-steps-1.svg" alt=""></div>
-    
-
-
-      <div class="form-container-purchase">
-        <form class="form-purchase-flow" action="#" method="get">
-          <div class="form-name-purchase">
-            <label for="name">Your Name</label>
-            <input name="name" type="text" id="name" placeholder="James Smith ">
-          </div>
-        <div class="form-name-purchase">
-          <label for="contact">Your Email</label>
-          <input name="contact" type="text" id="contact" placeholder="someone@example.com">
-        </div>
-        <div class="form-name-purchase">
-          <label for="Address">Your Address </label>
-          <input name="Address" type="text" id="name" placeholder="Your Address ">
-        </div>
-        <div class="form-name-purchase">
-          <label for="PostCode">Your Post Code</label>
-          <input name="PostCode" type="text" id="name" placeholder="Post code ">
-        </div>
-        <div class="row">
-          <input class="yellow-button" type="submit" value="Submit">
-        </div>
-        </form>
-      </div> -->
