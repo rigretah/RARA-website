@@ -108,7 +108,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   z-index: 5;
-  width: 98%;
+  width: calc(100% - var(--half-margin));
   background-color: var(--accent-color);
   box-shadow: var(--shadow);
   overflow: visible;
@@ -139,13 +139,9 @@ header {
   max-width: 100%;
   justify-items: center;
 
-  border-style: solid;
-  border-width: 2px;
-  border-inline: none;
-  border-top: none;
-
   position: fixed;
   z-index: 4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .cart-container {
@@ -176,6 +172,7 @@ header {
   width: 100%;
   justify-content: space-between;
   gap: var(--margin);
+  justify-content: center;
 }
 
 .cart-button {
@@ -1189,18 +1186,22 @@ input[type="submit"]:hover {
 .order-image {
   aspect-ratio: 1/1;
   object-fit: cover;
-  box-shadow: var(--shadow);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .order-card {
   display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-
+.close-cart {
+  justify-self: end;
+}
 .order-details {
   display: grid;
   grid-template-columns: 1fr 2fr 0.5fr;
   gap: var(--half-margin);
   align-items: center;
+  grid-column: 1/3;
 }
 
 .order-container h4 {
@@ -1219,6 +1220,7 @@ input[type="submit"]:hover {
 
 .order-price {
   justify-self: end;
+  grid-column: 1/3;
 }
 
 .shipping-info {
@@ -1395,6 +1397,17 @@ input#date{
   }
   .burger-menu-popUp h2 {
     font-size: 1.2rem;
+  }
+  .shop-navbar a {
+    grid-column: 1/2;
+    justify-self: left;
+  }
+
+  /*shop navigation*/
+  .cart-drop-down {
+    width: 50%;
+    justify-self: flex-end;
+    border-end-start-radius: 0.3rem;
   }
 
   /*------- footer -------*/
@@ -1784,11 +1797,6 @@ input#date{
     gap: var(--margin);
     justify-items: left;
   }
-
-  .shop-product main a:last-of-type {
-    justify-self: right;
-    margin-inline: 0;
-  }
 }
 
 /*----desktop screen size----*/
@@ -1854,6 +1862,20 @@ input#date{
     display: none;
   }
 
+  /*shop navigation*/
+  .cart-drop-down {
+    width: 35%;
+    justify-self: flex-end;
+  }
+  .cart-drop-down h3 {
+    font-size: 1rem;
+  }
+  .cart-drop-down h4 {
+    font-size: 0.8rem;
+  }
+  .cart-drop-down a {
+    font-size: 0.8rem;
+  }
   /*------- general -------*/
   p {
     font-size: 1rem;
@@ -2087,7 +2109,7 @@ input#date{
   .shop-product main {
     gap: var(--half-margin) var(--double-margin);
     margin: 0;
-    margin-top: 3.7rem;
+    margin-top: 3rem;
     margin-right: var(--double-margin);
     grid-template-columns: 1fr 1fr;
   }
@@ -2095,13 +2117,17 @@ input#date{
   .shop-product .side-arrow {
     margin-top: var(--half-margin);
   }
-  .shop-product main a:last-of-type {
-    justify-self: right;
-    margin-inline: 0;
-    align-self: center;
+
+  .product-category {
+    align-self: flex-end;
   }
-  .shop-product main h2 {
-    align-self: center;
+  .product-title {
+    align-self: flex-start;
+  }
+
+  .buy-button {
+    align-self: flex-start;
+    margin-left: 0;
   }
 }
 
