@@ -1458,6 +1458,7 @@ input[type="submit"]:hover {
     display: grid;
     justify-items: end;
     justify-self: right;
+    text-align: right;
   }
   .left {
     grid-column: 1/2;
