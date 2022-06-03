@@ -247,6 +247,12 @@ p {
 /*---------- SIDE ARROW ----------*/
 .back-arrow {
   margin-bottom: var(--half-margin);
+  margin-top: var(--half-margin);
+  display: flex;
+  align-items: center;
+  gap: var(--half-margin);
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .side-arrow {
@@ -1048,11 +1054,6 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-.back-arrow {
-  margin-bottom: var(--half-margin);
-  justify-self: left;
-}
-
 /* Order basket overview */
 
 .order-container {
@@ -1191,6 +1192,9 @@ input[type="submit"]:hover {
 
   main {
     margin-top: calc(var(--margin) * 3);
+  }
+  .back-arrow {
+    margin-bottom: var(--margin);
   }
   /*------- index page -------*/
   .index-body {
@@ -1486,11 +1490,6 @@ input[type="submit"]:hover {
     gap: var(--half-margin);
   }
 
-  .back-arrow {
-    margin: 0;
-    margin-bottom: var(--margin);
-  }
-
   #event-page h1,
   #event-page h3 {
     margin-left: 0;
@@ -1731,8 +1730,6 @@ input[type="submit"]:hover {
   }
   .main-portfolio-artwork .back-arrow {
     grid-column: 2/3;
-    margin: 0;
-    margin-top: var(--half-margin);
   }
   .artwork-container {
     margin: 0;
