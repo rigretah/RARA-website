@@ -108,7 +108,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   z-index: 5;
-  width: 98%;
+  width: calc(100% - var(--half-margin));
   background-color: var(--accent-color);
   box-shadow: var(--shadow);
   overflow: visible;
