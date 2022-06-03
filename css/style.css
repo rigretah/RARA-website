@@ -134,11 +134,10 @@ header {
 
 .cart-drop-down {
   background-color: var(--bg-color);
-  padding: 2em;
-  padding-top: var(--double-margin);
   margin-top: var(--margin);
   display: grid;
   max-width: 100%;
+  justify-items: center;
 
   border-style: solid;
   border-width: 2px;
@@ -146,6 +145,18 @@ header {
   border-top: none;
 
   position: fixed;
+  z-index: 4;
+}
+
+.cart-container {
+  margin: var(--margin);
+  max-width: 100%;
+}
+
+.cart-drop-down h1 {
+  font-family: var(--header-font);
+  margin-top: var(--half-margin);
+  margin-bottom: var(--margin);
 }
 
 .cart-drop-down h4 {
@@ -158,10 +169,46 @@ header {
   text-transform: uppercase;
 }
 
-.cart-drop-down a {
-  justify-self: center;
-  width: 13em;
+.cart-buttons {
   margin-top: var(--margin);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: var(--margin);
+}
+
+.cart-button {
+  align-self: center;
+  font-family: var(--text-font);
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+  padding-inline: var(--half-margin);
+  padding-top: var(--half-margin);
+  padding-bottom: var(--half-margin);
+}
+
+.cart-button:hover {
+  background-image: url(../images/icons/hover-effects/Hover-effect-rectangualr-black.svg);
+  background-size: 8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cart-button:active {
+  background-image: url(../images/icons/hover-effects/Hover-effect-rectangualr-yellow.svg);
+  background-size: 8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: var(--accent-color);
+  background-color: var(--primary-color);
 }
 
 /*---------- FOOTER ----------*/
@@ -1062,9 +1109,6 @@ input[type="submit"]:hover {
   display: grid;
   gap: var(--half-margin);
   justify-items: left;
-}
-.shop-product main a:last-of-type {
-  justify-self: center;
 }
 
 /*---------- SHOP PURCHASE ----------*/

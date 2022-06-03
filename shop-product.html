@@ -23,40 +23,47 @@
       </nav>
 
       <div class="cart-drop-down hide">
-        <div class="order-card">
-          <div class="order-details">
-            <img
-              class="order-image"
-              src="images/enlightened-hedonism.jpeg"
-              alt="product-image"
-            />
+        <div class="cart-container">
+          <div class="order-card">
+            <h1>Your cart</h1>
+            <div class="order-details">
+              <img
+                class="order-image"
+                src="images/enlightened-hedonism.jpeg"
+                alt="product-image"
+              />
 
-            <div class="order-text">
-              <h4>Illustration</h4>
-              <h3>Enlightened hedonism</h3>
+              <div class="order-text">
+                <h4>Illustration</h4>
+                <h3>Enlightened hedonism</h3>
+              </div>
+
+              <img
+                class="delete"
+                src="images/icons/Trash.svg"
+                alt="delete-icon"
+              />
             </div>
-
-            <img
-              class="delete"
-              src="images/icons/Trash.svg"
-              alt="delete-icon"
-            />
+            <p class="order-price">DKK 169</p>
           </div>
-          <p class="order-price">DKK 169</p>
-        </div>
 
-        <div class="shipping-info">
-          <h4>Standard Shipping & Returns</h4>
-          <p>DKK 100</p>
-        </div>
+          <div class="shipping-info">
+            <h4>Standard Shipping & Returns</h4>
+            <p>DKK 100</p>
+          </div>
 
-        <div class="order-total">
-          <h4>Total</h4>
-          <p>DKK 269</p>
+          <div class="order-total">
+            <h4>Total</h4>
+            <p>DKK 269</p>
+          </div>
+
+          <div class="cart-buttons">
+            <div class="cart-button gray close">Close cart</div>
+            <a class="cart-button" href="shop-purchase.html"
+              >Proceed to purchase</a
+            >
+          </div>
         </div>
-        <a class="yellow-button cart-button" href="shop-purchase.html"
-          >Proceed to purchase</a
-        >
       </div>
 
       <div class="burger-menu-popUp hide">
@@ -167,7 +174,7 @@
         <h2 class="product-title yellowBG">Artwork Title</h2>
         <p class="product-description">Description</p>
         <p class="product-price">Price</p>
-        <a class="yellow-button" href="#">Buy me</a>
+        <div class="yellow-button buy-button">Buy me</div>
       </template>
     </main>
 

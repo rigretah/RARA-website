@@ -12,14 +12,60 @@
   </head>
   <body id="shop-list">
     <header>
-      <nav class="navbar">
+      <nav class="shop-navbar">
         <a class="header-logo-full" href="portfolio.html"
           ><img
             src="images/logo/rara-logo-full-black.svg"
             alt="header-logo-horizontal"
         /></a>
+        <img class="cart-icon" src="images/icons/cart.svg" alt="cart-icon" />
         <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
       </nav>
+
+      <div class="cart-drop-down hide">
+        <div class="cart-container">
+          <div class="order-card">
+            <h1>Your cart</h1>
+            <div class="order-details">
+              <img
+                class="order-image"
+                src="images/enlightened-hedonism.jpeg"
+                alt="product-image"
+              />
+
+              <div class="order-text">
+                <h4>Illustration</h4>
+                <h3>Enlightened hedonism</h3>
+              </div>
+
+              <img
+                class="delete"
+                src="images/icons/Trash.svg"
+                alt="delete-icon"
+              />
+            </div>
+            <p class="order-price">DKK 169</p>
+          </div>
+
+          <div class="shipping-info">
+            <h4>Standard Shipping & Returns</h4>
+            <p>DKK 100</p>
+          </div>
+
+          <div class="order-total">
+            <h4>Total</h4>
+            <p>DKK 269</p>
+          </div>
+
+          <div class="cart-buttons">
+            <div class="cart-button gray close">Close cart</div>
+            <a class="cart-button" href="shop-purchase.html"
+              >Proceed to purchase</a
+            >
+          </div>
+        </div>
+      </div>
+
       <div class="burger-menu-popUp hide">
         <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
         <img
@@ -27,62 +73,61 @@
           src="images/logo/rara-logo-square-black.svg"
           alt="header-logo-square"
         />
-  
+
         <ul>
           <li class="left brg-home">
             <a href="portfolio.html">
               <h2>Home</h2>
             </a>
           </li>
-            <li class="left brg-portfolio">
-              <a href="portfolio-list.html"><h2>Porfolio</h2></a>
-               <ul class="extended-menu">
-                 <a href="portfolio-list.html">
-                   <li>See all</li>
-                 </a>
-                 <a href="portfolio-list.html?categories=4">
-                   <li>Illustration</li>
-                 </a>
-                 <a href="portfolio-list.html?categories=3">
-                   <li>Digital Art</li>
-                 </a>
-                 <a href="portfolio-list.html?categories=8">
-                   <li>Merchandise</li>
-                 </a>
-                 <a href="portfolio-list.html?categories=6">
-                   <li>Design</li>
-                 </a>
-                 <a href="portfolio-list.html?categories=7">
-                  <li>Consulting</li>
-                </a>
-               </ul>
-            </li>
-          
-         
-            <li class="right brg-shop">
-               <a href="shop.html"><h2>Shop</h2> </a>
-               <ul class="extended-menu right">
-                <a href="shop.html">
-                  <li>See all</li>
-                </a>
-                <a href="shop.html?categories=4">
-                  <li>Illustration</li>
-                </a>
-                <a href="shop.html?categories=3">
-                  <li>Digital Art</li>
-                </a>
-                <a href="shop.html?categories=8">
-                  <li>Merchandise</li>
-                </a>
-                <a href="shop.html?categories=6">
-                  <li>Design</li>
-                </a>
-              </ul>
-              </li>
-         
-         
-            <li class="left brg-events"> <a href="eventlist.html"><h2>Events</h2></a>
-            <ul class="extended-menu ">
+          <li class="left brg-portfolio">
+            <a href="portfolio-list.html"><h2>Porfolio</h2></a>
+            <ul class="extended-menu">
+              <a href="portfolio-list.html">
+                <li>See all</li>
+              </a>
+              <a href="portfolio-list.html?categories=4">
+                <li>Illustration</li>
+              </a>
+              <a href="portfolio-list.html?categories=3">
+                <li>Digital Art</li>
+              </a>
+              <a href="portfolio-list.html?categories=8">
+                <li>Merchandise</li>
+              </a>
+              <a href="portfolio-list.html?categories=6">
+                <li>Design</li>
+              </a>
+              <a href="portfolio-list.html?categories=7">
+                <li>Consulting</li>
+              </a>
+            </ul>
+          </li>
+
+          <li class="right brg-shop">
+            <a href="shop.html"><h2>Shop</h2> </a>
+            <ul class="extended-menu right">
+              <a href="shop.html">
+                <li>See all</li>
+              </a>
+              <a href="shop.html?categories=4">
+                <li>Illustration</li>
+              </a>
+              <a href="shop.html?categories=3">
+                <li>Digital Art</li>
+              </a>
+              <a href="shop.html?categories=8">
+                <li>Merchandise</li>
+              </a>
+              <a href="shop.html?categories=6">
+                <li>Design</li>
+              </a>
+            </ul>
+          </li>
+
+          <li class="left brg-events">
+            <a href="eventlist.html"><h2>Events</h2></a>
+            <ul class="extended-menu">
               <a href="eventlist.html">
                 <li>See all</li>
               </a>
@@ -90,10 +135,10 @@
                 <li>Current</li>
               </a>
             </ul>
-            </li>
-          
-          
-            <li class="right brg-about"><a href="about.html"><h2>About Me</h2></a>
+          </li>
+
+          <li class="right brg-about">
+            <a href="about.html"><h2>About Me</h2></a>
             <ul class="extended-menu right">
               <a href="about.html">
                 <li>About</li>
@@ -102,11 +147,13 @@
                 <li>Contacts</li>
               </a>
             </ul>
-            </li>
-          
-           <li class="brg-contacts"><a class="brg-menu-contacts" href="#">
-           <h2>Contacts</h2>
-          </a></li>
+          </li>
+
+          <li class="brg-contacts">
+            <a class="brg-menu-contacts" href="#">
+              <h2>Contacts</h2>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
