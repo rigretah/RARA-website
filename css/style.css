@@ -361,6 +361,12 @@ p {
 /*---------- SIDE ARROW ----------*/
 .back-arrow {
   margin-bottom: var(--half-margin);
+  margin-top: var(--half-margin);
+  display: flex;
+  align-items: center;
+  gap: var(--half-margin);
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .side-arrow {
@@ -576,7 +582,12 @@ p {
   grid-template-columns: 1fr;
   justify-items: center;
 }
-
+.portfolio-instagram-container div {
+  margin-top: var(--margin);
+  display: flex;
+  gap: var(--half-margin);
+  flex-direction: column;
+}
 .portfolio-instagram-container h4 {
   margin-top: var(--half-margin);
 }
@@ -599,12 +610,19 @@ p {
   background-size: cover;
   background-position: center;
 }
-.portfolio-instagram-container img {
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  margin-top: var(--half-margin);
-}
 
+.instagram-post {
+  display: block;
+  aspect-ratio: 1/1;
+  align-self: center;
+}
+.instagram-post img {
+  aspect-ratio: 1/1;
+  max-width: 100%;
+}
+.instagram-post img:hover {
+  filter: opacity(50%);
+}
 /*---------- PORTFOLIO - LIST ----------*/
 
 .main-portfolio-list {
@@ -1159,11 +1177,6 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-.back-arrow {
-  margin-bottom: var(--half-margin);
-  justify-self: left;
-}
-
 /* Order basket overview */
 
 .order-container {
@@ -1304,6 +1317,9 @@ input[type="submit"]:hover {
   main {
     margin-top: calc(var(--margin) * 3);
   }
+  .back-arrow {
+    margin-bottom: var(--margin);
+  }
   /*------- index page -------*/
   .index-body {
     display: grid;
@@ -1371,7 +1387,7 @@ input[type="submit"]:hover {
   }
 
   .portfolio-instagram-container div {
-    display: flex;
+    flex-direction: row;
     gap: var(--half-margin);
   }
 
@@ -1598,11 +1614,6 @@ input[type="submit"]:hover {
     gap: var(--half-margin);
   }
 
-  .back-arrow {
-    margin: 0;
-    margin-bottom: var(--margin);
-  }
-
   #event-page h1,
   #event-page h3 {
     margin-left: 0;
@@ -1650,7 +1661,7 @@ input[type="submit"]:hover {
   }
 
   /*------- shop page -------*/
-  .artwork-image {
+  .product-image {
     max-width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -1809,9 +1820,7 @@ input[type="submit"]:hover {
     margin: 0 calc(var(--double-margin) * 2);
     margin-bottom: calc(var(--double-margin) + var(--margin));
   }
-  .portfolio-instagram-container img {
-    margin-top: var(--margin);
-  }
+
   .portfolio-instagram-container div {
     gap: var(--margin);
   }
@@ -1833,6 +1842,12 @@ input[type="submit"]:hover {
   .portfolio-list-card {
     page-break-inside: avoid;
   }
+  .portfolio-list-category {
+    font-size: 0.8rem;
+  }
+  .portfolio-list-title {
+    font-size: 1.5rem;
+  }
 
   /*------- portfolio artwork -------*/
   .main-portfolio-artwork {
@@ -1843,8 +1858,6 @@ input[type="submit"]:hover {
   }
   .main-portfolio-artwork .back-arrow {
     grid-column: 2/3;
-    margin: 0;
-    margin-top: var(--half-margin);
   }
   .artwork-container {
     margin: 0;
@@ -1854,7 +1867,7 @@ input[type="submit"]:hover {
   }
   .artwork-container .artwork-image {
     width: 100%;
-    margin-top: -4rem;
+    margin-top: -6rem;
     aspect-ratio: 185/ 220;
     object-fit: cover;
     object-position: top;
@@ -1954,7 +1967,7 @@ input[type="submit"]:hover {
   }
 
   /*------- shop page -------*/
-  .artwork-image {
+  .product-image {
     margin: 0;
     grid-column: 1/2;
     grid-row: 1/7;
