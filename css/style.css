@@ -139,13 +139,9 @@ header {
   max-width: 100%;
   justify-items: center;
 
-  border-style: solid;
-  border-width: 2px;
-  border-inline: none;
-  border-top: none;
-
   position: fixed;
   z-index: 4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .cart-container {
@@ -176,6 +172,7 @@ header {
   width: 100%;
   justify-content: space-between;
   gap: var(--margin);
+  justify-content: center;
 }
 
 .cart-button {
@@ -1145,13 +1142,17 @@ input[type="submit"]:hover {
 
 .order-card {
   display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-
+.close-cart {
+  justify-self: end;
+}
 .order-details {
   display: grid;
   grid-template-columns: 1fr 2fr 0.5fr;
   gap: var(--half-margin);
   align-items: center;
+  grid-column: 1/3;
 }
 
 .order-container h4 {
@@ -1170,6 +1171,7 @@ input[type="submit"]:hover {
 
 .order-price {
   justify-self: end;
+  grid-column: 1/3;
 }
 
 .shipping-info {
@@ -1240,12 +1242,16 @@ input[type="submit"]:hover {
   .burger-menu-popUp h2 {
     font-size: 1.2rem;
   }
+  .shop-navbar a {
+    grid-column: 1/2;
+    justify-self: left;
+  }
 
   /*shop navigation*/
   .cart-drop-down {
     width: 50%;
     justify-self: flex-end;
-    border-inline: solid 2px var(--primary-color);
+    border-end-start-radius: 0.3rem;
   }
 
   /*------- footer -------*/
@@ -1599,9 +1605,8 @@ input[type="submit"]:hover {
 
   /*shop navigation*/
   .cart-drop-down {
-    width: 25%;
+    width: 35%;
     justify-self: flex-end;
-    border-inline: solid 2px var(--primary-color);
   }
   .cart-drop-down h3 {
     font-size: 1rem;
