@@ -784,7 +784,7 @@ img.about-welcome-img {
 #about_description > p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  text-align: justify; 
+  text-align: justify;
   font-size: 1.2rem;
 }
 
@@ -1264,69 +1264,66 @@ input[type="submit"]:hover {
 
 #form-bg-1,
 #form-bg-2,
-#form-bg-3{
-  margin: 0; 
+#form-bg-3 {
+  margin: 0;
   width: 100%;
   background-color: var(--bg-color);
 }
 
-#form-bg-4{
+#form-bg-4 {
   margin: 0;
   width: 100%;
   background-color: var(--color5);
 }
 
-
-.step-indicator{
- display: flex;
- flex-direction: column;
- margin: var(--half-margin);
+.step-indicator {
+  display: flex;
+  flex-direction: column;
+  margin: var(--half-margin);
 }
-.step-img{
+.step-img {
   width: 100%;
   margin-bottom: 1rem;
-
 }
-.step-indicator > h3{
+.step-indicator > h3 {
   margin: var(--half-margin);
 }
 
-.labelStyle{
+.labelStyle {
   font-family: var(--text-font);
   margin-bottom: 0.25rem;
 }
-.form-purchase-flow{
-/* width: 100%; */
+.form-purchase-flow {
+  /* width: 100%; */
   margin: var(--half-margin);
 }
-input#contact.postcode{
+input#contact.postcode {
   width: 40%;
 }
 input.name[type="text"],
-input.name[type=email]{
+input.name[type="email"] {
   width: inherit;
   padding: 0.5rem 0.5rem;
-
 }
-.fields{
+.fields {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: var(--half-margin);
 }
 
-.inline-div{
+.inline-div {
   display: flex;
 }
-.inline{
+.inline {
   justify-content: space-evenly;
   width: 100%;
 }
-input#date{
+input#date {
   width: 100%;
 }
 
-.button-cancel{
+.button-cancel {
   font-family: var(--text-font);
   font-weight: bold;
   color: var(--primary-color);
@@ -1342,20 +1339,19 @@ input#date{
   box-shadow: var(--shadow);
 }
 
-.button-cancel:hover{
-  
+.button-cancel:hover {
   background-image: url(../images/icons/hover-effects/Hover-effect-rectangualr-black.svg);
   background-size: 8rem;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.buttons-purchase-form{
+.buttons-purchase-form {
   display: flex;
   justify-content: space-between;
 }
 
-.buttons-purchase-form-3{
+.buttons-purchase-form-3 {
   display: flex;
   flex-direction: column; /* It looks weird, but this is how it is made in Figma */
   align-items: center;
@@ -1363,7 +1359,7 @@ input#date{
 
 /* step 3 purchase flow */
 
-.overview-billing{
+.overview-billing {
   margin: var(--double-margin);
 }
 
