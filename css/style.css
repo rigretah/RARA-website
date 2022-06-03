@@ -108,7 +108,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   z-index: 5;
-  width: 98%;
+  width: calc(100% - var(--half-margin));
   background-color: var(--accent-color);
   box-shadow: var(--shadow);
   overflow: visible;
@@ -1780,6 +1780,21 @@ input[id="cvc"] {
     justify-self: right;
     margin-inline: 0;
   }
+
+  /*------- shop purchase page-------*/
+  .p-flow-main {
+    margin-inline: calc(var(--half-margin) + var(--double-margin));
+    margin-top: calc(var(--half-margin) + var(--double-margin));
+  }
+
+  .p-flow-main .yellow-button {
+    padding-inline: var(--margin);
+    padding-top: var(--half-margin);
+    padding-bottom: var(--half-margin);
+  }
+  .buttons-purchase-form {
+    justify-content: space-evenly;
+  }
 }
 
 /*----desktop screen size----*/
@@ -2094,6 +2109,8 @@ input[id="cvc"] {
   .shop-product main h2 {
     align-self: center;
   }
+
+  /*------- shop purchase page-------*/
 }
 
 /*----wide screen size----*/
