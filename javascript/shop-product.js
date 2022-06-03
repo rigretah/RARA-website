@@ -11,6 +11,15 @@ function hideBRGMenu() {
   document.querySelector(".burger-menu-popUp").classList.add("hide");
 }
 
+// ------ CART DROPDOWN -------
+
+document.querySelector(".cart-icon").addEventListener("click", showCart);
+document.querySelector(".close").addEventListener("click", showCart);
+
+function showCart() {
+  document.querySelector(".cart-drop-down").classList.toggle("hide");
+}
+
 // ------ DISPLAYING DATA ------
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -41,6 +50,9 @@ function displayArtwork(artwork) {
     ".artwork-image"
   ).src = `${artwork._embedded["wp:featuredmedia"][0].source_url}`;
   copy.querySelector(".artwork-image").alt = artwork.title.rendered;
+
+  // button
+  copy.querySelector(".buy-button").addEventListener("click", showCart);
 
   // select parent
   const parent = document.querySelector("main");

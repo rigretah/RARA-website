@@ -12,14 +12,60 @@
   </head>
   <body class="shop-product">
     <header>
-      <nav class="navbar">
+      <nav class="shop-navbar">
         <a class="header-logo-full" href="portfolio.html"
           ><img
             src="images/logo/rara-logo-full-black.svg"
             alt="header-logo-horizontal"
         /></a>
+        <img class="cart-icon" src="images/icons/cart.svg" alt="cart-icon" />
         <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
       </nav>
+
+      <div class="cart-drop-down hide">
+        <div class="cart-container">
+          <div class="order-card">
+            <h1>Your cart</h1>
+            <div class="order-details">
+              <img
+                class="order-image"
+                src="images/enlightened-hedonism.jpeg"
+                alt="product-image"
+              />
+
+              <div class="order-text">
+                <h4>Illustration</h4>
+                <h3>Enlightened hedonism</h3>
+              </div>
+
+              <img
+                class="delete"
+                src="images/icons/Trash.svg"
+                alt="delete-icon"
+              />
+            </div>
+            <p class="order-price">DKK 169</p>
+          </div>
+
+          <div class="shipping-info">
+            <h4>Standard Shipping & Returns</h4>
+            <p>DKK 100</p>
+          </div>
+
+          <div class="order-total">
+            <h4>Total</h4>
+            <p>DKK 269</p>
+          </div>
+
+          <div class="cart-buttons">
+            <div class="cart-button gray close">Close cart</div>
+            <a class="cart-button" href="shop-purchase.html"
+              >Proceed to purchase</a
+            >
+          </div>
+        </div>
+      </div>
+
       <div class="burger-menu-popUp hide">
         <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
         <img
@@ -128,7 +174,7 @@
         <h2 class="product-title yellowBG">Artwork Title</h2>
         <p class="product-description">Description</p>
         <p class="product-price">Price</p>
-        <a class="yellow-button" href="#">Buy me</a>
+        <div class="yellow-button buy-button">Buy me</div>
       </template>
     </main>
 
