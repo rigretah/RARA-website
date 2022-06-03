@@ -5,6 +5,9 @@ function showBRGMenu() {
   document.querySelector(".burger-menu-popUp").classList.remove("hide");
 
   document.querySelector(".cross-icon").addEventListener("click", hideBRGMenu);
+  document
+    .querySelector(".contact-link")
+    .addEventListener("click", hideBRGMenu);
 }
 
 function hideBRGMenu() {
