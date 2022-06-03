@@ -468,7 +468,12 @@ p {
   grid-template-columns: 1fr;
   justify-items: center;
 }
-
+.portfolio-instagram-container div {
+  margin-top: var(--margin);
+  display: flex;
+  gap: var(--half-margin);
+  flex-direction: column;
+}
 .portfolio-instagram-container h4 {
   margin-top: var(--half-margin);
 }
@@ -491,12 +496,19 @@ p {
   background-size: cover;
   background-position: center;
 }
-.portfolio-instagram-container img {
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  margin-top: var(--half-margin);
-}
 
+.instagram-post {
+  display: block;
+  aspect-ratio: 1/1;
+  align-self: center;
+}
+.instagram-post img {
+  aspect-ratio: 1/1;
+  max-width: 100%;
+}
+.instagram-post img:hover {
+  filter: opacity(50%);
+}
 /*---------- PORTFOLIO - LIST ----------*/
 
 .main-portfolio-list {
@@ -1263,7 +1275,7 @@ input[type="submit"]:hover {
   }
 
   .portfolio-instagram-container div {
-    display: flex;
+    flex-direction: row;
     gap: var(--half-margin);
   }
 
@@ -1696,9 +1708,7 @@ input[type="submit"]:hover {
     margin: 0 calc(var(--double-margin) * 2);
     margin-bottom: calc(var(--double-margin) + var(--margin));
   }
-  .portfolio-instagram-container img {
-    margin-top: var(--margin);
-  }
+
   .portfolio-instagram-container div {
     gap: var(--margin);
   }
