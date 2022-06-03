@@ -14,11 +14,9 @@ function hideBRGMenu() {
 // ------ CART DROPDOWN -------
 
 document.querySelector(".cart-icon").addEventListener("click", showCart);
-document.querySelector(".yellow-button").addEventListener("click", showCart);
-// this event listener doesn't work, probably because it's an <a> tag with a # link - change element to div or something else?
+document.querySelector(".close").addEventListener("click", showCart);
 
 function showCart() {
-  console.log("cart dropdown");
   document.querySelector(".cart-drop-down").classList.toggle("hide");
 }
 
@@ -52,6 +50,9 @@ function displayArtwork(artwork) {
     ".artwork-image"
   ).src = `${artwork._embedded["wp:featuredmedia"][0].source_url}`;
   copy.querySelector(".artwork-image").alt = artwork.title.rendered;
+
+  // button
+  copy.querySelector(".buy-button").addEventListener("click", showCart);
 
   // select parent
   const parent = document.querySelector("main");
