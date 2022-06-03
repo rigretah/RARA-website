@@ -2161,4 +2161,14 @@ input[id="cvc"] {
     width: 80%;
     justify-self: end;
   }
+
+  /*------- shop purchase page-------*/
+  .p-flow-main {
+    margin-inline: calc(var(--margin) + var(--double-margin));
+    margin-top: calc(var(--double-margin) + var(--double-margin));
+    margin-bottom: calc(var(--margin) + var(--double-margin));
+    grid-template-columns: 1fr 1fr;
+    column-gap: calc(var(--half-margin) + var(--double-margin));
+    row-gap: var(--half-margin);
+  }
 }
