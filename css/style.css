@@ -1688,11 +1688,6 @@ input[type="submit"]:hover {
     gap: var(--margin);
     justify-items: left;
   }
-
-  .shop-product main a:last-of-type {
-    justify-self: right;
-    margin-inline: 0;
-  }
 }
 
 /*----desktop screen size----*/
@@ -2013,13 +2008,17 @@ input[type="submit"]:hover {
   .shop-product .side-arrow {
     margin-top: var(--half-margin);
   }
-  .shop-product main a:last-of-type {
-    justify-self: right;
-    margin-inline: 0;
-    align-self: center;
+
+  .product-category {
+    align-self: flex-end;
   }
-  .shop-product main h2 {
-    align-self: center;
+  .product-title {
+    align-self: flex-start;
+  }
+
+  .buy-button {
+    align-self: flex-start;
+    margin-left: 0;
   }
 }
 
