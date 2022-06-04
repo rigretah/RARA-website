@@ -1072,6 +1072,7 @@ input[type="submit"]:hover {
   font-family: var(--text-font);
   font-size: 1.2rem;
 }
+
 .product-card {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1971,6 +1972,7 @@ input[id="cvc"] {
     margin-bottom: var(--margin);
     gap: var(--margin);
   }
+
   .porfolio-list-container {
     columns: 4;
     column-gap: var(--double-margin);
