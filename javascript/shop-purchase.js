@@ -73,4 +73,9 @@ function step4() {
 
   // show step 4
   document.querySelector(".step-4").classList.remove("hide");
+
+  // move step indicator
+  document
+    .querySelector(".step-indicator")
+    .classList.add("order-indicator-step4");
 }
