@@ -1475,7 +1475,9 @@ input[id="cvc"] {
     gap: calc(var(--double-margin) + var(--margin));
   }
   .portfolio-video-container {
-    aspect-ratio: 3/4;
+    aspect-ratio: 16/9;
+    height: auto;
+    margin-top: 3rem;
   }
 
   .portfolio-feature-container {
@@ -1914,6 +1916,7 @@ input[id="cvc"] {
   }
   .portfolio-video-container {
     aspect-ratio: 18/9;
+    height: calc(100vh - 3rem);
   }
   .portfolio-feature-container,
   .portfolio-events-container {
