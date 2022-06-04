@@ -8,6 +8,9 @@ function showBRGMenu() {
   document
     .querySelector(".contact-link")
     .addEventListener("click", hideBRGMenu);
+  document
+    .querySelector(".brg-menu-contacts")
+    .addEventListener("click", hideBRGMenu);
 }
 
 function hideBRGMenu() {
