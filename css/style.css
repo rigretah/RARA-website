@@ -2152,8 +2152,10 @@ input[id="cvc"] {
     grid-row: 1/2;
   }
   .step-indicator {
-    grid-column: 2/3;
+    grid-column: 1/3;
     grid-row: 1/2;
+    justify-self: center;
+    width: 50%;
   }
   .order-container {
     grid-column: 1/2;
@@ -2167,7 +2169,7 @@ input[id="cvc"] {
   }
   .step-4 {
     grid-column: 1/3;
-    grid-row: 1/4;
+    grid-row: 2/4;
     justify-self: center;
     align-self: center;
   }
