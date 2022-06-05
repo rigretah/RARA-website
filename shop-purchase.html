@@ -144,7 +144,6 @@
     </header>
 
     <main class="p-flow-main">
-
       <!-- ORDER OVERVIEW -->
 
       <h1 class="purchase-h1">Your order</h1>
@@ -183,157 +182,226 @@
         </div>
       </div>
 
-    <!-- PURCHASE FLOW FORMS -->
+      <!-- PURCHASE FLOW FORMS -->
 
-    <div class="step-indicator">
-      <h3 class="step-title">Step 1 - Personal Details</h2>
-        <img class="step-img" src="images/purchase-steps-1.svg" alt="step-indicator">
-    </div>
-    
-    <section class="step-1">
-      <form class="form-purchase-flow" action="#" method="get">
-
-        <div class="fields">
-          <label class="labelStyle" for="name">Full Name </label>
-          <input name="name" type="text" id="name" placeholder="Alan Applewood" required>
-        </div>
-
-        <div class="fields">
-          <label class="labelStyle" for="address">Address</label>
-          <input name="address" type="text" id="address" placeholder="Nørrebrogade 72">
-        </div>
-
-        <div class="fields">
-          <label class="labelStyle" for="postcode">Postcode</label>
-          <input name="postcode" type="text" id="postcode" class="postcode" class="short" placeholder="2200">
-        </div>
-
-        <div class="fields">
-          <label class="labelStyle" for="email">Email</label>
-          <input name="email" type="text" id="email" placeholder="email@example.com" required>
-        </div>
-
-        <div class="fields">
-          <label class="labelStyle" for="phone">Phone Number</label>
-          <input name="phone" type="text" id="phone" placeholder="+45 35275678" required>
-        </div>
-
-      </form>
-
-      <div class="buttons-purchase-form">
-        <Button class="yellow-button gray step-1-back" onclick="window.location.href='shop.html'" >Back</Button>
-        <Button class="yellow-button step-1-button" type="submit">Continue</Button>
+      <div class="step-indicator">
+        <h3 class="step-title">Step 1 - Personal Details</h3>
+        <img
+          class="step-img"
+          src="images/purchase-steps-1.svg"
+          alt="step-indicator"
+        />
       </div>
 
-    </section>
+      <section class="step-1">
+        <form class="form-purchase-flow" action="#" method="get">
+          <div class="fields">
+            <label class="labelStyle" for="name">Full Name </label>
+            <input
+              name="name"
+              type="text"
+              id="name"
+              placeholder="Alan Applewood"
+              required
+            />
+          </div>
 
-    <section class="step-2 hide">
+          <div class="fields">
+            <label class="labelStyle" for="address">Address</label>
+            <input
+              name="address"
+              type="text"
+              id="address"
+              placeholder="Nørrebrogade 72"
+            />
+          </div>
 
-      <form class="form-purchase-flow" action="#" method="get">
-        <div class="fields">
-          <label class="labelStyle" for="cardname">Card Name</label>
-          <input name="cardname" type="text" id="cardname" placeholder="Alan Applewood" required>
+          <div class="fields">
+            <label class="labelStyle" for="postcode">Postcode</label>
+            <input
+              name="postcode"
+              type="text"
+              id="postcode"
+              class="postcode short"
+              placeholder="2200"
+            />
+          </div>
+
+          <div class="fields">
+            <label class="labelStyle" for="email">Email</label>
+            <input
+              name="email"
+              type="text"
+              id="email"
+              placeholder="email@example.com"
+              required
+            />
+          </div>
+
+          <div class="fields">
+            <label class="labelStyle" for="phone">Phone Number</label>
+            <input
+              name="phone"
+              type="text"
+              id="phone"
+              placeholder="+45 35275678"
+              required
+            />
+          </div>
+        </form>
+
+        <div class="buttons-purchase-form">
+          <button
+            class="yellow-button gray step-1-back"
+            onclick="window.location.href='shop.html'"
+          >
+            Back
+          </button>
+          <button class="yellow-button step-1-button" type="submit">
+            Continue
+          </button>
         </div>
-        <div class="fields">
-          <label class="labelStyle" for="cardnumber">Card Number</label>
-          <input name="cardnumber" type="text" id="cardnumber" placeholder="5567 4458">
+      </section>
+
+      <section class="step-2 hide">
+        <form class="form-purchase-flow" action="#" method="get">
+          <div class="fields">
+            <label class="labelStyle" for="cardname">Card Name</label>
+            <input
+              name="cardname"
+              type="text"
+              id="cardname"
+              placeholder="Alan Applewood"
+              required
+            />
+          </div>
+          <div class="fields">
+            <label class="labelStyle" for="cardnumber">Card Number</label>
+            <input
+              name="cardnumber"
+              type="text"
+              id="cardnumber"
+              placeholder="5567 4458"
+            />
+          </div>
+
+          <div class="fields">
+            <label class="labelStyle" for="expdate">Exp. Date</label>
+            <input
+              name="expdate"
+              type="text"
+              id="expdate"
+              placeholder="01/30"
+            />
+          </div>
+
+          <div class="fields">
+            <label class="labelStyle" for="cvc">CVC</label>
+            <input name="cvc" type="text" id="cvc" placeholder="012" />
+          </div>
+        </form>
+
+        <div class="buttons-purchase-form">
+          <button
+            class="yellow-button gray step-2-back"
+            onclick="window.location.href='shop-purchase.html'"
+          >
+            Back
+          </button>
+          <button class="yellow-button step-2-button" type="submit">
+            Continue
+          </button>
         </div>
-        
-        <div class="fields">
-          <label class="labelStyle" for="expdate">Exp. Date</label>
-          <input name="expdate" type="text" id="expdate" placeholder="01/30">
+      </section>
+
+      <section class="step-3 hide">
+        <div class="overview-billing">
+          <div class="billing-address">
+            <h3>Billing Address</h3>
+
+            <p id="billing-fullName">Alan Applewood</p>
+            <p id="billing-address">Nørrebrogade 72</p>
+            <p id="billing-postcode">2200</p>
+            <p>Copenhagen, Denmark</p>
+          </div>
+
+          <div class="shipping-address">
+            <h3>Shipping Address</h3>
+
+            <p id="shipping-fullName">Alan Applewood</p>
+            <p id="shipping-address">Nørrebrogade 72</p>
+            <p id="shipping-postcode">2200</p>
+            <p>Copenhagen, Denmark</p>
+          </div>
+
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p id="emailAddress">alan@applewood.com</p>
+            <p id="phoneNumber">+45 35275678</p>
+          </div>
+
+          <div class="payment-info">
+            <h3>Payment</h3>
+            <img
+              class="payment-method"
+              src="images/visa-icon.svg"
+              alt="payment-method"
+            />
+            <p id="payment-emailAddress">VISA DEBIT</p>
+            <p id="payment-phoneNumber">Exp. Date 01/30</p>
+          </div>
         </div>
 
-        <div class="fields">
-          <label class="labelStyle" for="cvc">CVC</label>
-          <input name="cvc" type="text" id="cvc" placeholder="012">
+        <div class="buttons-purchase-form">
+          <button
+            class="yellow-button gray step-3-back"
+            onclick="window.location.href='shop.html'"
+          >
+            Cancel
+          </button>
+          <button class="yellow-button step-3-button" type="submit">
+            Complete purchase
+          </button>
         </div>
+      </section>
 
-      </form>
+      <section class="step-4 hide">
+        <div class="thank-you-container">
+          <h2>Thank you for your purchase</h2>
 
-      <div class="buttons-purchase-form">
-        <Button class="yellow-button gray step-2-back" onclick="window.location.href='shop-purchase.html'" >Back</Button>
-        <Button class="yellow-button step-2-button" type="submit">Continue</Button>
-      </div>
+          <div class="payment-approved">
+            <h3>Your payment has been approved</h3>
+            <img src="images/icons/checkmark.svg" alt="checkmark-icon" />
+          </div>
 
-    </section>
-
-    <section class="step-3 hide">
-      <div class="overview-billing">
-        <div class="billing-address">
-          <h3>Billing Address</h3>
-
-          <p id="fullName">Alan Applewood</p>
-          <p id="address">Nørrebrogade 72</p>
-          <p id="postcode">2200</p>
-          <p>Copenhagen, Denmark</p>
+          <a class="yellow-button" href="shop.html">Back to shop</a>
         </div>
-      
-        <div class="shipping-address">
-          <h3>Shipping Address</h3>
+      </section>
+    </main>
 
-          <p id="fullName">Alan Applewood</p>
-          <p id="address">Nørrebrogade 72</p>
-          <p id="postcode">2200</p>
-          <p>Copenhagen, Denmark</p>
-        </div>
+    <footer>
+      <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
 
-        <div class="contact-info">  
-          <h3>Contact</h3>
-          <p id="emailAddress">alan@applewood.com</p>
-          <p id="phoneNumber">+45 35275678</p>
-        </div>
-     
-        <div class="payment-info">
-          <h3>Payment</h3>
-          <img class="payment-method" src="images/visa-icon.svg" alt="payment-method">
-          <p id="emailAddress">VISA DEBIT</p>
-          <p id="phoneNumber">Exp. Date 01/30</p>
-        </div>
-      </div>
+      <h5>still here? then you shouLd DEFINITELY contact me</h5>
 
-      <div class="buttons-purchase-form">
-        <Button class="yellow-button gray step-3-back" onclick="window.location.href='shop.html'" >Cancel</Button>        
-        <Button class="yellow-button step-3-button" type="submit">Complete purchase</Button>
-      </div>
-
-    </section>
-
-    <section class="step-4 hide">
-      <div class="thank-you-container">
-      <h2>Thank you for your purchase</h2>
-
-      <div class="payment-approved">
-        <h3>Your payment has been approved</h3>
-        <img src="images/icons/checkmark.svg" alt="checkmark-icon">
-      </div>
-
-      <a class="yellow-button" href="shop.html">Back to shop</a>
-    </div>
-
-    </section>
-
-  </main>
-
-  <footer>
-    <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
-
-    <h5>still here? then you shouLd DEFINITELY contact me</h5>
-
-    <ul id="footer-SoMe">
-  
-      <li id="FTinstagram">
-        <a href="https://www.instagram.com/almostrara/"><img src="assets/Instagram.svg" alt="instagram-icon" /></a>
-      </li>
-      <li id="FTfacebook">
-        <a href="https://www.facebook.com/rasa.drukteinyte.7"><img src="assets/Facebook.svg" alt="facebook-icon" /></a>
-      </li>
-      <li id="FTlinkedin">
-        <a href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"><img src="assets/LinkedIn.svg"
-            alt="linkedin-icon" /></a>
-      </li>
-    </ul>
-  </footer>
+      <ul id="footer-SoMe">
+        <li id="FTinstagram">
+          <a href="https://www.instagram.com/almostrara/"
+            ><img src="assets/Instagram.svg" alt="instagram-icon"
+          /></a>
+        </li>
+        <li id="FTfacebook">
+          <a href="https://www.facebook.com/rasa.drukteinyte.7"
+            ><img src="assets/Facebook.svg" alt="facebook-icon"
+          /></a>
+        </li>
+        <li id="FTlinkedin">
+          <a href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
+            ><img src="assets/LinkedIn.svg" alt="linkedin-icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
 
     <script src="/javascript/shop-purchase.js"></script>
   </body>
