@@ -407,15 +407,17 @@ p {
   margin-bottom: var(--half-margin);
 }
 
+.categories-drop-down li {
+  aspect-ratio: 2.5/1;
+}
 .categories-drop-down a {
   width: 100%;
   text-decoration: none;
   color: var(--primary-color);
   font-family: var(--text-font);
-  aspect-ratio: 2.5/1;
 }
 
-.categories-drop-down a:hover {
+.categories-drop-down li:hover {
   background-image: url(../images/icons/hover-effects/Hover-effect-line-black.svg);
   background-size: contain;
   background-repeat: no-repeat;
