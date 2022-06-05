@@ -409,9 +409,6 @@ p {
 
 .categories-drop-down a {
   width: 100%;
-}
-
-.categories-drop-down a {
   text-decoration: none;
   color: var(--primary-color);
   font-family: var(--text-font);
