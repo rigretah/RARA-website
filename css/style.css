@@ -407,7 +407,7 @@ p {
   margin-bottom: var(--half-margin);
 }
 
-.categories-drop-down li {
+.categories-drop-down a {
   width: 100%;
 }
 
