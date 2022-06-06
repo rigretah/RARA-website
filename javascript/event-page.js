@@ -40,6 +40,11 @@ function displayEvent(event) {
   copy.querySelector(".event-date p").textContent = event.event_date;
   copy.querySelector(".event-location p").textContent = event.location;
 
+  // change meta title
+  document.querySelector(
+    "head title"
+  ).textContent = `RARA | ${event.title.rendered}`;
+
   // select parent
   const parent = document.querySelector("main");
   // append it

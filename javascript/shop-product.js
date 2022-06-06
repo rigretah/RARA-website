@@ -51,6 +51,11 @@ function displayArtwork(artwork) {
   ).src = `${artwork._embedded["wp:featuredmedia"][0].source_url}`;
   copy.querySelector(".product-image").alt = artwork.title.rendered;
 
+  // change meta title
+  document.querySelector(
+    "head title"
+  ).textContent = `RARA | ${artwork.title.rendered}`;
+
   // button
   copy.querySelector(".buy-button").addEventListener("click", showCart);
 

@@ -41,6 +41,11 @@ function displayArtwork(artwork) {
   ).src = `${artwork._embedded["wp:featuredmedia"][0].source_url}`;
   copy.querySelector(".artwork-image").alt = artwork.title.rendered;
 
+  // change meta title
+  document.querySelector(
+    "head title"
+  ).textContent = `RARA | ${artwork.title.rendered}`;
+
   // select parent
   const parent = document.querySelector("main");
   // append it
